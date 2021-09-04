@@ -1,6 +1,6 @@
 {
-	"name": "p2made/yii2-p2y2-things-demo",
-	"description": "Not really a theme. A set of pages to demonstrate p2made/yii2-p2y2-things, bundled as a theme.",
+	"name": "p2made/p2y2-things-demo",
+	"description": "Not really a theme. A set of pages to demonstrate p2made/p2y2-things, bundled as a theme.",
 	"type": "yii2-extension",
 	"keywords": [
 		"yii2", "yii", "extension", "PHP",
@@ -16,15 +16,15 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/p2made/yii2-p2y2-things-demo/issues?state=open",
-		"source": "https://github.com/p2made/yii2-p2y2-things-demo"
+		"issues": "https://github.com/p2made/p2y2-things-demo/issues?state=open",
+		"source": "https://github.com/p2made/p2y2-things-demo"
 	},
 
 	"minimum-stability": "dev",
 	"prefer-stable" : true,
 
 	"require": {
-		"p2made/yii2-p2y2-things": "dev-master"
+		"p2made/p2y2-things": "dev-master"
 	},
 
 	"autoload": {
