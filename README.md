@@ -8,12 +8,17 @@
 
 ---
 
+# ¡¡ Notice !!
+
+After an extented period of life getting in the way I'm back to [Yii2](https://www.yiiframework.com/) development. I'll be rebasing every project as I resume work on it. Projects that use [Bootstrap](https://getbootstrap.com/) will resume as version `5.0.0` for Bootstrap 5.x.
+
+---
+
 A set of pages to demonstrate [`p2made/yii2-p2y2-things`](https://github.com/p2made/yii2-p2y2-things), bundled as a theme.
 
 It declares p2made/yii2-p2y2-things as a dependancy.
 
-Installation
-------------
+# Installation
 
 The preferred way to install P2Y2Things Demo is through [composer](http://getcomposer.org/download/).
 Depending on your composer installation, run *one* of the following commands:
@@ -38,8 +43,7 @@ to the requires section of your `composer.json` file & P2Y2Things Demo will be i
 
 The files are installed via Yii's recommended usage of the `fxp/composer-asset-plugin`.
 
-Quick Start
------------
+# Quick Start
 
 Once the extension is installed, you can have a *preview* by reconfiguring the path mappings of the view component:
 
@@ -69,8 +73,7 @@ To view pages in `site/pages/` you need to modify `actions()` in the `SiteContro
 	}
 ```
 
-And then...
------------
+# And then...
 
 P2Y2Things Demo uses [P2Y2Things](https://github.com/p2made/yii2-p2y2-things) which requires some Yii 2 assets to be nullified to avoid conflicts through double loading. Modify `common/config/main.php` with...
 
