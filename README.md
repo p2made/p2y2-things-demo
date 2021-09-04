@@ -1,4 +1,4 @@
-# P2Y2Things Demo v4.0.0-dev
+# P2Y2Things Demo
 
 [![License](https://poser.pugx.org/p2made/p2y2-things-demo/license)](https://packagist.org/packages/p2made/p2y2-things-demo)
 [![Total Downloads](https://poser.pugx.org/p2made/p2y2-things-demo/downloads)](https://packagist.org/packages/p2made/p2y2-things-demo)
