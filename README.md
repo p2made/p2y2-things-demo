@@ -1,10 +1,10 @@
 # P2Y2Things Demo v4.0.0-dev
 
-[![License](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
-[![Total Downloads](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/downloads)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
-[![Monthly Downloads](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/d/monthly)](https://packagist.org/packages/p2made/yii2-p2y2-things)
-[![Latest Stable Version](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/v/stable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
-[![Latest Unstable Version](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/v/unstable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![License](https://poser.pugx.org/p2made/p2y2-things-demo/license)](https://packagist.org/packages/p2made/p2y2-things-demo)
+[![Total Downloads](https://poser.pugx.org/p2made/p2y2-things-demo/downloads)](https://packagist.org/packages/p2made/p2y2-things-demo)
+[![Monthly Downloads](https://poser.pugx.org/p2made/p2y2-things-demo/d/monthly)](https://packagist.org/packages/p2made/p2y2-things)
+[![Latest Stable Version](https://poser.pugx.org/p2made/p2y2-things-demo/v/stable)](https://packagist.org/packages/p2made/p2y2-things-demo)
+[![Latest Unstable Version](https://poser.pugx.org/p2made/p2y2-things-demo/v/unstable)](https://packagist.org/packages/p2made/p2y2-things-demo)
 
 ---
 
@@ -14,9 +14,9 @@ After an extented period of life getting in the way I'm back to [Yii2](https://w
 
 ---
 
-A set of pages to demonstrate [`p2made/yii2-p2y2-things`](https://github.com/p2made/yii2-p2y2-things), bundled as a theme.
+A set of pages to demonstrate [`p2made/p2y2-things`](https://github.com/p2made/p2y2-things), bundled as a theme.
 
-It declares p2made/yii2-p2y2-things as a dependancy.
+It declares p2made/p2y2-things as a dependancy.
 
 # Installation
 
@@ -24,19 +24,19 @@ The preferred way to install P2Y2Things Demo is through [composer](http://getcom
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require --prefer-dist p2made/yii2-p2y2-things-demo "^2.8"
+composer require --prefer-dist p2made/p2y2-things-demo "^2.8"
 ```
 
 or
 
 ```
-php composer.phar require --prefer-dist p2made/yii2-p2y2-things-demo "^2.8"
+php composer.phar require --prefer-dist p2made/p2y2-things-demo "^2.8"
 ```
 
 Alternatively add:
 
 ```
-"p2made/yii2-p2y2-things-demo": "^2.8"
+"p2made/p2y2-things-demo": "^2.8"
 ```
 
 to the requires section of your `composer.json` file & P2Y2Things Demo will be installed next time you run `composer update`.
@@ -52,7 +52,7 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 		'view' => [
 			'theme' => [
 				'pathMap' => [
-					'@app/views' => '@vendor/p2m/yii2-p2y2-things-demo/views',
+					'@app/views' => '@vendor/p2m/p2y2-things-demo/views',
 				],
 			],
 		],
@@ -75,7 +75,7 @@ To view pages in `site/pages/` you need to modify `actions()` in the `SiteContro
 
 # And then...
 
-P2Y2Things Demo uses [P2Y2Things](https://github.com/p2made/yii2-p2y2-things) which requires some Yii 2 assets to be nullified to avoid conflicts through double loading. Modify `common/config/main.php` with...
+P2Y2Things Demo uses [P2Y2Things](https://github.com/p2made/p2y2-things) which requires some Yii 2 assets to be nullified to avoid conflicts through double loading. Modify `common/config/main.php` with...
 
 ```
 	'components' => [
