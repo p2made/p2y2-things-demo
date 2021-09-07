@@ -24,7 +24,7 @@
 	"prefer-stable" : true,
 
 	"require": {
-		"p2made/p2y2-things": "dev-master"
+		"p2made/p2y2-things": "dev-temp"
 	},
 
 	"autoload": {
