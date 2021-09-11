@@ -24,19 +24,19 @@ The preferred way to install P2Y2Things Demo is through [composer](http://getcom
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require --prefer-dist p2made/p2y2-things-demo "dev-5.0.0-dev"
+composer require --prefer-dist p2made/p2y2-things-demo "^5.0"
 ```
 
 or
 
 ```
-php composer.phar require --prefer-dist p2made/p2y2-things-demo "dev-5.0.0-dev"
+php composer.phar require --prefer-dist p2made/p2y2-things-demo "^5.0"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/p2y2-things-demo": "dev-5.0.0-dev"
+	"p2made/p2y2-things-demo": "^5.0"
 ```
 
 to the requires section of your `composer.json` file & P2Y2Things Demo will be installed next time you run `composer update`.
