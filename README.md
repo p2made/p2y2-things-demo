@@ -36,7 +36,7 @@ php composer.phar require --prefer-dist p2made/p2y2-things-demo "dev-5.0.0-dev"
 Alternatively add:
 
 ```
-	"p2made/p2y2-things-demo": "dev-5.0.0-dev"
+		"p2made/p2y2-things-demo": "dev-5.0.0-dev"
 ```
 
 to the requires section of your `composer.json` file & P2Y2Things Demo will be installed next time you run `composer update`.
@@ -52,7 +52,7 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 		'view' => [
 			'theme' => [
 				'pathMap' => [
-					'@app/views' => '@vendor/p2m/p2y2-things-demo/views',
+					'@app/views' => '@vendor/p2made/p2y2-things-demo/views',
 				],
 			],
 		],
