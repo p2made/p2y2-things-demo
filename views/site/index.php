@@ -13,11 +13,15 @@ use yii\bootstrap5\Html;
 use yii\widgets\Breadcrumbs;
 use yii\bootstrap5\ActiveForm;
 
-use p2m\helpers\FA;
+//use p2m\helpers\FA;
+
+use rmrevin\yii\fontawesome\FA;
 
 // load assets...
 p2m\assets\TimelineAsset::register($this);
 p2m\assets\MorrisAsset::register($this);
+
+//rmrevin\yii\fontawesome\NpmFreeAssetBundle::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
 p2m\demo\assets\MorrisDemoData::register($this);
@@ -574,7 +578,7 @@ $this->title = 'P2Y2Things';
 	<br><div class="alert alert-success" role="alert">
 		<ul class="fa-ul">
 			<li>
-				<?= FA::fw(FA::_CODE)->li()->size(FA::SIZE_LARGE) ?> <code><?= __FILE__ ?></code>
+				<?= FA::fixedWidth(FA::_CODE)->li()->size(FA::SIZE_LARGE) ?> <code><?= __FILE__ ?></code>
 			</li>
 		</ul>
 	</div>
