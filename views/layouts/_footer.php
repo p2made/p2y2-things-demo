@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-use yii\bootstrap\Html;
+use yii\bootstrap5\Html;
 use p2m\helpers\FA;
 
 /* @var $this \yii\web\View */

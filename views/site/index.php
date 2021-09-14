@@ -14,7 +14,6 @@ use yii\widgets\Breadcrumbs;
 use yii\bootstrap5\ActiveForm;
 
 //use p2m\helpers\FA;
-
 use rmrevin\yii\fontawesome\FA;
 
 // load assets...
@@ -578,7 +577,7 @@ $this->title = 'P2Y2Things';
 	<br><div class="alert alert-success" role="alert">
 		<ul class="fa-ul">
 			<li>
-				<?= FA::fixedWidth(FA::_CODE)->li()->size(FA::SIZE_LARGE) ?> <code><?= __FILE__ ?></code>
+				<!-- FA::etc etc removed here -->
 			</li>
 		</ul>
 	</div>
