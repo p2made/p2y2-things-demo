@@ -12,7 +12,8 @@
 use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
 use yii\helpers\Url;
-use p2m\helpers\FA;
+//use p2m\helpers\FA;
+use rmrevin\yii\fontawesome\FA;
 use p2m\models\FullCalendarEvent;
 use p2m\widgets\FullCalendarWidget;
 

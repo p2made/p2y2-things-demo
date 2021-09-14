@@ -11,7 +11,8 @@
 
 use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
-use p2m\helpers\FA;
+//use p2m\helpers\FA;
+use rmrevin\yii\fontawesome\FA;
 
 // load assets...
 p2m\assets\AnimateAsset::register($this);

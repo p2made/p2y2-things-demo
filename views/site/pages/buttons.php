@@ -12,7 +12,8 @@
 use yii\bootstrap\Html;
 use yii\bootstrap\Button;
 use yii\widgets\Breadcrumbs;
-use p2m\helpers\FA;
+//use p2m\helpers\FA;
+use rmrevin\yii\fontawesome\FA;
 use p2m\helpers\BSocial;
 
 // load assets...

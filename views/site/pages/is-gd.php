@@ -12,7 +12,8 @@
 use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
-use p2m\helpers\FA;
+//use p2m\helpers\FA;
+use rmrevin\yii\fontawesome\FA;
 
 // load assets...
 

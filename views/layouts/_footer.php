@@ -10,7 +10,8 @@
  */
 
 use yii\bootstrap5\Html;
-use p2m\helpers\FA;
+//use p2m\helpers\FA;
+use rmrevin\yii\fontawesome\FA;
 
 /* @var $this \yii\web\View */
 
