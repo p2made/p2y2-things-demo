@@ -9,9 +9,9 @@
  * @license MIT
  */
 
-use yii\bootstrap\Html;
+use yii\bootstrap5\Html;
 use yii\widgets\Breadcrumbs;
-use yii\bootstrap\ActiveForm;
+use yii\bootstrap5\ActiveForm;
 
 use p2m\helpers\FA;
 
