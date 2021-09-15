@@ -21,13 +21,13 @@ use rmrevin\yii\fontawesome\FA;
 		<p class="pull-left">
 			Crafted with <?= FA::icon('heart') ?> by Pedro fp, on the
 			<a href="https://en.wikipedia.org/wiki/Sunshine_Coast,_Queensland" target="_blank">
-				Sunshine Coast <?= FA::icon(FA::_EXTERNAL_LINK) ?>
+				Sunshine Coast <?= FA::icon(FA::_EXTERNAL_LINK_ALT) ?>
 			</a> of
 			<a href="https://en.wikipedia.org/wiki/Queensland" target="_blank">
-				Queensland <?= FA::icon(FA::_EXTERNAL_LINK) ?>
+				Queensland <?= FA::icon(FA::_EXTERNAL_LINK_ALT) ?>
 			</a>,
 			<a href="https://en.wikipedia.org/wiki/Australia" target="_blank">
-				Australia <?= FA::icon(FA::_EXTERNAL_LINK) ?>
+				Australia <?= FA::icon(FA::_EXTERNAL_LINK_ALT) ?>
 			</a>
 			<?= FA::icon('copyright') ?> <?= date('Y') ?>
 		</p>
