@@ -1,51 +1,53 @@
 <?php
-/**
- * main.php
- *
- * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
- * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things-demo
- * @license MIT
- */
-
-use yii\bootstrap5\Html;
-use yii\bootstrap5\Nav;
-use yii\bootstrap5\NavBar;
-use p2m\widgets\Alert;
-//use p2m\helpers\FA;
-use rmrevin\yii\fontawesome\FA;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+use common\widgets\Alert;
+use yii\bootstrap5\Breadcrumbs;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\Nav;
+use yii\bootstrap5\NavBar;
+
 p2m\demo\assets\ThingsDemoAsset::register($this);
+//p2m\assets\BootstrapIconsAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
+<html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
 	<meta charset="<?= Yii::$app->charset ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<?= Html::csrfMetaTags() ?>
-	<title><?= Html::encode($this->title) ?> | P2Y2Things</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="assets/img/favicon.ico" type="image/x-icon" rel="icon">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<?php $this->registerCsrfMetaTags() ?>
+	<title><?= Html::encode($this->title) ?></title>
 	<?php $this->head() ?>
+
 </head>
-<body>
+<body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
 
-	<div class="wrap">
-<?= $this->render('_navigation.php', []) ?>
 
-		<div class="container">
-<?= Alert::widget() ?>
-<?= $content ?>
-		</div>
+<main role="main" class="flex-shrink-0">
+	<div class="container">
+		<?= Breadcrumbs::widget([
+			'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+		]) ?>
+		<?= Alert::widget() ?>
+		<?= $content ?>
 	</div>
+</main>
 
-<?= $this->render('_footer.php', []) ?>
+<footer class="py-5 bg-dark">
+	<div class="container">
+		<p class="float-start">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
+		<p class="float-end"><?= Yii::powered() ?></p>
+	</div>
+</footer>
 
 <?php $this->endBody() ?>
 </body>
 </html>
-<?php $this->endPage() ?>
+<?php $this->endPage();
