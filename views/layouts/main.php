@@ -9,9 +9,9 @@
  * @license MIT
  */
 
-use yii\bootstrap\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\Nav;
+use yii\bootstrap5\NavBar;
 use p2m\widgets\Alert;
 use p2m\helpers\FA;
 

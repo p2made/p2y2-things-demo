@@ -16,8 +16,8 @@ use yii\bootstrap\ActiveForm;
 use p2m\helpers\FA;
 
 // load assets...
-p2m\assets\TimelineAsset::register($this);
-p2m\assets\MorrisAsset::register($this);
+p2m\assets\P2TimelineAsset::register($this);
+//p2m\assets\P2MorrisAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
 p2m\demo\assets\MorrisDemoData::register($this);
