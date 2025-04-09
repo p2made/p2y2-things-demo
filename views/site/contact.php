@@ -1,74 +1,45 @@
 <?php
-/**
- * contact.php
- *
- * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
- * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things-demo
- * @license MIT
- */
 
-use yii\bootstrap\Html;
-use yii\widgets\Breadcrumbs;
-use yii\bootstrap\ActiveForm;
-use p2m\helpers\FA;
-//use yii\captcha\Captcha;
+/** @var yii\web\View $this */
+/** @var yii\bootstrap5\ActiveForm $form */
+/** @var \frontend\models\ContactForm $model */
 
-// load assets...
-
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \frontend\models\ContactForm */
+use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
+use yii\captcha\Captcha;
 
 $this->title = 'Contact';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div id="content-wrapper">
-	<?= Breadcrumbs::widget([
-		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-	]) ?>
+<div class="site-contact">
+	<h1><?= Html::encode($this->title) ?></h1>
 
-	<div class="jumbotron">
-		<h1><?= Html::encode($this->title) ?></h1>
-	</div>
+	<p>
+		If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+	</p>
 
-	<div class="body-content">
+	<div class="row">
+		<div class="col-lg-5">
+			<?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-		<div class="row">
-			<div class="col-lg-6 col-lg-offset-3">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-					</div>
-					<div class="panel-body">
+				<?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
 
-						<?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
-							<?= $form->field($model, 'name') ?>
-							<?= $form->field($model, 'email') ?>
-							<?= $form->field($model, 'subject') ?>
-							<?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
-							<!--< ?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-								'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
-							]) ?>-->
-							<div class="form-group">
-								<?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
-							</div>
-						<?php ActiveForm::end(); ?>
+				<?= $form->field($model, 'email') ?>
 
-					</div>
+				<?= $form->field($model, 'subject') ?>
+
+				<?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
+
+				<?= $form->field($model, 'verifyCode')->widget(Captcha::class, [
+					'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
+				]) ?>
+
+				<div class="form-group">
+					<?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
 				</div>
-			</div>
+
+			<?php ActiveForm::end(); ?>
 		</div>
-
 	</div>
 
-	<!-- this goes on every site file in p2made demos -->
-	<br><div class="alert alert-success" role="alert">
-		<ul class="fa-ul">
-			<li>
-				<?= FA::fw(FA::_CODE)->li()->size(FA::SIZE_LARGE) ?> <code><?= __FILE__ ?></code>
-			</li>
-		</ul>
-	</div>
-</div><!-- /#content-wrapper -->
+</div>
