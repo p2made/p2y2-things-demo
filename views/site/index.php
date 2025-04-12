@@ -5,8 +5,10 @@
 $this->title = 'My Yii Application';
 
 p2m\assets\P2BootstrapIconsAsset::register($this);
+p2m\assets\P2FlagIconsAsset::register($this);
 
-use p2m\icons\BI;
+use p2m\helpers\BI;
+use p2m\helpers\FI;
 ?>
 <div class="site-index">
 	<div class="p-5 mb-4 bg-transparent rounded-3">
@@ -31,7 +33,7 @@ use p2m\icons\BI;
 				<p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
 			</div>
 			<div class="col-lg-4">
-				<h2>Heading</h2>
+				<h2><?= FI::i(FI::_TURKIC_STATES)->square() ?> Heading</h2>
 
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
 					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
