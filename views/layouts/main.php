@@ -32,18 +32,18 @@ $this->title = 'p2y2-things demos';
 <body id="page-top">
 	<?= $this->beginBody() ?>
 	<div id="wrapper">
-		<?= $this->render('@app/modules/letter/layouts/side-navigation.php') ?>
+		<?= $this->render('@vendor/p2made/p2y2-things-demo/views/layouts/side-navigation.php') ?>
 		<div id="content-wrapper" class="d-flex flex-column">
 			<div id="content">
-				<?= $this->render('@app/modules/letter/layouts/top-navigation.php') ?>
+				<?= $this->render('@vendor/p2made/p2y2-things-demo/views/layouts/top-navigation.php') ?>
 
 				<?= $content ?>
 
 			</div>
-			<?= $this->render('@app/modules/letter/layouts/sticky-footer.php') ?>
+			<?= $this->render('@vendor/p2made/p2y2-things-demo/views/layouts/sticky-footer.php') ?>
 		</div>
 	</div>
-	<?= $this->render('@app/modules/letter/layouts/scroll-to-top.php') ?>
+	<?= $this->render('@vendor/p2made/p2y2-things-demo/views/layouts/scroll-to-top.php') ?>
 	<?= $this->endBody() ?>
 </body>
 </html>
