@@ -25,8 +25,8 @@ use yii\web\AssetBundle;
 
 class FlotDemoAsset extends AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-p2y2-things-demo/assets/lib';
-	//public $sourcePath = '@p2m/demo/assets/lib';
+	//public $sourcePath = '@vendor/p2made/yii2-p2y2-things-demo/assets/lib';
+	public $sourcePath = '@p2m/demo/assets/lib';
 
 	public $css = [
 		'css/flot-demo.css',
