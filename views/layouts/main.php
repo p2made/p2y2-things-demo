@@ -9,28 +9,18 @@
  */
 
 use common\widgets\Alert;
-use yii\bootstrap5\Html;
-use yii\bootstrap5\Nav;
-use yii\bootstrap5\NavBar;
-
-/** @var \yii\web\View $this */
-/** @var string $content */
-
-?>
-<?php
-
-/** @var \yii\web\View $this */
-/** @var string $content */
-
-use common\widgets\Alert;
 use frontend\assets\AppAsset;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 
+/** @var \yii\web\View $this */
+/** @var string $content */
+
 AppAsset::register($this);
-p2m\assets\P2CoreAsset::register($this);
+p2m\demo\assets\ThingsDemoAsset::register($this);
+
 $this->title = 'p2y2-things demos';
 ?>
 <?php $this->beginPage() ?>
@@ -38,30 +28,6 @@ $this->title = 'p2y2-things demos';
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
 	<?= $this->render('@vendor/p2made/p2y2-things-demo/views/layouts/head.php') ?>
-</head>
-<body>
-	<?= $this->beginBody() ?>
-	<?= $this->render('@app/modules/letter/layouts/header.php') ?>
-	<?= $content ?>
-	<?= $this->render('@app/modules/letter/layouts/footer.php') ?>
-	<?= $this->endBody() ?>
-</body>
-</html>
-<?php $this->endPage(); ?>
-
-
-
-
-
-<?php $this->beginPage() ?>
-<!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>" class="h-100">
-<head>
-	<meta charset="<?= Yii::$app->charset ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<?php $this->registerCsrfMetaTags() ?>
-	<title><?= Html::encode($this->title) ?></title>
-	<?php $this->head() ?>
 </head>
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
