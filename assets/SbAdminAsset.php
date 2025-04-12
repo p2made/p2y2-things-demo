@@ -1,6 +1,6 @@
 <?php
 /**
- * SbAdmin2Asset.php
+ * SbAdminAsset.php
  *
  * @author Pedro Plowman
  * @copyright Copyright &copy; Pedro Plowman, 2025
@@ -8,32 +8,31 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things-demo
- * @class \p2m\assets\SbAdmin2Asset
+ * @class \p2m\assets\SbAdminAsset
  */
 
 /**
  * Load this asset with...
- * p2m\demo\assets\SbAdmin2Asset::register($this);
+ * p2m\demo\assets\SbAdminAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\demo\assets\SbAdmin2Asset',
+ *     'p2m\demo\assets\SbAdminAsset',
  */
 
 namespace p2m\demo\assets;
 
 use yii\web\AssetBundle;
 
-class SbAdmin2Asset extends AssetBundle
+class SbAdminAsset extends AssetBundle
 {
-	//public $sourcePath = '@vendor/p2made/yii2-p2y2-things-demo/assets/lib';
 	public $sourcePath = '@p2m/demo/assets/lib';
 
 	public $css = [
-		'css/sb-admin-2.min.css',
+		'css/sb-admin.min.css',
 	];
 
 	public $js = [
-		'js/sb-admin-2.min.js',
+		'js/sb-admin.min.js',
 	];
 
 	public $depends = [

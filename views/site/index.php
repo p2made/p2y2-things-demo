@@ -3,12 +3,6 @@
 /** @var yii\web\View $this */
 
 $this->title = 'My Yii Application';
-
-p2m\assets\P2BootstrapIconsAsset::register($this);
-p2m\assets\P2FlagIconsAsset::register($this);
-
-use p2m\helpers\BI;
-use p2m\helpers\FI;
 ?>
 <div class="container-fluid">
 

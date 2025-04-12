@@ -9,7 +9,6 @@
  */
 
 use common\widgets\Alert;
-use frontend\assets\AppAsset;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
@@ -18,7 +17,6 @@ use yii\bootstrap5\NavBar;
 /** @var \yii\web\View $this */
 /** @var string $content */
 
-AppAsset::register($this);
 p2m\demo\assets\ThingsDemoAsset::register($this);
 
 $this->title = 'p2y2-things demos';

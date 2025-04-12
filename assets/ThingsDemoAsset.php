@@ -25,15 +25,17 @@ use yii\web\AssetBundle;
 
 class ThingsDemoAsset extends AssetBundle
 {
-	//public $sourcePath = '@vendor/p2made/yii2-p2y2-things-demo/assets/lib';
+	/**
 	public $sourcePath = '@p2m/demo/assets/lib';
 
 	public $css = [
 		'css/things-demo.css',
 	];
+	 */
 
 	public $depends = [
-		'p2m\demo\assets\SbAdmin2Asset',
-		'p2m\demo\assets\GoogleFontAsset',
+		'p2m\assets\P2BootstrapIconsAsset',
+		'p2m\demo\assets\SbAdminAsset',
+		'p2m\assets\P2SimpleDatatablesAsset',
 	];
 }
