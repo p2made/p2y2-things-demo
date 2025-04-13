@@ -34,8 +34,9 @@ class ThingsDemoAsset extends AssetBundle
 	 */
 
 	public $depends = [
+		'p2m\assets\P2CoreAsset',
+		'p2m\demo\assets\SbAdmin2Asset',
 		'p2m\assets\P2BootstrapIconsAsset',
-		'p2m\demo\assets\SbAdminAsset',
 		'p2m\assets\P2SimpleDatatablesAsset',
 	];
 }
