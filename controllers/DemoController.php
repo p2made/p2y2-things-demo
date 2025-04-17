@@ -1,19 +1,32 @@
 <?php
+/**
+ * DemoController.php
+ *
+ * @author Pedro Plowman
+ * @copyright Copyright (c) Pedro Plowman, 2025
+ * @link https://github.com/p2made
+ * @license MIT
+ *
+ * @package p2made/yii2-p2y2-things-demo
+ * @class \p2m\demo\assets\ThingsDemoAsset
+ */
 
 namespace p2m\demo\controllers;
 
 use Yii;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use p2m\demo\assets\ThingsDemoAsset;
 
 /**
  * Site controller
  */
 class DemoController extends Controller
 {
-	//public $layout = '@p2m/demo/views/layouts/main';
+	// Title for demo pages
+	protected $demoTitle = 'p2y2-things-demo';
 
-	public function actionPage($part1 = '', $part2 = '')
+	public function actionPage($part1 = '', $part2 = '') // actionView
 	{
 		//die("✅ DemoController reached: $part1 / $part2");
 
@@ -23,6 +36,11 @@ class DemoController extends Controller
 		if ($route === '') {
 			$route = 'index';
 		}
+
+		// Register the meta asset
+		$demoAsset = ThingsDemoAsset::register($this->view);
+		$this->view->params['demoAssetUrl'] = $demoAsset->baseUrl;
+		$this->view->params['demoTitle'] = $this->demoTitle;
 
 		$viewFile = "@p2m/demo/views/site/{$route}.php";
 

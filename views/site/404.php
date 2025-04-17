@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Login - SB Admin</title>
+	<title>404 Error - SB Admin</title>
 
 	<!-- Favicon-->
 	<link href="assets/ico/favicon.ico" type="image/x-icon" rel="icon">
@@ -20,45 +20,27 @@
 	<!-- Font Awesome icons (free version)-->
 	<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" integrity="sha384-QM3vQ1ro1SUguF26PKxC17ZxibTi/ixpgL9NRL5/RHw1AmA0pfSeGCh6k+uqbyzJ" crossorigin="anonymous"></script>
 </head>
-<body class="bg-primary">
-	<div id="layoutAuthentication">
-		<div id="layoutAuthentication_content">
+<body>
+	<div id="layoutError">
+		<div id="layoutError_content">
 			<main>
 				<div class="container">
 					<div class="row justify-content-center">
-						<div class="col-lg-5">
-							<div class="card shadow-lg border-0 rounded-lg mt-5">
-								<div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
-								<div class="card-body">
-									<form>
-										<div class="form-floating mb-3">
-											<input class="form-control" id="inputEmail" type="email" placeholder="name@example.com">
-											<label for="inputEmail">Email address</label>
-										</div>
-										<div class="form-floating mb-3">
-											<input class="form-control" id="inputPassword" type="password" placeholder="Password">
-											<label for="inputPassword">Password</label>
-										</div>
-										<div class="form-check mb-3">
-											<input class="form-check-input" id="inputRememberPassword" type="checkbox" value="">
-											<label class="form-check-label" for="inputRememberPassword">Remember Password</label>
-										</div>
-										<div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-											<a class="small" href="password.php">Forgot Password?</a>
-											<a class="btn btn-primary" href="index.php">Login</a>
-										</div>
-									</form>
-								</div>
-								<div class="card-footer text-center py-3">
-									<div class="small"><a href="register.php">Need an account? Sign up!</a></div>
-								</div>
+						<div class="col-lg-6">
+							<div class="text-center mt-4">
+								<img class="mb-4 img-error" src="assets/img/error-404-monochrome.svg">
+								<p class="lead">This requested URL was not found on this server.</p>
+								<a href="index.php">
+									<i class="fas fa-arrow-left me-1"></i>
+									Return to Dashboard
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</main>
 		</div>
-		<div id="layoutAuthentication_footer">
+		<div id="layoutError_footer">
 			<footer class="py-4 bg-light mt-auto">
 				<div class="container-fluid px-4">
 					<div class="d-flex align-items-center justify-content-between small">
