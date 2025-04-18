@@ -31,7 +31,7 @@ class SbaNavBar extends \yii\bootstrap5\NavBar
 	public $brandImage = false;
 	public $brandImageOptions = [];
 	public $brandUrl = false;
-	public $brandOptions = ['class' => 'navbar-brand ps-3 me-auto'];
+	public $brandOptions = [];
 	public $screenReaderToggleText;
 	public $togglerContent = '<span class="navbar-toggler-icon"></span>';
 	public $togglerOptions = [];
@@ -39,9 +39,6 @@ class SbaNavBar extends \yii\bootstrap5\NavBar
 	public $innerContainerOptions = [];
 	public $clientOptions = [];
 
-	/**
-	 * Initiate the widget.
-	 */
 	public function init(): void
 	{
 		parent::init();
@@ -169,7 +166,7 @@ class SbaNavBar extends \yii\bootstrap5\NavBar
 		}
 
 		return Html::button(
-			BI::i(BI::_LIST)->size(4),
+			$this->togglerContent,
 			ArrayHelper::merge($options, [
 				'type' => 'button',
 				'data' => $bsData,
@@ -180,76 +177,5 @@ class SbaNavBar extends \yii\bootstrap5\NavBar
 				],
 			]),
 		);
-	}
-
-	/**
-	 * Renders search form.
-	 * @return string the rendering search form.
-	 */
-	protected function renderSearchForm(): string
-	{
-		$form = Html::beginForm('', 'get', [
-			'class' => 'd-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0',
-		]);
-		$form .= Html::beginTag('div', ['class' => 'input-group']);
-		$form .= Html::activeInput('text', $this->searchModel, 'q', [
-			'class' => 'form-control',
-			'placeholder' => 'Search for...',
-			'aria-label' => 'Search for...',
-			'aria-describedby' => 'btnNavbarSearch',
-		]);
-		$form .= Html::button(
-			BI::i(BI::_SEARCH . ' fs-6'),
-			[
-				'class' => 'btn btn-primary',
-				'id' => 'btnNavbarSearch',
-				'type' => 'submit',
-			]
-		);
-		$form .= Html::endTag('div');
-		$form .= Html::endForm();
-
-		return $form;
-	}
-
-	/**
-	 * Renders dropdown menu.
-	 * @return string the rendering dropdown menu.
-	 */
-	protected function renderDropdown(): string
-	{
-		//
-		$dropDown = Html::beginTag('ul', ['class' => 'navbar-nav ms-auto ms-md-0 me-3 me-lg-4']);
-		$dropDown .= Html::beginTag('li', ['class' => 'nav-item dropdown']);
-		$dropDown .= Html::a(
-			BI::i(BI::_PERSON)->size(5),
-			'#',
-			[
-				'class' => 'nav-link dropdown-toggle',
-				'id' => 'navbarDropdown',
-				'role' => 'button',
-				'data-bs-toggle' => 'dropdown',
-				'aria-expanded' => 'false',
-			]
-		);
-		$dropDown .= Html::beginTag('ul', [
-			'class' => 'dropdown-menu dropdown-menu-end',
-			'aria-labelledby' => 'navbarDropdown',
-		]);
-
-		$items = $this->userDropdownItems ?: [
-			Html::a('Settings', '#!', ['class' => 'dropdown-item']),
-			Html::a('Activity Log', '#!', ['class' => 'dropdown-item']),
-			Html::tag('hr', '', ['class' => 'dropdown-divider']),
-			Html::a('Logout', '#!', ['class' => 'dropdown-item']),
-		];
-
-		foreach ($items as $item) {
-			$dropDown .= Html::tag('li', $item);
-		}
-
-		$dropDown .= Html::endTag('ul');
-		$dropDown .= Html::endTag('li');
-		$dropDown .= Html::endTag('ul');
 	}
 }
