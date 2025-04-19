@@ -2,7 +2,7 @@
 
 /** @var yii\web\View $this */
 
-$this->title = 'My Yii Application';
+$this->title = $this->params['demoTitle'];
 ?>
 <div class="container-fluid px-4">
 	<h1 class="mt-4">Dashboard</h1>
