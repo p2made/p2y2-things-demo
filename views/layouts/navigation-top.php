@@ -9,6 +9,7 @@
  */
 
 /** @var \yii\web\View $this */
+/** @var string $this->title */
 
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
@@ -18,10 +19,8 @@ use p2m\helpers\BI;
 
 $searchModel = new \yii\base\DynamicModel(['q']);
 
-$demoTitle = $this->params['demoTitle'];
-
 NavBar::begin([
-	'brandLabel' => $demoTitle,
+	'brandLabel' => $this->title,
 	'brandUrl' => Yii::$app->homeUrl,
 	'brandOptions' => ['class' => 'navbar-brand ps-3'],
 	'options' => [

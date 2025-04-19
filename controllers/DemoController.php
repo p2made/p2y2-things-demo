@@ -33,43 +33,26 @@ class DemoController extends Controller
 	// User for demo pages
 	protected $copyright = 'Pedro Plowman';
 
-
-
-	public function actionView($part1 = '', $part2 = '') // actionView
-	{
-		//die("✅ DemoController reached: $part1 / $part2");
-
-		//$route = trim($part1 . '/' . $part2, '/');
-		$route = trim("$part1/$part2", '/');
-
-		if ($route === '') {
-			$route = 'index';
-		}
-
-		// Register the meta asset
-		$demoAsset = ThingsDemoAsset::register($this->view);
-		$this->view->params['demoAssetUrl'] = $demoAsset->baseUrl;
-		$this->view->params['demoTitle'] = $this->demoTitle;
-		$this->view->params['demoUser'] = $this->demoUser;
-		$this->view->params['copyright'] = $this->copyright;
-		$this->view->params['showSearch'] = true;
-		$this->view->params['searchModel'] = new \yii\base\DynamicModel(['q']);
-		$this->view->params['menus'] = [
-			'user' => [
+	// User for user menu
+	protected $userMenu = [
 				['label' => 'Settings', 'url' => '#!'],
 				['label' => 'Activity Log', 'url' => '#!'],
 				'<div class="dropdown-divider"></div>',
 				['label' => 'Logout', 'url' => '#!'],
-			],
-			'work' => [
+	];
+
+	// User for work menu
+	protected $workMenu = [
 				['label' => 'Contacts', 'url' => '#!'],
 				['label' => 'Messages', 'url' => '#!'],
 				['label' => 'Tasks', 'url' => '#!'],
 				'<div class="dropdown-divider"></div>',
 				['label' => 'Documents', 'url' => '#!'],
 				['label' => 'Media', 'url' => '#!'],
-			],
-			'side' => [
+	];
+
+	// User for side menu
+	protected $sideMenu = [
 				'Core' => [
 					[
 						'label' => 'Dashboard',
@@ -120,8 +103,35 @@ class DemoController extends Controller
 						'url' => ['/tables'],
 					],
 				],
-			],
+	];
+
+	public function actionView($part1 = '', $part2 = '') // actionView
+	{
+		//die("✅ DemoController reached: $part1 / $part2");
+
+		//$route = trim($part1 . '/' . $part2, '/');
+		$route = trim("$part1/$part2", '/');
+
+		if ($route === '') {
+			$route = 'index';
+		}
+
+		$this->view->title = $this->demoTitle;
+
+		$this->view->params['username'] = Yii::$app->user->identity->username ?? $this->demoUser;
+		$this->view->params['copyright'] = $this->copyright;
+		$this->view->params['menus'] = [
+			'user' => $this->userMenu,
+			'work' => $this->workMenu,
+			'side' => $this->sideMenu,
 		];
+
+		// Register the meta asset
+		//$demoAsset = ThingsDemoAsset::register($this->view);
+		//$this->view->params['demoAssetUrl'] = $demoAsset->baseUrl;
+		$this->view->params['demoAssetUrl'] = ThingsDemoAsset::register($this->view)->baseUrl;
+		$this->view->params['showSearch'] = true;
+		$this->view->params['searchModel'] = new \yii\base\DynamicModel(['q']);
 
 		$viewFile = "@p2m/demo/views/site/{$route}.php";
 

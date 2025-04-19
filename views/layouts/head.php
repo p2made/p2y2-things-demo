@@ -9,14 +9,14 @@
  */
 
 /** @var \yii\web\View $this */
+/** @var string $this->title */
 
 use yii\bootstrap5\Html;
 
-$demoTitle = $this->params['demoTitle'];
 $demoAssetUrl = $this->params['demoAssetUrl'];
 
 echo Html::tag('meta', '', ['charset' => Yii::$app->charset]);
-echo Html::tag('title', Html::encode($demoTitle));
+echo Html::tag('title', Html::encode($this->title));
 
 $this->registerLinkTag(['rel' => 'shortcut icon', 'href' => $demoAssetUrl . '/ico/favicon.ico']);
 $this->registerMetaTag(['property' => 'og:type', 'content' => 'article']);

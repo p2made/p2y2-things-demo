@@ -15,8 +15,6 @@ use yii\helpers\Url;
 use p2m\helpers\BI;
 
 $menu = $this->params['menus']['side'] ?? [];
-$user = $this->params['demoUser'] ?? 'Demo User';
-//$user = Yii::$app->user->identity->username ?? 'Demo User';
 
 function renderSideMenu(array $items, int $depth = 1): string
 {
@@ -82,7 +80,7 @@ function renderSideMenu(array $items, int $depth = 1): string
 		</div>
 		<div class="sb-sidenav-footer">
 			<div class="small">Logged in as:</div>
-			<?= Html::encode($user) ?>
+			<?= Html::encode($this->params['username']) ?>
 		</div>
 	</nav>
 </div>

@@ -10,6 +10,7 @@ echo $this->render('@p2m/demo/views/layouts/ * @p2m/demo/views/layouts/head.php'
  */
 
 /** @var \yii\web\View $this */
+/** @var string $this->title */
 /** @var string $content */
 
 use common\widgets\Alert;
@@ -20,10 +21,6 @@ use yii\bootstrap5\NavBar;
 use p2m\helpers\BI;
 
 yii\bootstrap5\BootstrapAsset::register($this);
-//p2m\assets\P2ChartJsAsset::register($this);
-p2m\demo\demo\ChartDemo::register($this);
-
-$demoTitle = $this->params['demoTitle'];
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

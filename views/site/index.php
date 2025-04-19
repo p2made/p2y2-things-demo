@@ -1,8 +1,8 @@
 <?php
 
 /** @var yii\web\View $this */
+/** @var yii\web\View $this->title */
 
-$this->title = $this->params['demoTitle'];
 ?>
 <div class="container-fluid px-4">
 	<h1 class="mt-4">Dashboard</h1>
