@@ -695,7 +695,7 @@
 	<!-- Core theme JS-->
 	<script src="assets/js/sb-admin.js"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js" integrity="sha384-b0GXujLkk9eYYSmcSfoyZbfyElGAQnDyY0skCHSG6w3JgTMFnz11ggrTAr7seu9f" crossorigin="anonymous"></script>
 	<script src="demo/chart-area-demo.js"></script>
 	<script src="demo/chart-bar-demo.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
@@ -707,8 +707,31 @@
 <!-- -- ^ -- -- ^ -- -- ^ -- -- ^ -- -- ^ -- -->
 
 
+<script src="//code.jquery.com/jquery-3.7.1.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+<script src="/assets/11779477/yii.js"></script>
+<script src="/assets/b0821e92/js/p2additions.js"></script>
+<script src="/assets/e412ecab/js/sb-admin.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/simple-datatables@10.0.0/dist/umd/simple-datatables.min.js" integrity="sha256-XMVx+UH21h8TkoCUMPmVwxu0IxIlINjmJu7j/itA8jI=" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js" integrity="sha384-T/4KgSWuZEPozpPz7rnnp/5lDSnpY1VPJCojf1S81uTHS1E38qgLfMgVsAeRCWc4" crossorigin="anonymous"></script>
+<script src="/assets/fca3c6c6/data/chart-area-demo.js"></script>
+<script src="/assets/fca3c6c6/data/chart-pie-demo.js"></script>
+<script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
 
 <!-- -- ^ -- -- ^ -- -- ^ -- -- ^ -- -- ^ -- -->
+
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+	<!-- Bootstrap core JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<!-- Core theme JS-->
+	<script src="assets/js/sb-admin.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+	<script src="demo/chart-area-demo.js"></script>
+	<script src="demo/chart-bar-demo.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+	<script src="js/datatables-simple-demo.js"></script>
 
 

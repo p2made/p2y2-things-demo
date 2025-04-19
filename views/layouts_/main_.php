@@ -48,3 +48,23 @@ $demoTitle = $this->params['demoTitle'];
 </body>
 </html>
 <?php $this->endPage();
+
+
+	<?= $this->render('@p2m/demo/views/layouts/footer.php') ?>
+	<?= $this->render('@p2m/demo/views/layouts/head.php') ?>
+	<?= $this->render('@p2m/demo/views/layouts/menu-user.php') ?>
+	<?= $this->render('@p2m/demo/views/layouts/menu-work.php') ?>
+	<?= $this->render('@p2m/demo/views/layouts/navigation-search.php') ?>
+	<?= $this->render('@p2m/demo/views/layouts/navigation-side.php') ?>
+	<?= $this->render('@p2m/demo/views/layouts/navigation-top.php') ?>
+echo $this->render('@p2m/demo/views/layouts/footer.php');
+echo $this->render('@p2m/demo/views/layouts/head.php');
+echo $this->render('@p2m/demo/views/layouts/main.php');
+echo $this->render('@p2m/demo/views/layouts/menu-user.php');
+echo $this->render('@p2m/demo/views/layouts/menu-work.php');
+echo $this->render('@p2m/demo/views/layouts/navigation-search.php');
+echo $this->render('@p2m/demo/views/layouts/navigation-side.php');
+echo $this->render('@p2m/demo/views/layouts/navigation-top.php');
+
+
+

@@ -17,6 +17,7 @@ use Yii;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use p2m\demo\assets\ThingsDemoAsset;
+use p2m\helpers\BI;
 
 /**
  * Site controller
@@ -26,7 +27,15 @@ class DemoController extends Controller
 	// Title for demo pages
 	protected $demoTitle = 'p2y2-things-demo';
 
-	public function actionPage($part1 = '', $part2 = '') // actionView
+	// User for demo pages
+	protected $demoUser = 'Demo User';
+
+	// User for demo pages
+	protected $copyright = 'Pedro Plowman';
+
+
+
+	public function actionView($part1 = '', $part2 = '') // actionView
 	{
 		//die("✅ DemoController reached: $part1 / $part2");
 
@@ -41,6 +50,78 @@ class DemoController extends Controller
 		$demoAsset = ThingsDemoAsset::register($this->view);
 		$this->view->params['demoAssetUrl'] = $demoAsset->baseUrl;
 		$this->view->params['demoTitle'] = $this->demoTitle;
+		$this->view->params['demoUser'] = $this->demoUser;
+		$this->view->params['copyright'] = $this->copyright;
+		$this->view->params['showSearch'] = true;
+		$this->view->params['searchModel'] = new \yii\base\DynamicModel(['q']);
+		$this->view->params['menus'] = [
+			'user' => [
+				['label' => 'Settings', 'url' => '#!'],
+				['label' => 'Activity Log', 'url' => '#!'],
+				'<div class="dropdown-divider"></div>',
+				['label' => 'Logout', 'url' => '#!'],
+			],
+			'work' => [
+				['label' => 'Contacts', 'url' => '#!'],
+				['label' => 'Messages', 'url' => '#!'],
+				['label' => 'Tasks', 'url' => '#!'],
+				'<div class="dropdown-divider"></div>',
+				['label' => 'Documents', 'url' => '#!'],
+				['label' => 'Media', 'url' => '#!'],
+			],
+			'side' => [
+				'Core' => [
+					[
+						'label' => 'Dashboard',
+						'icon' => BI::_SPEEDOMETER2,
+						'url' => ['/'],
+					],
+				],
+				'Interface' => [
+					[
+						'label' => 'Layouts',
+						'icon' => BI::_COLUMNS,
+						'items' => [
+							['label' => 'Static Navigation', 'url' => ['/layout/static']],
+							['label' => 'Light Sidenav', 'url' => ['/layout/light']],
+						],
+					],
+					[
+						'label' => 'Pages',
+						'icon' => BI::_BOOK,
+						'items' => [
+							[
+								'label' => 'Authentication',
+								'items' => [
+									['label' => 'Login', 'url' => ['/login']],
+									['label' => 'Register', 'url' => ['/register']],
+								],
+							],
+							[
+								'label' => 'Error',
+								'items' => [
+									['label' => '401 Page', 'url' => ['/error/401']],
+									['label' => '404 Page', 'url' => ['/error/404']],
+									['label' => '500 Page', 'url' => ['/error/500']],
+								],
+							],
+						],
+					],
+				],
+				'Addons' => [
+					[
+						'label' => 'Charts',
+						'icon' => BI::_BAR_CHART,
+						'url' => ['/charts'],
+					],
+					[
+						'label' => 'Tables',
+						'icon' => BI::_TABLE,
+						'url' => ['/tables'],
+					],
+				],
+			],
+		];
 
 		$viewFile = "@p2m/demo/views/site/{$route}.php";
 

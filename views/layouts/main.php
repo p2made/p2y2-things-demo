@@ -1,6 +1,7 @@
 <?php
 /**
- * @p2m/demo/views/layouts/head.php
+	<?= $this->render('@p2m/demo/views/layouts/ * @p2m/demo/views/layouts/head.php') ?>
+echo $this->render('@p2m/demo/views/layouts/ * @p2m/demo/views/layouts/head.php');
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) Pedro Plowman, 2025
@@ -28,19 +29,19 @@ $demoTitle = $this->params['demoTitle'];
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
-	<?= $this->render('@vendor/p2made/p2y2-things-demo/views/layouts/head.php') ?>
+	<?= $this->render('@p2m/demo/views/layouts/head.php') ?>
 </head>
-<body class="d-flex flex-column h-100">
+<body class="sb-nav-fixed">
 <?php $this->beginBody() ?>
-	<?= $this->render('@vendor/p2made/p2y2-things-demo/views/layouts/top-navigation.php') ?>
+	<?= $this->render('@p2m/demo/views/layouts/navigation-top.php') ?>
 
 	<div id="layoutSidenav">
-		<?= $this->render('@vendor/p2made/p2y2-things-demo/views/layouts/side-navigation.php') ?>
+		<?= $this->render('@p2m/demo/views/layouts/navigation-side.php') ?>
 		<div id="layoutSidenav_content">
 			<main>
 				<?= $content ?>
 			</main>
-			<?= $this->render('@vendor/p2made/p2y2-things-demo/views/layouts/footer.php') ?>
+			<?= $this->render('@p2m/demo/views/layouts/footer.php') ?>
 		</div>
 	</div>
 
