@@ -1,6 +1,6 @@
 <?php
 /**
- * ChartDemo.php
+ * ChartBarDemo.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) Pedro Plowman, 2025
@@ -8,40 +8,27 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things-demo
- * @class \p2m\demo\demo\ChartDemo
+ * @class \p2m\demo\demo\ChartBarDemo
  */
 
 /**
  * Load this asset with...
- * p2m\demo\demo\ChartDemo::register($this);
+ * p2m\demo\demo\ChartBarDemo::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\demo\demo\ChartDemo',
+ *     'p2m\demo\demo\ChartBarDemo',
  */
-
-sb-admin/chart-area-demo.js
-sb-admin/chart-bar-demo.js
-sb-admin/chart-pie-demo.js
-sb-admin/datatables-demo.js
-sb-admin/datatables-simple-demo.js
-
-ChartAreaDemo
-ChartBarDemo
-ChartPieDemo
-DatatablesDemo
-DatatablesSimpleDemo
 
 namespace p2m\demo\demo;
 
 use yii\web\AssetBundle;
 
-class ChartDemo extends AssetBundle
+class ChartBarDemo extends AssetBundle
 {
 	public $sourcePath = '@p2m/demo/demo';
 
 	public $js = [
-		'data/chart-area-demo.js',
-		'data/chart-pie-demo.js',
+		'sb-admin/chart-bar-demo.js',
 	];
 
 	public $depends = [
@@ -50,13 +37,13 @@ class ChartDemo extends AssetBundle
 }
 
 sb-admin/chart-area-demo.js
-sb-admin/chart-bar-demo.js
+
 sb-admin/chart-pie-demo.js
 sb-admin/datatables-demo.js
 sb-admin/datatables-simple-demo.js
 
 ChartAreaDemo
-ChartBarDemo
+
 ChartPieDemo
 DatatablesDemo
 DatatablesSimpleDemo
