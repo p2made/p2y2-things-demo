@@ -24,7 +24,7 @@ function renderSideMenu(array $items, int $depth = 1): string
 		$label = Html::encode($item['label']);
 		$url = $item['url'] ?? '#';
 		$icon = isset($item['icon']) ? Html::tag('div',
-			BI::i($item['icon'])->size(4),
+			BI::i($item['icon'])->size(6),
 			['class' => 'sb-nav-link-icon']
 		) : '';
 		$hasChildren = isset($item['items']) && is_array($item['items']);
