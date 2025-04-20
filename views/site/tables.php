@@ -2,7 +2,8 @@
 
 /** @var yii\web\View $this */
 
-$this->title = 'My Yii Application';
+p2m\assets\P2DataTablesBootstrap5Asset::register($this);
+p2m\demo\demo\DatatablesSimpleDemo::register($this);
 ?>
 <div class="container-fluid px-4">
 	<h1 class="mt-4">Tables</h1>

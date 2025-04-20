@@ -3,6 +3,11 @@
 /** @var yii\web\View $this */
 /** @var yii\web\View $this->title */
 
+p2m\assets\P2ChartJsAsset::register($this);
+p2m\assets\P2SimpleDatatablesAsset::register($this);
+p2m\demo\demo\ChartAreaDemo::register($this);
+p2m\demo\demo\ChartBarDemo::register($this);
+p2m\demo\demo\DatatablesSimpleDemo::register($this);
 ?>
 <div class="container-fluid px-4">
 	<h1 class="mt-4">Dashboard</h1>

@@ -35,15 +35,3 @@ class ChartBarDemo extends AssetBundle
 		'p2m\assets\P2ChartJsAsset',
 	];
 }
-
-sb-admin/chart-area-demo.js
-
-sb-admin/chart-pie-demo.js
-sb-admin/datatables-demo.js
-sb-admin/datatables-simple-demo.js
-
-ChartAreaDemo
-
-ChartPieDemo
-DatatablesDemo
-DatatablesSimpleDemo

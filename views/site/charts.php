@@ -2,7 +2,10 @@
 
 /** @var yii\web\View $this */
 
-$this->title = 'My Yii Application';
+p2m\assets\P2ChartJsAsset::register($this);
+p2m\demo\demo\ChartAreaDemo::register($this);
+p2m\demo\demo\ChartBarDemo::register($this);
+p2m\demo\demo\ChartPieDemo::register($this);
 ?>
 <div class="container-fluid px-4">
 	<h1 class="mt-4">Charts</h1>
