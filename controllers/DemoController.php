@@ -35,86 +35,85 @@ class DemoController extends Controller
 
 	// User for user menu
 	protected $userMenu = [
-				['label' => 'Settings', 'url' => '#!'],
-				['label' => 'Activity Log', 'url' => '#!'],
-				'<div class="dropdown-divider"></div>',
-				['label' => 'Logout', 'url' => '#!'],
+		['label' => 'Settings', 'url' => '#!'],
+		['label' => 'Activity Log', 'url' => '#!'],
+		'<div class="dropdown-divider"></div>',
+		['label' => 'Logout', 'url' => '#!'],
 	];
 
 	// User for work menu
 	protected $workMenu = [
-				['label' => 'Contacts', 'url' => '#!'],
-				['label' => 'Messages', 'url' => '#!'],
-				['label' => 'Tasks', 'url' => '#!'],
-				'<div class="dropdown-divider"></div>',
-				['label' => 'Documents', 'url' => '#!'],
-				['label' => 'Media', 'url' => '#!'],
+		['label' => 'Contacts', 'url' => '#!'],
+		['label' => 'Messages', 'url' => '#!'],
+		['label' => 'Tasks', 'url' => '#!'],
+		'<div class="dropdown-divider"></div>',
+		['label' => 'Documents', 'url' => '#!'],
+		['label' => 'Media', 'url' => '#!'],
 	];
 
 	// User for side menu
 	protected $sideMenu = [
-				'Core' => [
-					[
-						'label' => 'Dashboard',
-						'icon' => BI::_SPEEDOMETER2,
-						'url' => ['/'],
-					],
+		'Core' => [
+			[
+				'label' => 'Dashboard',
+				'icon' => BI::_SPEEDOMETER2,
+				'url' => ['/']],
+		],
+		'Interface' => [
+			[
+				'label' => 'Layouts',
+				'icon' => BI::_COLUMNS,
+				'items' => [
+					['label' => 'Static Navigation', 'url' => ['/layout/static']],
+					['label' => 'Light Sidenav', 'url' => ['/layout/light']],
 				],
-				'Interface' => [
+			],
+			[
+				'label' => 'Pages',
+				'icon' => BI::_BOOK,
+				'items' => [
 					[
-						'label' => 'Layouts',
-						'icon' => BI::_COLUMNS,
+						'label' => 'Authentication',
 						'items' => [
-							['label' => 'Static Navigation', 'url' => ['/layout/static']],
-							['label' => 'Light Sidenav', 'url' => ['/layout/light']],
+							['label' => 'Login', 'url' => ['/login']],
+							['label' => 'Register', 'url' => ['/register']],
 						],
 					],
 					[
-						'label' => 'Pages',
-						'icon' => BI::_BOOK,
+						'label' => 'Error',
 						'items' => [
-							[
-								'label' => 'Authentication',
-								'items' => [
-									['label' => 'Login', 'url' => ['/login']],
-									['label' => 'Register', 'url' => ['/register']],
-								],
-							],
-							[
-								'label' => 'Error',
-								'items' => [
-									['label' => '401 Page', 'url' => ['/error/401']],
-									['label' => '404 Page', 'url' => ['/error/404']],
-									['label' => '500 Page', 'url' => ['/error/500']],
-								],
-							],
+							['label' => '401 Page', 'url' => ['/error/401']],
+							['label' => '404 Page', 'url' => ['/error/404']],
+							['label' => '500 Page', 'url' => ['/error/500']],
 						],
 					],
 				],
-				'Addons' => [
-					[
-						'label' => 'Charts',
-						'icon' => BI::_BAR_CHART,
-						'url' => ['/charts'],
-					],
-					[
-						'label' => 'Tables',
-						'icon' => BI::_TABLE,
-						'url' => ['/tables'],
-					],
+			],
+		],
+		'Addons' => [
+			[
+				'label' => 'Data',
+				'icon' => BI::_CLIPBOARD_DATA,
+				'items' => [
+					['label' => 'Charts', 'url' => ['/charts']],
+					['label' => 'Tables', 'url' => ['/tables']],
 				],
+			],
+			[
+				'label' => 'Icons',
+				'icon' => BI::_EMOJI_LAUGHING_FILL,
+				'items' => [
+					['label' => 'Bootstrap Icons', 'url' => ['/icons/bootstrap']],
+					['label' => 'Emoji Icons', 'url' => ['/icons/emoji']],
+					['label' => 'Flag Icons', 'url' => ['/icons/flags']],
+				],
+			],
+		],
 	];
 
-	public function actionView($part1 = '', $part2 = '') // actionView
+	public function init()
 	{
-		//die("✅ DemoController reached: $part1 / $part2");
-
-		//$route = trim($part1 . '/' . $part2, '/');
-		$route = trim("$part1/$part2", '/');
-
-		if ($route === '') {
-			$route = 'index';
-		}
+		parent::init();
 
 		$this->view->title = $this->demoTitle;
 
@@ -132,6 +131,18 @@ class DemoController extends Controller
 		$this->view->params['demoAssetUrl'] = ThingsDemoAsset::register($this->view)->baseUrl;
 		$this->view->params['showSearch'] = true;
 		$this->view->params['searchModel'] = new \yii\base\DynamicModel(['q']);
+	}
+
+	public function actionView($part1 = '', $part2 = '')
+	{
+		//die("✅ DemoController reached: $part1 / $part2");
+
+		//$route = trim($part1 . '/' . $part2, '/');
+		$route = trim("$part1/$part2", '/');
+
+		if ($route === '') {
+			$route = 'index';
+		}
 
 		$viewFile = "@p2m/demo/views/site/{$route}.php";
 
