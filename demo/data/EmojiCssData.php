@@ -1,0 +1,4085 @@
+<?php
+/**
+ * EmojiCssData.php
+ *
+ * @author Pedro Plowman
+ * @copyright Copyright (c) Pedro Plowman, 2025
+ * @link https://github.com/p2made
+ * @license MIT
+ *
+ * @package p2made/yii2-p2y2-things-demo
+ */
+
+return [
+	'name' => 'Emoji CSS',
+	'data' => [
+		[
+			'code' = '100',
+			'constant' = 'EC::_100',
+		],
+		[
+			'code' = '1234',
+			'constant' = 'EC::_1234',
+		],
+		[
+			'code' = 'grinning',
+			'constant' = 'EC::_GRINNING ',
+		],
+		[
+			'code' = 'grimacing',
+			'constant' = 'EC::_GRIMACING ',
+		],
+		[
+			'code' = 'grin',
+			'constant' = 'EC::_GRIN ',
+		],
+		[
+			'code' = 'joy',
+			'constant' = 'EC::_JOY ',
+		],
+		[
+			'code' = 'rofl',
+			'constant' = 'EC::_ROFL ',
+		],
+		[
+			'code' = 'smiley',
+			'constant' = 'EC::_SMILEY ',
+		],
+		[
+			'code' = 'smile',
+			'constant' = 'EC::_SMILE ',
+		],
+		[
+			'code' = 'sweat-smile',
+			'constant' = 'EC::_SWEAT_SMILE ',
+		],
+		[
+			'code' = 'laughing',
+			'constant' = 'EC::_LAUGHING ',
+		],
+		[
+			'code' = 'innocent',
+			'constant' = 'EC::_INNOCENT ',
+		],
+		[
+			'code' = 'wink',
+			'constant' = 'EC::_WINK ',
+		],
+		[
+			'code' = 'blush',
+			'constant' = 'EC::_BLUSH ',
+		],
+		[
+			'code' = 'slightly-smiling-face',
+			'constant' = 'EC::_SLIGHTLY_SMILING_FACE ',
+		],
+		[
+			'code' = 'upside-down-face',
+			'constant' = 'EC::_UPSIDE_DOWN_FACE ',
+		],
+		[
+			'code' = 'yum',
+			'constant' = 'EC::_YUM ',
+		],
+		[
+			'code' = 'relieved',
+			'constant' = 'EC::_RELIEVED ',
+		],
+		[
+			'code' = 'heart-eyes',
+			'constant' = 'EC::_HEART_EYES ',
+		],
+		[
+			'code' = 'kissing-heart',
+			'constant' = 'EC::_KISSING_HEART ',
+		],
+		[
+			'code' = 'kissing',
+			'constant' = 'EC::_KISSING ',
+		],
+		[
+			'code' = 'kissing-smiling-eyes',
+			'constant' = 'EC::_KISSING_SMILING_EYES ',
+		],
+		[
+			'code' = 'kissing-closed-eyes',
+			'constant' = 'EC::_KISSING_CLOSED_EYES ',
+		],
+		[
+			'code' = 'stuck-out-tongue-winking-eye',
+			'constant' = 'EC::_STUCK_OUT_TONGUE_WINKING_EYE ',
+		],
+		[
+			'code' = 'stuck-out-tongue-closed-eyes',
+			'constant' = 'EC::_STUCK_OUT_TONGUE_CLOSED_EYES ',
+		],
+		[
+			'code' = 'stuck-out-tongue',
+			'constant' = 'EC::_STUCK_OUT_TONGUE ',
+		],
+		[
+			'code' = 'money-mouth-face',
+			'constant' = 'EC::_MONEY_MOUTH_FACE ',
+		],
+		[
+			'code' = 'nerd-face',
+			'constant' = 'EC::_NERD_FACE ',
+		],
+		[
+			'code' = 'sunglasses',
+			'constant' = 'EC::_SUNGLASSES ',
+		],
+		[
+			'code' = 'clown-face',
+			'constant' = 'EC::_CLOWN_FACE ',
+		],
+		[
+			'code' = 'cowboy-hat-face',
+			'constant' = 'EC::_COWBOY_HAT_FACE ',
+		],
+		[
+			'code' = 'hugs',
+			'constant' = 'EC::_HUGS ',
+		],
+		[
+			'code' = 'smirk',
+			'constant' = 'EC::_SMIRK ',
+		],
+		[
+			'code' = 'no-mouth',
+			'constant' = 'EC::_NO_MOUTH ',
+		],
+		[
+			'code' = 'neutral-face',
+			'constant' = 'EC::_NEUTRAL_FACE ',
+		],
+		[
+			'code' = 'expressionless',
+			'constant' = 'EC::_EXPRESSIONLESS ',
+		],
+		[
+			'code' = 'unamused',
+			'constant' = 'EC::_UNAMUSED ',
+		],
+		[
+			'code' = 'roll-eyes',
+			'constant' = 'EC::_ROLL_EYES ',
+		],
+		[
+			'code' = 'thinking',
+			'constant' = 'EC::_THINKING ',
+		],
+		[
+			'code' = 'lying-face',
+			'constant' = 'EC::_LYING_FACE ',
+		],
+		[
+			'code' = 'flushed',
+			'constant' = 'EC::_FLUSHED ',
+		],
+		[
+			'code' = 'disappointed',
+			'constant' = 'EC::_DISAPPOINTED ',
+		],
+		[
+			'code' = 'worried',
+			'constant' = 'EC::_WORRIED ',
+		],
+		[
+			'code' = 'angry',
+			'constant' = 'EC::_ANGRY ',
+		],
+		[
+			'code' = 'rage',
+			'constant' = 'EC::_RAGE ',
+		],
+		[
+			'code' = 'pensive',
+			'constant' = 'EC::_PENSIVE ',
+		],
+		[
+			'code' = 'confused',
+			'constant' = 'EC::_CONFUSED ',
+		],
+		[
+			'code' = 'slightly-frowning-face',
+			'constant' = 'EC::_SLIGHTLY_FROWNING_FACE ',
+		],
+		[
+			'code' = 'frowning-face',
+			'constant' = 'EC::_FROWNING_FACE ',
+		],
+		[
+			'code' = 'persevere',
+			'constant' = 'EC::_PERSEVERE ',
+		],
+		[
+			'code' = 'confounded',
+			'constant' = 'EC::_CONFOUNDED ',
+		],
+		[
+			'code' = 'tired-face',
+			'constant' = 'EC::_TIRED_FACE ',
+		],
+		[
+			'code' = 'weary',
+			'constant' = 'EC::_WEARY ',
+		],
+		[
+			'code' = 'triumph',
+			'constant' = 'EC::_TRIUMPH ',
+		],
+		[
+			'code' = 'open-mouth',
+			'constant' = 'EC::_OPEN_MOUTH ',
+		],
+		[
+			'code' = 'scream',
+			'constant' = 'EC::_SCREAM ',
+		],
+		[
+			'code' = 'fearful',
+			'constant' = 'EC::_FEARFUL ',
+		],
+		[
+			'code' = 'cold-sweat',
+			'constant' = 'EC::_COLD_SWEAT ',
+		],
+		[
+			'code' = 'hushed',
+			'constant' = 'EC::_HUSHED ',
+		],
+		[
+			'code' = 'frowning',
+			'constant' = 'EC::_FROWNING ',
+		],
+		[
+			'code' = 'anguished',
+			'constant' = 'EC::_ANGUISHED ',
+		],
+		[
+			'code' = 'cry',
+			'constant' = 'EC::_CRY ',
+		],
+		[
+			'code' = 'disappointed-relieved',
+			'constant' = 'EC::_DISAPPOINTED_RELIEVED ',
+		],
+		[
+			'code' = 'drooling-face',
+			'constant' = 'EC::_DROOLING_FACE ',
+		],
+		[
+			'code' = 'sleepy',
+			'constant' = 'EC::_SLEEPY ',
+		],
+		[
+			'code' = 'sweat',
+			'constant' = 'EC::_SWEAT ',
+		],
+		[
+			'code' = 'sob',
+			'constant' = 'EC::_SOB ',
+		],
+		[
+			'code' = 'dizzy-face',
+			'constant' = 'EC::_DIZZY_FACE ',
+		],
+		[
+			'code' = 'astonished',
+			'constant' = 'EC::_ASTONISHED ',
+		],
+		[
+			'code' = 'zipper-mouth-face',
+			'constant' = 'EC::_ZIPPER_MOUTH_FACE ',
+		],
+		[
+			'code' = 'nauseated-face',
+			'constant' = 'EC::_NAUSEATED_FACE ',
+		],
+		[
+			'code' = 'sneezing-face',
+			'constant' = 'EC::_SNEEZING_FACE ',
+		],
+		[
+			'code' = 'mask',
+			'constant' = 'EC::_MASK ',
+		],
+		[
+			'code' = 'face-with-thermometer',
+			'constant' = 'EC::_FACE_WITH_THERMOMETER ',
+		],
+		[
+			'code' = 'face-with-head-bandage',
+			'constant' = 'EC::_FACE_WITH_HEAD_BANDAGE ',
+		],
+		[
+			'code' = 'sleeping',
+			'constant' = 'EC::_SLEEPING ',
+		],
+		[
+			'code' = 'zzz',
+			'constant' = 'EC::_ZZZ ',
+		],
+		[
+			'code' = 'poop',
+			'constant' = 'EC::_POOP ',
+		],
+		[
+			'code' = 'smiling-imp',
+			'constant' = 'EC::_SMILING_IMP ',
+		],
+		[
+			'code' = 'imp',
+			'constant' = 'EC::_IMP ',
+		],
+		[
+			'code' = 'japanese-ogre',
+			'constant' = 'EC::_JAPANESE_OGRE ',
+		],
+		[
+			'code' = 'japanese-goblin',
+			'constant' = 'EC::_JAPANESE_GOBLIN ',
+		],
+		[
+			'code' = 'skull',
+			'constant' = 'EC::_SKULL ',
+		],
+		[
+			'code' = 'ghost',
+			'constant' = 'EC::_GHOST ',
+		],
+		[
+			'code' = 'alien',
+			'constant' = 'EC::_ALIEN ',
+		],
+		[
+			'code' = 'robot',
+			'constant' = 'EC::_ROBOT ',
+		],
+		[
+			'code' = 'smiley-cat',
+			'constant' = 'EC::_SMILEY_CAT ',
+		],
+		[
+			'code' = 'smile-cat',
+			'constant' = 'EC::_SMILE_CAT ',
+		],
+		[
+			'code' = 'joy-cat',
+			'constant' = 'EC::_JOY_CAT ',
+		],
+		[
+			'code' = 'heart-eyes-cat',
+			'constant' = 'EC::_HEART_EYES_CAT ',
+		],
+		[
+			'code' = 'smirk-cat',
+			'constant' = 'EC::_SMIRK_CAT ',
+		],
+		[
+			'code' = 'kissing-cat',
+			'constant' = 'EC::_KISSING_CAT ',
+		],
+		[
+			'code' = 'scream-cat',
+			'constant' = 'EC::_SCREAM_CAT ',
+		],
+		[
+			'code' = 'crying-cat-face',
+			'constant' = 'EC::_CRYING_CAT_FACE ',
+		],
+		[
+			'code' = 'pouting-cat',
+			'constant' = 'EC::_POUTING_CAT ',
+		],
+		[
+			'code' = 'raised-hands',
+			'constant' = 'EC::_RAISED_HANDS ',
+		],
+		[
+			'code' = 'clap',
+			'constant' = 'EC::_CLAP ',
+		],
+		[
+			'code' = 'wave',
+			'constant' = 'EC::_WAVE ',
+		],
+		[
+			'code' = 'call-me-hand',
+			'constant' = 'EC::_CALL_ME_HAND ',
+		],
+		[
+			'code' = 'plus1',
+			'constant' = 'EC::_PLUS1',
+		],
+		[
+			'code' = '-1',
+			'constant' = 'EC::__1',
+		],
+		[
+			'code' = 'facepunch',
+			'constant' = 'EC::_FACEPUNCH ',
+		],
+		[
+			'code' = 'fist',
+			'constant' = 'EC::_FIST ',
+		],
+		[
+			'code' = 'fist-left',
+			'constant' = 'EC::_FIST_LEFT ',
+		],
+		[
+			'code' = 'fist-right',
+			'constant' = 'EC::_FIST_RIGHT ',
+		],
+		[
+			'code' = 'v',
+			'constant' = 'EC::_V ',
+		],
+		[
+			'code' = 'ok-hand',
+			'constant' = 'EC::_OK_HAND ',
+		],
+		[
+			'code' = 'raised-hand',
+			'constant' = 'EC::_RAISED_HAND ',
+		],
+		[
+			'code' = 'raised-back-of-hand',
+			'constant' = 'EC::_RAISED_BACK_OF_HAND ',
+		],
+		[
+			'code' = 'open-hands',
+			'constant' = 'EC::_OPEN_HANDS ',
+		],
+		[
+			'code' = 'muscle',
+			'constant' = 'EC::_MUSCLE ',
+		],
+		[
+			'code' = 'pray',
+			'constant' = 'EC::_PRAY ',
+		],
+		[
+			'code' = 'handshake',
+			'constant' = 'EC::_HANDSHAKE ',
+		],
+		[
+			'code' = 'point-up',
+			'constant' = 'EC::_POINT_UP ',
+		],
+		[
+			'code' = 'point-up-2',
+			'constant' = 'EC::_POINT_UP_2',
+		],
+		[
+			'code' = 'point-down',
+			'constant' = 'EC::_POINT_DOWN ',
+		],
+		[
+			'code' = 'point-left',
+			'constant' = 'EC::_POINT_LEFT ',
+		],
+		[
+			'code' = 'point-right',
+			'constant' = 'EC::_POINT_RIGHT ',
+		],
+		[
+			'code' = 'fu',
+			'constant' = 'EC::_FU ',
+		],
+		[
+			'code' = 'raised-hand-with-fingers-splayed',
+			'constant' = 'EC::_RAISED_HAND_WITH_FINGERS_SPLAYED ',
+		],
+		[
+			'code' = 'metal',
+			'constant' = 'EC::_METAL ',
+		],
+		[
+			'code' = 'crossed-fingers',
+			'constant' = 'EC::_CROSSED_FINGERS ',
+		],
+		[
+			'code' = 'vulcan-salute',
+			'constant' = 'EC::_VULCAN_SALUTE ',
+		],
+		[
+			'code' = 'writing-hand',
+			'constant' = 'EC::_WRITING_HAND ',
+		],
+		[
+			'code' = 'selfie',
+			'constant' = 'EC::_SELFIE ',
+		],
+		[
+			'code' = 'nail-care',
+			'constant' = 'EC::_NAIL_CARE ',
+		],
+		[
+			'code' = 'lips',
+			'constant' = 'EC::_LIPS ',
+		],
+		[
+			'code' = 'tongue',
+			'constant' = 'EC::_TONGUE ',
+		],
+		[
+			'code' = 'ear',
+			'constant' = 'EC::_EAR ',
+		],
+		[
+			'code' = 'nose',
+			'constant' = 'EC::_NOSE ',
+		],
+		[
+			'code' = 'eye',
+			'constant' = 'EC::_EYE ',
+		],
+		[
+			'code' = 'eyes',
+			'constant' = 'EC::_EYES ',
+		],
+		[
+			'code' = 'bust-in-silhouette',
+			'constant' = 'EC::_BUST_IN_SILHOUETTE ',
+		],
+		[
+			'code' = 'busts-in-silhouette',
+			'constant' = 'EC::_BUSTS_IN_SILHOUETTE ',
+		],
+		[
+			'code' = 'speaking-head',
+			'constant' = 'EC::_SPEAKING_HEAD ',
+		],
+		[
+			'code' = 'baby',
+			'constant' = 'EC::_BABY ',
+		],
+		[
+			'code' = 'boy',
+			'constant' = 'EC::_BOY ',
+		],
+		[
+			'code' = 'girl',
+			'constant' = 'EC::_GIRL ',
+		],
+		[
+			'code' = 'man',
+			'constant' = 'EC::_MAN ',
+		],
+		[
+			'code' = 'woman',
+			'constant' = 'EC::_WOMAN ',
+		],
+		[
+			'code' = 'blonde-man',
+			'constant' = 'EC::_BLONDE_MAN ',
+		],
+		[
+			'code' = 'older-man',
+			'constant' = 'EC::_OLDER_MAN ',
+		],
+		[
+			'code' = 'older-woman',
+			'constant' = 'EC::_OLDER_WOMAN ',
+		],
+		[
+			'code' = 'man-with-gua-pi-mao',
+			'constant' = 'EC::_MAN_WITH_GUA_PI_MAO ',
+		],
+		[
+			'code' = 'man-with-turban',
+			'constant' = 'EC::_MAN_WITH_TURBAN ',
+		],
+		[
+			'code' = 'policeman',
+			'constant' = 'EC::_POLICEMAN ',
+		],
+		[
+			'code' = 'construction-worker-man',
+			'constant' = 'EC::_CONSTRUCTION_WORKER_MAN ',
+		],
+		[
+			'code' = 'guardsman',
+			'constant' = 'EC::_GUARDSMAN ',
+		],
+		[
+			'code' = 'male-detective',
+			'constant' = 'EC::_MALE_DETECTIVE ',
+		],
+		[
+			'code' = 'mrs-claus',
+			'constant' = 'EC::_MRS_CLAUS ',
+		],
+		[
+			'code' = 'santa',
+			'constant' = 'EC::_SANTA ',
+		],
+		[
+			'code' = 'angel',
+			'constant' = 'EC::_ANGEL ',
+		],
+		[
+			'code' = 'pregnant-woman',
+			'constant' = 'EC::_PREGNANT_WOMAN ',
+		],
+		[
+			'code' = 'princess',
+			'constant' = 'EC::_PRINCESS ',
+		],
+		[
+			'code' = 'prince',
+			'constant' = 'EC::_PRINCE ',
+		],
+		[
+			'code' = 'bride-with-veil',
+			'constant' = 'EC::_BRIDE_WITH_VEIL ',
+		],
+		[
+			'code' = 'man-in-tuxedo',
+			'constant' = 'EC::_MAN_IN_TUXEDO ',
+		],
+		[
+			'code' = 'running-man',
+			'constant' = 'EC::_RUNNING_MAN ',
+		],
+		[
+			'code' = 'walking-man',
+			'constant' = 'EC::_WALKING_MAN ',
+		],
+		[
+			'code' = 'dancer',
+			'constant' = 'EC::_DANCER ',
+		],
+		[
+			'code' = 'man-dancing',
+			'constant' = 'EC::_MAN_DANCING ',
+		],
+		[
+			'code' = 'dancing-women',
+			'constant' = 'EC::_DANCING_WOMEN ',
+		],
+		[
+			'code' = 'couple',
+			'constant' = 'EC::_COUPLE ',
+		],
+		[
+			'code' = 'two-men-holding-hands',
+			'constant' = 'EC::_TWO_MEN_HOLDING_HANDS ',
+		],
+		[
+			'code' = 'two-women-holding-hands',
+			'constant' = 'EC::_TWO_WOMEN_HOLDING_HANDS ',
+		],
+		[
+			'code' = 'bowing-man',
+			'constant' = 'EC::_BOWING_MAN ',
+		],
+		[
+			'code' = 'man-facepalming',
+			'constant' = 'EC::_MAN_FACEPALMING ',
+		],
+		[
+			'code' = 'woman-shrugging',
+			'constant' = 'EC::_WOMAN_SHRUGGING ',
+		],
+		[
+			'code' = 'tipping-hand-woman',
+			'constant' = 'EC::_TIPPING_HAND_WOMAN ',
+		],
+		[
+			'code' = 'no-good-woman',
+			'constant' = 'EC::_NO_GOOD_WOMAN ',
+		],
+		[
+			'code' = 'ok-woman',
+			'constant' = 'EC::_OK_WOMAN ',
+		],
+		[
+			'code' = 'raising-hand-woman',
+			'constant' = 'EC::_RAISING_HAND_WOMAN ',
+		],
+		[
+			'code' = 'pouting-woman',
+			'constant' = 'EC::_POUTING_WOMAN ',
+		],
+		[
+			'code' = 'frowning-woman',
+			'constant' = 'EC::_FROWNING_WOMAN ',
+		],
+		[
+			'code' = 'haircut-woman',
+			'constant' = 'EC::_HAIRCUT_WOMAN ',
+		],
+		[
+			'code' = 'massage-woman',
+			'constant' = 'EC::_MASSAGE_WOMAN ',
+		],
+		[
+			'code' = 'couple-with-heart-woman-man',
+			'constant' = 'EC::_COUPLE_WITH_HEART_WOMAN_MAN ',
+		],
+		[
+			'code' = 'couplekiss-man-woman',
+			'constant' = 'EC::_COUPLEKISS_MAN_WOMAN ',
+		],
+		[
+			'code' = 'family-man-woman-boy',
+			'constant' = 'EC::_FAMILY_MAN_WOMAN_BOY ',
+		],
+		[
+			'code' = 'womans-clothes',
+			'constant' = 'EC::_WOMANS_CLOTHES ',
+		],
+		[
+			'code' = 'tshirt',
+			'constant' = 'EC::_TSHIRT ',
+		],
+		[
+			'code' = 'jeans',
+			'constant' = 'EC::_JEANS ',
+		],
+		[
+			'code' = 'necktie',
+			'constant' = 'EC::_NECKTIE ',
+		],
+		[
+			'code' = 'dress',
+			'constant' = 'EC::_DRESS ',
+		],
+		[
+			'code' = 'bikini',
+			'constant' = 'EC::_BIKINI ',
+		],
+		[
+			'code' = 'kimono',
+			'constant' = 'EC::_KIMONO ',
+		],
+		[
+			'code' = 'lipstick',
+			'constant' = 'EC::_LIPSTICK ',
+		],
+		[
+			'code' = 'kiss',
+			'constant' = 'EC::_KISS ',
+		],
+		[
+			'code' = 'footprints',
+			'constant' = 'EC::_FOOTPRINTS ',
+		],
+		[
+			'code' = 'high-heel',
+			'constant' = 'EC::_HIGH_HEEL ',
+		],
+		[
+			'code' = 'sandal',
+			'constant' = 'EC::_SANDAL ',
+		],
+		[
+			'code' = 'boot',
+			'constant' = 'EC::_BOOT ',
+		],
+		[
+			'code' = 'mans-shoe',
+			'constant' = 'EC::_MANS_SHOE ',
+		],
+		[
+			'code' = 'athletic-shoe',
+			'constant' = 'EC::_ATHLETIC_SHOE ',
+		],
+		[
+			'code' = 'womans-hat',
+			'constant' = 'EC::_WOMANS_HAT ',
+		],
+		[
+			'code' = 'tophat',
+			'constant' = 'EC::_TOPHAT ',
+		],
+		[
+			'code' = 'rescue-worker-helmet',
+			'constant' = 'EC::_RESCUE_WORKER_HELMET ',
+		],
+		[
+			'code' = 'mortar-board',
+			'constant' = 'EC::_MORTAR_BOARD ',
+		],
+		[
+			'code' = 'crown',
+			'constant' = 'EC::_CROWN ',
+		],
+		[
+			'code' = 'school-satchel',
+			'constant' = 'EC::_SCHOOL_SATCHEL ',
+		],
+		[
+			'code' = 'pouch',
+			'constant' = 'EC::_POUCH ',
+		],
+		[
+			'code' = 'purse',
+			'constant' = 'EC::_PURSE ',
+		],
+		[
+			'code' = 'handbag',
+			'constant' = 'EC::_HANDBAG ',
+		],
+		[
+			'code' = 'briefcase',
+			'constant' = 'EC::_BRIEFCASE ',
+		],
+		[
+			'code' = 'eyeglasses',
+			'constant' = 'EC::_EYEGLASSES ',
+		],
+		[
+			'code' = 'dark-sunglasses',
+			'constant' = 'EC::_DARK_SUNGLASSES ',
+		],
+		[
+			'code' = 'ring',
+			'constant' = 'EC::_RING ',
+		],
+		[
+			'code' = 'closed-umbrella',
+			'constant' = 'EC::_CLOSED_UMBRELLA ',
+		],
+		[
+			'code' = 'dog',
+			'constant' = 'EC::_DOG ',
+		],
+		[
+			'code' = 'cat',
+			'constant' = 'EC::_CAT ',
+		],
+		[
+			'code' = 'mouse',
+			'constant' = 'EC::_MOUSE ',
+		],
+		[
+			'code' = 'hamster',
+			'constant' = 'EC::_HAMSTER ',
+		],
+		[
+			'code' = 'rabbit',
+			'constant' = 'EC::_RABBIT ',
+		],
+		[
+			'code' = 'fox-face',
+			'constant' = 'EC::_FOX_FACE ',
+		],
+		[
+			'code' = 'bear',
+			'constant' = 'EC::_BEAR ',
+		],
+		[
+			'code' = 'panda-face',
+			'constant' = 'EC::_PANDA_FACE ',
+		],
+		[
+			'code' = 'koala',
+			'constant' = 'EC::_KOALA ',
+		],
+		[
+			'code' = 'tiger',
+			'constant' = 'EC::_TIGER ',
+		],
+		[
+			'code' = 'lion',
+			'constant' = 'EC::_LION ',
+		],
+		[
+			'code' = 'cow',
+			'constant' = 'EC::_COW ',
+		],
+		[
+			'code' = 'pig',
+			'constant' = 'EC::_PIG ',
+		],
+		[
+			'code' = 'pig-nose',
+			'constant' = 'EC::_PIG_NOSE ',
+		],
+		[
+			'code' = 'frog',
+			'constant' = 'EC::_FROG ',
+		],
+		[
+			'code' = 'squid',
+			'constant' = 'EC::_SQUID ',
+		],
+		[
+			'code' = 'octopus',
+			'constant' = 'EC::_OCTOPUS ',
+		],
+		[
+			'code' = 'shrimp',
+			'constant' = 'EC::_SHRIMP ',
+		],
+		[
+			'code' = 'monkey-face',
+			'constant' = 'EC::_MONKEY_FACE ',
+		],
+		[
+			'code' = 'gorilla',
+			'constant' = 'EC::_GORILLA ',
+		],
+		[
+			'code' = 'see-no-evil',
+			'constant' = 'EC::_SEE_NO_EVIL ',
+		],
+		[
+			'code' = 'hear-no-evil',
+			'constant' = 'EC::_HEAR_NO_EVIL ',
+		],
+		[
+			'code' = 'speak-no-evil',
+			'constant' = 'EC::_SPEAK_NO_EVIL ',
+		],
+		[
+			'code' = 'monkey',
+			'constant' = 'EC::_MONKEY ',
+		],
+		[
+			'code' = 'chicken',
+			'constant' = 'EC::_CHICKEN ',
+		],
+		[
+			'code' = 'penguin',
+			'constant' = 'EC::_PENGUIN ',
+		],
+		[
+			'code' = 'bird',
+			'constant' = 'EC::_BIRD ',
+		],
+		[
+			'code' = 'baby-chick',
+			'constant' = 'EC::_BABY_CHICK ',
+		],
+		[
+			'code' = 'hatching-chick',
+			'constant' = 'EC::_HATCHING_CHICK ',
+		],
+		[
+			'code' = 'hatched-chick',
+			'constant' = 'EC::_HATCHED_CHICK ',
+		],
+		[
+			'code' = 'duck',
+			'constant' = 'EC::_DUCK ',
+		],
+		[
+			'code' = 'eagle',
+			'constant' = 'EC::_EAGLE ',
+		],
+		[
+			'code' = 'owl',
+			'constant' = 'EC::_OWL ',
+		],
+		[
+			'code' = 'bat',
+			'constant' = 'EC::_BAT ',
+		],
+		[
+			'code' = 'wolf',
+			'constant' = 'EC::_WOLF ',
+		],
+		[
+			'code' = 'boar',
+			'constant' = 'EC::_BOAR ',
+		],
+		[
+			'code' = 'horse',
+			'constant' = 'EC::_HORSE ',
+		],
+		[
+			'code' = 'unicorn',
+			'constant' = 'EC::_UNICORN ',
+		],
+		[
+			'code' = 'honeybee',
+			'constant' = 'EC::_HONEYBEE ',
+		],
+		[
+			'code' = 'bug',
+			'constant' = 'EC::_BUG ',
+		],
+		[
+			'code' = 'butterfly',
+			'constant' = 'EC::_BUTTERFLY ',
+		],
+		[
+			'code' = 'snail',
+			'constant' = 'EC::_SNAIL ',
+		],
+		[
+			'code' = 'beetle',
+			'constant' = 'EC::_BEETLE ',
+		],
+		[
+			'code' = 'ant',
+			'constant' = 'EC::_ANT ',
+		],
+		[
+			'code' = 'spider',
+			'constant' = 'EC::_SPIDER ',
+		],
+		[
+			'code' = 'scorpion',
+			'constant' = 'EC::_SCORPION ',
+		],
+		[
+			'code' = 'crab',
+			'constant' = 'EC::_CRAB ',
+		],
+		[
+			'code' = 'snake',
+			'constant' = 'EC::_SNAKE ',
+		],
+		[
+			'code' = 'lizard',
+			'constant' = 'EC::_LIZARD ',
+		],
+		[
+			'code' = 'turtle',
+			'constant' = 'EC::_TURTLE ',
+		],
+		[
+			'code' = 'tropical-fish',
+			'constant' = 'EC::_TROPICAL_FISH ',
+		],
+		[
+			'code' = 'fish',
+			'constant' = 'EC::_FISH ',
+		],
+		[
+			'code' = 'blowfish',
+			'constant' = 'EC::_BLOWFISH ',
+		],
+		[
+			'code' = 'dolphin',
+			'constant' = 'EC::_DOLPHIN ',
+		],
+		[
+			'code' = 'shark',
+			'constant' = 'EC::_SHARK ',
+		],
+		[
+			'code' = 'whale',
+			'constant' = 'EC::_WHALE ',
+		],
+		[
+			'code' = 'whale2',
+			'constant' = 'EC::_WHALE2',
+		],
+		[
+			'code' = 'crocodile',
+			'constant' = 'EC::_CROCODILE ',
+		],
+		[
+			'code' = 'leopard',
+			'constant' = 'EC::_LEOPARD ',
+		],
+		[
+			'code' = 'tiger2',
+			'constant' = 'EC::_TIGER2',
+		],
+		[
+			'code' = 'water-buffalo',
+			'constant' = 'EC::_WATER_BUFFALO ',
+		],
+		[
+			'code' = 'ox',
+			'constant' = 'EC::_OX ',
+		],
+		[
+			'code' = 'cow2',
+			'constant' = 'EC::_COW2',
+		],
+		[
+			'code' = 'deer',
+			'constant' = 'EC::_DEER ',
+		],
+		[
+			'code' = 'dromedary-camel',
+			'constant' = 'EC::_DROMEDARY_CAMEL ',
+		],
+		[
+			'code' = 'camel',
+			'constant' = 'EC::_CAMEL ',
+		],
+		[
+			'code' = 'elephant',
+			'constant' = 'EC::_ELEPHANT ',
+		],
+		[
+			'code' = 'rhinoceros',
+			'constant' = 'EC::_RHINOCEROS ',
+		],
+		[
+			'code' = 'goat',
+			'constant' = 'EC::_GOAT ',
+		],
+		[
+			'code' = 'ram',
+			'constant' = 'EC::_RAM ',
+		],
+		[
+			'code' = 'sheep',
+			'constant' = 'EC::_SHEEP ',
+		],
+		[
+			'code' = 'racehorse',
+			'constant' = 'EC::_RACEHORSE ',
+		],
+		[
+			'code' = 'pig2',
+			'constant' = 'EC::_PIG2',
+		],
+		[
+			'code' = 'rat',
+			'constant' = 'EC::_RAT ',
+		],
+		[
+			'code' = 'mouse2',
+			'constant' = 'EC::_MOUSE2',
+		],
+		[
+			'code' = 'rooster',
+			'constant' = 'EC::_ROOSTER ',
+		],
+		[
+			'code' = 'turkey',
+			'constant' = 'EC::_TURKEY ',
+		],
+		[
+			'code' = 'dove',
+			'constant' = 'EC::_DOVE ',
+		],
+		[
+			'code' = 'dog2',
+			'constant' = 'EC::_DOG2',
+		],
+		[
+			'code' = 'poodle',
+			'constant' = 'EC::_POODLE ',
+		],
+		[
+			'code' = 'cat2',
+			'constant' = 'EC::_CAT2',
+		],
+		[
+			'code' = 'rabbit2',
+			'constant' = 'EC::_RABBIT2',
+		],
+		[
+			'code' = 'chipmunk',
+			'constant' = 'EC::_CHIPMUNK ',
+		],
+		[
+			'code' = 'paw-prints',
+			'constant' = 'EC::_PAW_PRINTS ',
+		],
+		[
+			'code' = 'dragon',
+			'constant' = 'EC::_DRAGON ',
+		],
+		[
+			'code' = 'dragon-face',
+			'constant' = 'EC::_DRAGON_FACE ',
+		],
+		[
+			'code' = 'cactus',
+			'constant' = 'EC::_CACTUS ',
+		],
+		[
+			'code' = 'christmas-tree',
+			'constant' = 'EC::_CHRISTMAS_TREE ',
+		],
+		[
+			'code' = 'evergreen-tree',
+			'constant' = 'EC::_EVERGREEN_TREE ',
+		],
+		[
+			'code' = 'deciduous-tree',
+			'constant' = 'EC::_DECIDUOUS_TREE ',
+		],
+		[
+			'code' = 'palm-tree',
+			'constant' = 'EC::_PALM_TREE ',
+		],
+		[
+			'code' = 'seedling',
+			'constant' = 'EC::_SEEDLING ',
+		],
+		[
+			'code' = 'herb',
+			'constant' = 'EC::_HERB ',
+		],
+		[
+			'code' = 'shamrock',
+			'constant' = 'EC::_SHAMROCK ',
+		],
+		[
+			'code' = 'four-leaf-clover',
+			'constant' = 'EC::_FOUR_LEAF_CLOVER ',
+		],
+		[
+			'code' = 'bamboo',
+			'constant' = 'EC::_BAMBOO ',
+		],
+		[
+			'code' = 'tanabata-tree',
+			'constant' = 'EC::_TANABATA_TREE ',
+		],
+		[
+			'code' = 'leaves',
+			'constant' = 'EC::_LEAVES ',
+		],
+		[
+			'code' = 'fallen-leaf',
+			'constant' = 'EC::_FALLEN_LEAF ',
+		],
+		[
+			'code' = 'maple-leaf',
+			'constant' = 'EC::_MAPLE_LEAF ',
+		],
+		[
+			'code' = 'ear-of-rice',
+			'constant' = 'EC::_EAR_OF_RICE ',
+		],
+		[
+			'code' = 'hibiscus',
+			'constant' = 'EC::_HIBISCUS ',
+		],
+		[
+			'code' = 'sunflower',
+			'constant' = 'EC::_SUNFLOWER ',
+		],
+		[
+			'code' = 'rose',
+			'constant' = 'EC::_ROSE ',
+		],
+		[
+			'code' = 'wilted-flower',
+			'constant' = 'EC::_WILTED_FLOWER ',
+		],
+		[
+			'code' = 'tulip',
+			'constant' = 'EC::_TULIP ',
+		],
+		[
+			'code' = 'blossom',
+			'constant' = 'EC::_BLOSSOM ',
+		],
+		[
+			'code' = 'cherry-blossom',
+			'constant' = 'EC::_CHERRY_BLOSSOM ',
+		],
+		[
+			'code' = 'bouquet',
+			'constant' = 'EC::_BOUQUET ',
+		],
+		[
+			'code' = 'mushroom',
+			'constant' = 'EC::_MUSHROOM ',
+		],
+		[
+			'code' = 'chestnut',
+			'constant' = 'EC::_CHESTNUT ',
+		],
+		[
+			'code' = 'jack-o-lantern',
+			'constant' = 'EC::_JACK_O_LANTERN ',
+		],
+		[
+			'code' = 'shell',
+			'constant' = 'EC::_SHELL ',
+		],
+		[
+			'code' = 'spider-web',
+			'constant' = 'EC::_SPIDER_WEB ',
+		],
+		[
+			'code' = 'earth-americas',
+			'constant' = 'EC::_EARTH_AMERICAS ',
+		],
+		[
+			'code' = 'earth-africa',
+			'constant' = 'EC::_EARTH_AFRICA ',
+		],
+		[
+			'code' = 'earth-asia',
+			'constant' = 'EC::_EARTH_ASIA ',
+		],
+		[
+			'code' = 'full-moon',
+			'constant' = 'EC::_FULL_MOON ',
+		],
+		[
+			'code' = 'waning-gibbous-moon',
+			'constant' = 'EC::_WANING_GIBBOUS_MOON ',
+		],
+		[
+			'code' = 'last-quarter-moon',
+			'constant' = 'EC::_LAST_QUARTER_MOON ',
+		],
+		[
+			'code' = 'waning-crescent-moon',
+			'constant' = 'EC::_WANING_CRESCENT_MOON ',
+		],
+		[
+			'code' = 'new-moon',
+			'constant' = 'EC::_NEW_MOON ',
+		],
+		[
+			'code' = 'waxing-crescent-moon',
+			'constant' = 'EC::_WAXING_CRESCENT_MOON ',
+		],
+		[
+			'code' = 'first-quarter-moon',
+			'constant' = 'EC::_FIRST_QUARTER_MOON ',
+		],
+		[
+			'code' = 'waxing-gibbous-moon',
+			'constant' = 'EC::_WAXING_GIBBOUS_MOON ',
+		],
+		[
+			'code' = 'new-moon-with-face',
+			'constant' = 'EC::_NEW_MOON_WITH_FACE ',
+		],
+		[
+			'code' = 'full-moon-with-face',
+			'constant' = 'EC::_FULL_MOON_WITH_FACE ',
+		],
+		[
+			'code' = 'first-quarter-moon-with-face',
+			'constant' = 'EC::_FIRST_QUARTER_MOON_WITH_FACE ',
+		],
+		[
+			'code' = 'last-quarter-moon-with-face',
+			'constant' = 'EC::_LAST_QUARTER_MOON_WITH_FACE ',
+		],
+		[
+			'code' = 'sun-with-face',
+			'constant' = 'EC::_SUN_WITH_FACE ',
+		],
+		[
+			'code' = 'crescent-moon',
+			'constant' = 'EC::_CRESCENT_MOON ',
+		],
+		[
+			'code' = 'star',
+			'constant' = 'EC::_STAR ',
+		],
+		[
+			'code' = 'star2',
+			'constant' = 'EC::_STAR2',
+		],
+		[
+			'code' = 'dizzy',
+			'constant' = 'EC::_DIZZY ',
+		],
+		[
+			'code' = 'sparkles',
+			'constant' = 'EC::_SPARKLES ',
+		],
+		[
+			'code' = 'comet',
+			'constant' = 'EC::_COMET ',
+		],
+		[
+			'code' = 'sun-behind-small-cloud',
+			'constant' = 'EC::_SUN_BEHIND_SMALL_CLOUD ',
+		],
+		[
+			'code' = 'partly-sunny',
+			'constant' = 'EC::_PARTLY_SUNNY ',
+		],
+		[
+			'code' = 'sun-behind-large-cloud',
+			'constant' = 'EC::_SUN_BEHIND_LARGE_CLOUD ',
+		],
+		[
+			'code' = 'sun-behind-rain-cloud',
+			'constant' = 'EC::_SUN_BEHIND_RAIN_CLOUD ',
+		],
+		[
+			'code' = 'cloud-with-rain',
+			'constant' = 'EC::_CLOUD_WITH_RAIN ',
+		],
+		[
+			'code' = 'cloud-with-lightning-and-rain',
+			'constant' = 'EC::_CLOUD_WITH_LIGHTNING_AND_RAIN ',
+		],
+		[
+			'code' = 'cloud-with-lightning',
+			'constant' = 'EC::_CLOUD_WITH_LIGHTNING ',
+		],
+		[
+			'code' = 'zap',
+			'constant' = 'EC::_ZAP ',
+		],
+		[
+			'code' = 'fire',
+			'constant' = 'EC::_FIRE ',
+		],
+		[
+			'code' = 'boom',
+			'constant' = 'EC::_BOOM ',
+		],
+		[
+			'code' = 'cloud-with-snow',
+			'constant' = 'EC::_CLOUD_WITH_SNOW ',
+		],
+		[
+			'code' = 'snowman',
+			'constant' = 'EC::_SNOWMAN ',
+		],
+		[
+			'code' = 'snowman-with-snow',
+			'constant' = 'EC::_SNOWMAN_WITH_SNOW ',
+		],
+		[
+			'code' = 'wind-face',
+			'constant' = 'EC::_WIND_FACE ',
+		],
+		[
+			'code' = 'dash',
+			'constant' = 'EC::_DASH ',
+		],
+		[
+			'code' = 'tornado',
+			'constant' = 'EC::_TORNADO ',
+		],
+		[
+			'code' = 'fog',
+			'constant' = 'EC::_FOG ',
+		],
+		[
+			'code' = 'open-umbrella',
+			'constant' = 'EC::_OPEN_UMBRELLA ',
+		],
+		[
+			'code' = 'umbrella',
+			'constant' = 'EC::_UMBRELLA ',
+		],
+		[
+			'code' = 'droplet',
+			'constant' = 'EC::_DROPLET ',
+		],
+		[
+			'code' = 'sweat-drops',
+			'constant' = 'EC::_SWEAT_DROPS ',
+		],
+		[
+			'code' = 'ocean',
+			'constant' = 'EC::_OCEAN ',
+		],
+		[
+			'code' = 'green-apple',
+			'constant' = 'EC::_GREEN_APPLE ',
+		],
+		[
+			'code' = 'apple',
+			'constant' = 'EC::_APPLE ',
+		],
+		[
+			'code' = 'pear',
+			'constant' = 'EC::_PEAR ',
+		],
+		[
+			'code' = 'tangerine',
+			'constant' = 'EC::_TANGERINE ',
+		],
+		[
+			'code' = 'lemon',
+			'constant' = 'EC::_LEMON ',
+		],
+		[
+			'code' = 'banana',
+			'constant' = 'EC::_BANANA ',
+		],
+		[
+			'code' = 'watermelon',
+			'constant' = 'EC::_WATERMELON ',
+		],
+		[
+			'code' = 'grapes',
+			'constant' = 'EC::_GRAPES ',
+		],
+		[
+			'code' = 'strawberry',
+			'constant' = 'EC::_STRAWBERRY ',
+		],
+		[
+			'code' = 'melon',
+			'constant' = 'EC::_MELON ',
+		],
+		[
+			'code' = 'cherries',
+			'constant' = 'EC::_CHERRIES ',
+		],
+		[
+			'code' = 'peach',
+			'constant' = 'EC::_PEACH ',
+		],
+		[
+			'code' = 'pineapple',
+			'constant' = 'EC::_PINEAPPLE ',
+		],
+		[
+			'code' = 'kiwi-fruit',
+			'constant' = 'EC::_KIWI_FRUIT ',
+		],
+		[
+			'code' = 'avocado',
+			'constant' = 'EC::_AVOCADO ',
+		],
+		[
+			'code' = 'tomato',
+			'constant' = 'EC::_TOMATO ',
+		],
+		[
+			'code' = 'eggplant',
+			'constant' = 'EC::_EGGPLANT ',
+		],
+		[
+			'code' = 'cucumber',
+			'constant' = 'EC::_CUCUMBER ',
+		],
+		[
+			'code' = 'carrot',
+			'constant' = 'EC::_CARROT ',
+		],
+		[
+			'code' = 'hot-pepper',
+			'constant' = 'EC::_HOT_PEPPER ',
+		],
+		[
+			'code' = 'potato',
+			'constant' = 'EC::_POTATO ',
+		],
+		[
+			'code' = 'corn',
+			'constant' = 'EC::_CORN ',
+		],
+		[
+			'code' = 'sweet-potato',
+			'constant' = 'EC::_SWEET_POTATO ',
+		],
+		[
+			'code' = 'peanuts',
+			'constant' = 'EC::_PEANUTS ',
+		],
+		[
+			'code' = 'honey-pot',
+			'constant' = 'EC::_HONEY_POT ',
+		],
+		[
+			'code' = 'croissant',
+			'constant' = 'EC::_CROISSANT ',
+		],
+		[
+			'code' = 'bread',
+			'constant' = 'EC::_BREAD ',
+		],
+		[
+			'code' = 'baguette-bread',
+			'constant' = 'EC::_BAGUETTE_BREAD ',
+		],
+		[
+			'code' = 'cheese',
+			'constant' = 'EC::_CHEESE ',
+		],
+		[
+			'code' = 'egg',
+			'constant' = 'EC::_EGG ',
+		],
+		[
+			'code' = 'bacon',
+			'constant' = 'EC::_BACON ',
+		],
+		[
+			'code' = 'pancakes',
+			'constant' = 'EC::_PANCAKES ',
+		],
+		[
+			'code' = 'poultry-leg',
+			'constant' = 'EC::_POULTRY_LEG ',
+		],
+		[
+			'code' = 'meat-on-bone',
+			'constant' = 'EC::_MEAT_ON_BONE ',
+		],
+		[
+			'code' = 'fried-shrimp',
+			'constant' = 'EC::_FRIED_SHRIMP ',
+		],
+		[
+			'code' = 'fried-egg',
+			'constant' = 'EC::_FRIED_EGG ',
+		],
+		[
+			'code' = 'hamburger',
+			'constant' = 'EC::_HAMBURGER ',
+		],
+		[
+			'code' = 'fries',
+			'constant' = 'EC::_FRIES ',
+		],
+		[
+			'code' = 'stuffed-flatbread',
+			'constant' = 'EC::_STUFFED_FLATBREAD ',
+		],
+		[
+			'code' = 'hotdog',
+			'constant' = 'EC::_HOTDOG ',
+		],
+		[
+			'code' = 'pizza',
+			'constant' = 'EC::_PIZZA ',
+		],
+		[
+			'code' = 'spaghetti',
+			'constant' = 'EC::_SPAGHETTI ',
+		],
+		[
+			'code' = 'taco',
+			'constant' = 'EC::_TACO ',
+		],
+		[
+			'code' = 'burrito',
+			'constant' = 'EC::_BURRITO ',
+		],
+		[
+			'code' = 'green-salad',
+			'constant' = 'EC::_GREEN_SALAD ',
+		],
+		[
+			'code' = 'shallow-pan-of-food',
+			'constant' = 'EC::_SHALLOW_PAN_OF_FOOD ',
+		],
+		[
+			'code' = 'ramen',
+			'constant' = 'EC::_RAMEN ',
+		],
+		[
+			'code' = 'stew',
+			'constant' = 'EC::_STEW ',
+		],
+		[
+			'code' = 'fish-cake',
+			'constant' = 'EC::_FISH_CAKE ',
+		],
+		[
+			'code' = 'sushi',
+			'constant' = 'EC::_SUSHI ',
+		],
+		[
+			'code' = 'bento',
+			'constant' = 'EC::_BENTO ',
+		],
+		[
+			'code' = 'curry',
+			'constant' = 'EC::_CURRY ',
+		],
+		[
+			'code' = 'rice-ball',
+			'constant' = 'EC::_RICE_BALL ',
+		],
+		[
+			'code' = 'rice',
+			'constant' = 'EC::_RICE ',
+		],
+		[
+			'code' = 'rice-cracker',
+			'constant' = 'EC::_RICE_CRACKER ',
+		],
+		[
+			'code' = 'oden',
+			'constant' = 'EC::_ODEN ',
+		],
+		[
+			'code' = 'dango',
+			'constant' = 'EC::_DANGO ',
+		],
+		[
+			'code' = 'shaved-ice',
+			'constant' = 'EC::_SHAVED_ICE ',
+		],
+		[
+			'code' = 'ice-cream',
+			'constant' = 'EC::_ICE_CREAM ',
+		],
+		[
+			'code' = 'icecream',
+			'constant' = 'EC::_ICECREAM ',
+		],
+		[
+			'code' = 'cake',
+			'constant' = 'EC::_CAKE ',
+		],
+		[
+			'code' = 'birthday',
+			'constant' = 'EC::_BIRTHDAY ',
+		],
+		[
+			'code' = 'custard',
+			'constant' = 'EC::_CUSTARD ',
+		],
+		[
+			'code' = 'candy',
+			'constant' = 'EC::_CANDY ',
+		],
+		[
+			'code' = 'lollipop',
+			'constant' = 'EC::_LOLLIPOP ',
+		],
+		[
+			'code' = 'chocolate-bar',
+			'constant' = 'EC::_CHOCOLATE_BAR ',
+		],
+		[
+			'code' = 'popcorn',
+			'constant' = 'EC::_POPCORN ',
+		],
+		[
+			'code' = 'doughnut',
+			'constant' = 'EC::_DOUGHNUT ',
+		],
+		[
+			'code' = 'cookie',
+			'constant' = 'EC::_COOKIE ',
+		],
+		[
+			'code' = 'milk-glass',
+			'constant' = 'EC::_MILK_GLASS ',
+		],
+		[
+			'code' = 'beer',
+			'constant' = 'EC::_BEER ',
+		],
+		[
+			'code' = 'beers',
+			'constant' = 'EC::_BEERS ',
+		],
+		[
+			'code' = 'clinking-glasses',
+			'constant' = 'EC::_CLINKING_GLASSES ',
+		],
+		[
+			'code' = 'wine-glass',
+			'constant' = 'EC::_WINE_GLASS ',
+		],
+		[
+			'code' = 'tumbler-glass',
+			'constant' = 'EC::_TUMBLER_GLASS ',
+		],
+		[
+			'code' = 'cocktail',
+			'constant' = 'EC::_COCKTAIL ',
+		],
+		[
+			'code' = 'tropical-drink',
+			'constant' = 'EC::_TROPICAL_DRINK ',
+		],
+		[
+			'code' = 'champagne',
+			'constant' = 'EC::_CHAMPAGNE ',
+		],
+		[
+			'code' = 'sake',
+			'constant' = 'EC::_SAKE ',
+		],
+		[
+			'code' = 'tea',
+			'constant' = 'EC::_TEA ',
+		],
+		[
+			'code' = 'coffee',
+			'constant' = 'EC::_COFFEE ',
+		],
+		[
+			'code' = 'baby-bottle',
+			'constant' = 'EC::_BABY_BOTTLE ',
+		],
+		[
+			'code' = 'spoon',
+			'constant' = 'EC::_SPOON ',
+		],
+		[
+			'code' = 'fork-and-knife',
+			'constant' = 'EC::_FORK_AND_KNIFE ',
+		],
+		[
+			'code' = 'plate-with-cutlery',
+			'constant' = 'EC::_PLATE_WITH_CUTLERY ',
+		],
+		[
+			'code' = 'soccer',
+			'constant' = 'EC::_SOCCER ',
+		],
+		[
+			'code' = 'basketball',
+			'constant' = 'EC::_BASKETBALL ',
+		],
+		[
+			'code' = 'football',
+			'constant' = 'EC::_FOOTBALL ',
+		],
+		[
+			'code' = 'baseball',
+			'constant' = 'EC::_BASEBALL ',
+		],
+		[
+			'code' = 'tennis',
+			'constant' = 'EC::_TENNIS ',
+		],
+		[
+			'code' = 'volleyball',
+			'constant' = 'EC::_VOLLEYBALL ',
+		],
+		[
+			'code' = 'rugby-football',
+			'constant' = 'EC::_RUGBY_FOOTBALL ',
+		],
+		[
+			'code' = '8ball',
+			'constant' = 'EC::_8BALL',
+		],
+		[
+			'code' = 'golf',
+			'constant' = 'EC::_GOLF ',
+		],
+		[
+			'code' = 'golfing-man',
+			'constant' = 'EC::_GOLFING_MAN ',
+		],
+		[
+			'code' = 'ping-pong',
+			'constant' = 'EC::_PING_PONG ',
+		],
+		[
+			'code' = 'badminton',
+			'constant' = 'EC::_BADMINTON ',
+		],
+		[
+			'code' = 'goal-net',
+			'constant' = 'EC::_GOAL_NET ',
+		],
+		[
+			'code' = 'ice-hockey',
+			'constant' = 'EC::_ICE_HOCKEY ',
+		],
+		[
+			'code' = 'field-hockey',
+			'constant' = 'EC::_FIELD_HOCKEY ',
+		],
+		[
+			'code' = 'cricket',
+			'constant' = 'EC::_CRICKET ',
+		],
+		[
+			'code' = 'ski',
+			'constant' = 'EC::_SKI ',
+		],
+		[
+			'code' = 'skier',
+			'constant' = 'EC::_SKIER ',
+		],
+		[
+			'code' = 'snowboarder',
+			'constant' = 'EC::_SNOWBOARDER ',
+		],
+		[
+			'code' = 'person-fencing',
+			'constant' = 'EC::_PERSON_FENCING ',
+		],
+		[
+			'code' = 'ice-skate',
+			'constant' = 'EC::_ICE_SKATE ',
+		],
+		[
+			'code' = 'bow-and-arrow',
+			'constant' = 'EC::_BOW_AND_ARROW ',
+		],
+		[
+			'code' = 'fishing-pole-and-fish',
+			'constant' = 'EC::_FISHING_POLE_AND_FISH ',
+		],
+		[
+			'code' = 'boxing-glove',
+			'constant' = 'EC::_BOXING_GLOVE ',
+		],
+		[
+			'code' = 'martial-arts-uniform',
+			'constant' = 'EC::_MARTIAL_ARTS_UNIFORM ',
+		],
+		[
+			'code' = 'rowing-man',
+			'constant' = 'EC::_ROWING_MAN ',
+		],
+		[
+			'code' = 'swimming-man',
+			'constant' = 'EC::_SWIMMING_MAN ',
+		],
+		[
+			'code' = 'surfing-man',
+			'constant' = 'EC::_SURFING_MAN ',
+		],
+		[
+			'code' = 'bath',
+			'constant' = 'EC::_BATH ',
+		],
+		[
+			'code' = 'basketball-man',
+			'constant' = 'EC::_BASKETBALL_MAN ',
+		],
+		[
+			'code' = 'weight-lifting-man',
+			'constant' = 'EC::_WEIGHT_LIFTING_MAN ',
+		],
+		[
+			'code' = 'biking-man',
+			'constant' = 'EC::_BIKING_MAN ',
+		],
+		[
+			'code' = 'mountain-biking-man',
+			'constant' = 'EC::_MOUNTAIN_BIKING_MAN ',
+		],
+		[
+			'code' = 'horse-racing',
+			'constant' = 'EC::_HORSE_RACING ',
+		],
+		[
+			'code' = 'business-suit-levitating',
+			'constant' = 'EC::_BUSINESS_SUIT_LEVITATING ',
+		],
+		[
+			'code' = 'trophy',
+			'constant' = 'EC::_TROPHY ',
+		],
+		[
+			'code' = 'running-shirt-with-sash',
+			'constant' = 'EC::_RUNNING_SHIRT_WITH_SASH ',
+		],
+		[
+			'code' = 'medal-sports',
+			'constant' = 'EC::_MEDAL_SPORTS ',
+		],
+		[
+			'code' = 'medal-military',
+			'constant' = 'EC::_MEDAL_MILITARY ',
+		],
+		[
+			'code' = '1st-place-medal',
+			'constant' = 'EC::_1ST_PLACE_MEDAL',
+		],
+		[
+			'code' = '2nd-place-medal',
+			'constant' = 'EC::_2ND_PLACE_MEDAL',
+		],
+		[
+			'code' = '3rd-place-medal',
+			'constant' = 'EC::_3RD_PLACE_MEDAL',
+		],
+		[
+			'code' = 'reminder-ribbon',
+			'constant' = 'EC::_REMINDER_RIBBON ',
+		],
+		[
+			'code' = 'rosette',
+			'constant' = 'EC::_ROSETTE ',
+		],
+		[
+			'code' = 'ticket',
+			'constant' = 'EC::_TICKET ',
+		],
+		[
+			'code' = 'tickets',
+			'constant' = 'EC::_TICKETS ',
+		],
+		[
+			'code' = 'performing-arts',
+			'constant' = 'EC::_PERFORMING_ARTS ',
+		],
+		[
+			'code' = 'art',
+			'constant' = 'EC::_ART ',
+		],
+		[
+			'code' = 'circus-tent',
+			'constant' = 'EC::_CIRCUS_TENT ',
+		],
+		[
+			'code' = 'microphone',
+			'constant' = 'EC::_MICROPHONE ',
+		],
+		[
+			'code' = 'headphones',
+			'constant' = 'EC::_HEADPHONES ',
+		],
+		[
+			'code' = 'musical-score',
+			'constant' = 'EC::_MUSICAL_SCORE ',
+		],
+		[
+			'code' = 'musical-keyboard',
+			'constant' = 'EC::_MUSICAL_KEYBOARD ',
+		],
+		[
+			'code' = 'drum',
+			'constant' = 'EC::_DRUM ',
+		],
+		[
+			'code' = 'saxophone',
+			'constant' = 'EC::_SAXOPHONE ',
+		],
+		[
+			'code' = 'trumpet',
+			'constant' = 'EC::_TRUMPET ',
+		],
+		[
+			'code' = 'guitar',
+			'constant' = 'EC::_GUITAR ',
+		],
+		[
+			'code' = 'violin',
+			'constant' = 'EC::_VIOLIN ',
+		],
+		[
+			'code' = 'clapper',
+			'constant' = 'EC::_CLAPPER ',
+		],
+		[
+			'code' = 'video-game',
+			'constant' = 'EC::_VIDEO_GAME ',
+		],
+		[
+			'code' = 'space-invader',
+			'constant' = 'EC::_SPACE_INVADER ',
+		],
+		[
+			'code' = 'dart',
+			'constant' = 'EC::_DART ',
+		],
+		[
+			'code' = 'game-die',
+			'constant' = 'EC::_GAME_DIE ',
+		],
+		[
+			'code' = 'slot-machine',
+			'constant' = 'EC::_SLOT_MACHINE ',
+		],
+		[
+			'code' = 'bowling',
+			'constant' = 'EC::_BOWLING ',
+		],
+		[
+			'code' = 'red-car',
+			'constant' = 'EC::_RED_CAR ',
+		],
+		[
+			'code' = 'taxi',
+			'constant' = 'EC::_TAXI ',
+		],
+		[
+			'code' = 'blue-car',
+			'constant' = 'EC::_BLUE_CAR ',
+		],
+		[
+			'code' = 'bus',
+			'constant' = 'EC::_BUS ',
+		],
+		[
+			'code' = 'trolleybus',
+			'constant' = 'EC::_TROLLEYBUS ',
+		],
+		[
+			'code' = 'racing-car',
+			'constant' = 'EC::_RACING_CAR ',
+		],
+		[
+			'code' = 'police-car',
+			'constant' = 'EC::_POLICE_CAR ',
+		],
+		[
+			'code' = 'ambulance',
+			'constant' = 'EC::_AMBULANCE ',
+		],
+		[
+			'code' = 'fire-engine',
+			'constant' = 'EC::_FIRE_ENGINE ',
+		],
+		[
+			'code' = 'minibus',
+			'constant' = 'EC::_MINIBUS ',
+		],
+		[
+			'code' = 'truck',
+			'constant' = 'EC::_TRUCK ',
+		],
+		[
+			'code' = 'articulated-lorry',
+			'constant' = 'EC::_ARTICULATED_LORRY ',
+		],
+		[
+			'code' = 'tractor',
+			'constant' = 'EC::_TRACTOR ',
+		],
+		[
+			'code' = 'kick-scooter',
+			'constant' = 'EC::_KICK_SCOOTER ',
+		],
+		[
+			'code' = 'motorcycle',
+			'constant' = 'EC::_MOTORCYCLE ',
+		],
+		[
+			'code' = 'bike',
+			'constant' = 'EC::_BIKE ',
+		],
+		[
+			'code' = 'motor-scooter',
+			'constant' = 'EC::_MOTOR_SCOOTER ',
+		],
+		[
+			'code' = 'rotating-light',
+			'constant' = 'EC::_ROTATING_LIGHT ',
+		],
+		[
+			'code' = 'oncoming-police-car',
+			'constant' = 'EC::_ONCOMING_POLICE_CAR ',
+		],
+		[
+			'code' = 'oncoming-bus',
+			'constant' = 'EC::_ONCOMING_BUS ',
+		],
+		[
+			'code' = 'oncoming-automobile',
+			'constant' = 'EC::_ONCOMING_AUTOMOBILE ',
+		],
+		[
+			'code' = 'oncoming-taxi',
+			'constant' = 'EC::_ONCOMING_TAXI ',
+		],
+		[
+			'code' = 'aerial-tramway',
+			'constant' = 'EC::_AERIAL_TRAMWAY ',
+		],
+		[
+			'code' = 'mountain-cableway',
+			'constant' = 'EC::_MOUNTAIN_CABLEWAY ',
+		],
+		[
+			'code' = 'suspension-railway',
+			'constant' = 'EC::_SUSPENSION_RAILWAY ',
+		],
+		[
+			'code' = 'railway-car',
+			'constant' = 'EC::_RAILWAY_CAR ',
+		],
+		[
+			'code' = 'train',
+			'constant' = 'EC::_TRAIN ',
+		],
+		[
+			'code' = 'monorail',
+			'constant' = 'EC::_MONORAIL ',
+		],
+		[
+			'code' = 'bullettrain-side',
+			'constant' = 'EC::_BULLETTRAIN_SIDE ',
+		],
+		[
+			'code' = 'bullettrain-front',
+			'constant' = 'EC::_BULLETTRAIN_FRONT ',
+		],
+		[
+			'code' = 'light-rail',
+			'constant' = 'EC::_LIGHT_RAIL ',
+		],
+		[
+			'code' = 'mountain-railway',
+			'constant' = 'EC::_MOUNTAIN_RAILWAY ',
+		],
+		[
+			'code' = 'steam-locomotive',
+			'constant' = 'EC::_STEAM_LOCOMOTIVE ',
+		],
+		[
+			'code' = 'train2',
+			'constant' = 'EC::_TRAIN2',
+		],
+		[
+			'code' = 'metro',
+			'constant' = 'EC::_METRO ',
+		],
+		[
+			'code' = 'tram',
+			'constant' = 'EC::_TRAM ',
+		],
+		[
+			'code' = 'station',
+			'constant' = 'EC::_STATION ',
+		],
+		[
+			'code' = 'helicopter',
+			'constant' = 'EC::_HELICOPTER ',
+		],
+		[
+			'code' = 'small-airplane',
+			'constant' = 'EC::_SMALL_AIRPLANE ',
+		],
+		[
+			'code' = 'flight-departure',
+			'constant' = 'EC::_FLIGHT_DEPARTURE ',
+		],
+		[
+			'code' = 'flight-arrival',
+			'constant' = 'EC::_FLIGHT_ARRIVAL ',
+		],
+		[
+			'code' = 'sailboat',
+			'constant' = 'EC::_SAILBOAT ',
+		],
+		[
+			'code' = 'motor-boat',
+			'constant' = 'EC::_MOTOR_BOAT ',
+		],
+		[
+			'code' = 'speedboat',
+			'constant' = 'EC::_SPEEDBOAT ',
+		],
+		[
+			'code' = 'ferry',
+			'constant' = 'EC::_FERRY ',
+		],
+		[
+			'code' = 'passenger-ship',
+			'constant' = 'EC::_PASSENGER_SHIP ',
+		],
+		[
+			'code' = 'rocket',
+			'constant' = 'EC::_ROCKET ',
+		],
+		[
+			'code' = 'artificial-satellite',
+			'constant' = 'EC::_ARTIFICIAL_SATELLITE ',
+		],
+		[
+			'code' = 'seat',
+			'constant' = 'EC::_SEAT ',
+		],
+		[
+			'code' = 'canoe',
+			'constant' = 'EC::_CANOE ',
+		],
+		[
+			'code' = 'anchor',
+			'constant' = 'EC::_ANCHOR ',
+		],
+		[
+			'code' = 'construction',
+			'constant' = 'EC::_CONSTRUCTION ',
+		],
+		[
+			'code' = 'fuelpump',
+			'constant' = 'EC::_FUELPUMP ',
+		],
+		[
+			'code' = 'busstop',
+			'constant' = 'EC::_BUSSTOP ',
+		],
+		[
+			'code' = 'vertical-traffic-light',
+			'constant' = 'EC::_VERTICAL_TRAFFIC_LIGHT ',
+		],
+		[
+			'code' = 'traffic-light',
+			'constant' = 'EC::_TRAFFIC_LIGHT ',
+		],
+		[
+			'code' = 'checkered-flag',
+			'constant' = 'EC::_CHECKERED_FLAG ',
+		],
+		[
+			'code' = 'ship',
+			'constant' = 'EC::_SHIP ',
+		],
+		[
+			'code' = 'ferris-wheel',
+			'constant' = 'EC::_FERRIS_WHEEL ',
+		],
+		[
+			'code' = 'roller-coaster',
+			'constant' = 'EC::_ROLLER_COASTER ',
+		],
+		[
+			'code' = 'carousel-horse',
+			'constant' = 'EC::_CAROUSEL_HORSE ',
+		],
+		[
+			'code' = 'building-construction',
+			'constant' = 'EC::_BUILDING_CONSTRUCTION ',
+		],
+		[
+			'code' = 'foggy',
+			'constant' = 'EC::_FOGGY ',
+		],
+		[
+			'code' = 'tokyo-tower',
+			'constant' = 'EC::_TOKYO_TOWER ',
+		],
+		[
+			'code' = 'factory',
+			'constant' = 'EC::_FACTORY ',
+		],
+		[
+			'code' = 'fountain',
+			'constant' = 'EC::_FOUNTAIN ',
+		],
+		[
+			'code' = 'rice-scene',
+			'constant' = 'EC::_RICE_SCENE ',
+		],
+		[
+			'code' = 'mountain',
+			'constant' = 'EC::_MOUNTAIN ',
+		],
+		[
+			'code' = 'mountain-snow',
+			'constant' = 'EC::_MOUNTAIN_SNOW ',
+		],
+		[
+			'code' = 'mount-fuji',
+			'constant' = 'EC::_MOUNT_FUJI ',
+		],
+		[
+			'code' = 'volcano',
+			'constant' = 'EC::_VOLCANO ',
+		],
+		[
+			'code' = 'japan',
+			'constant' = 'EC::_JAPAN ',
+		],
+		[
+			'code' = 'camping',
+			'constant' = 'EC::_CAMPING ',
+		],
+		[
+			'code' = 'tent',
+			'constant' = 'EC::_TENT ',
+		],
+		[
+			'code' = 'national-park',
+			'constant' = 'EC::_NATIONAL_PARK ',
+		],
+		[
+			'code' = 'motorway',
+			'constant' = 'EC::_MOTORWAY ',
+		],
+		[
+			'code' = 'railway-track',
+			'constant' = 'EC::_RAILWAY_TRACK ',
+		],
+		[
+			'code' = 'sunrise',
+			'constant' = 'EC::_SUNRISE ',
+		],
+		[
+			'code' = 'sunrise-over-mountains',
+			'constant' = 'EC::_SUNRISE_OVER_MOUNTAINS ',
+		],
+		[
+			'code' = 'desert',
+			'constant' = 'EC::_DESERT ',
+		],
+		[
+			'code' = 'beach-umbrella',
+			'constant' = 'EC::_BEACH_UMBRELLA ',
+		],
+		[
+			'code' = 'desert-island',
+			'constant' = 'EC::_DESERT_ISLAND ',
+		],
+		[
+			'code' = 'city-sunrise',
+			'constant' = 'EC::_CITY_SUNRISE ',
+		],
+		[
+			'code' = 'city-sunset',
+			'constant' = 'EC::_CITY_SUNSET ',
+		],
+		[
+			'code' = 'cityscape',
+			'constant' = 'EC::_CITYSCAPE ',
+		],
+		[
+			'code' = 'night-with-stars',
+			'constant' = 'EC::_NIGHT_WITH_STARS ',
+		],
+		[
+			'code' = 'bridge-at-night',
+			'constant' = 'EC::_BRIDGE_AT_NIGHT ',
+		],
+		[
+			'code' = 'milky-way',
+			'constant' = 'EC::_MILKY_WAY ',
+		],
+		[
+			'code' = 'stars',
+			'constant' = 'EC::_STARS ',
+		],
+		[
+			'code' = 'sparkler',
+			'constant' = 'EC::_SPARKLER ',
+		],
+		[
+			'code' = 'fireworks',
+			'constant' = 'EC::_FIREWORKS ',
+		],
+		[
+			'code' = 'rainbow',
+			'constant' = 'EC::_RAINBOW ',
+		],
+		[
+			'code' = 'houses',
+			'constant' = 'EC::_HOUSES ',
+		],
+		[
+			'code' = 'european-castle',
+			'constant' = 'EC::_EUROPEAN_CASTLE ',
+		],
+		[
+			'code' = 'japanese-castle',
+			'constant' = 'EC::_JAPANESE_CASTLE ',
+		],
+		[
+			'code' = 'stadium',
+			'constant' = 'EC::_STADIUM ',
+		],
+		[
+			'code' = 'statue-of-liberty',
+			'constant' = 'EC::_STATUE_OF_LIBERTY ',
+		],
+		[
+			'code' = 'house',
+			'constant' = 'EC::_HOUSE ',
+		],
+		[
+			'code' = 'house-with-garden',
+			'constant' = 'EC::_HOUSE_WITH_GARDEN ',
+		],
+		[
+			'code' = 'derelict-house',
+			'constant' = 'EC::_DERELICT_HOUSE ',
+		],
+		[
+			'code' = 'office',
+			'constant' = 'EC::_OFFICE ',
+		],
+		[
+			'code' = 'department-store',
+			'constant' = 'EC::_DEPARTMENT_STORE ',
+		],
+		[
+			'code' = 'post-office',
+			'constant' = 'EC::_POST_OFFICE ',
+		],
+		[
+			'code' = 'european-post-office',
+			'constant' = 'EC::_EUROPEAN_POST_OFFICE ',
+		],
+		[
+			'code' = 'hospital',
+			'constant' = 'EC::_HOSPITAL ',
+		],
+		[
+			'code' = 'bank',
+			'constant' = 'EC::_BANK ',
+		],
+		[
+			'code' = 'hotel',
+			'constant' = 'EC::_HOTEL ',
+		],
+		[
+			'code' = 'convenience-store',
+			'constant' = 'EC::_CONVENIENCE_STORE ',
+		],
+		[
+			'code' = 'school',
+			'constant' = 'EC::_SCHOOL ',
+		],
+		[
+			'code' = 'love-hotel',
+			'constant' = 'EC::_LOVE_HOTEL ',
+		],
+		[
+			'code' = 'wedding',
+			'constant' = 'EC::_WEDDING ',
+		],
+		[
+			'code' = 'classical-building',
+			'constant' = 'EC::_CLASSICAL_BUILDING ',
+		],
+		[
+			'code' = 'church',
+			'constant' = 'EC::_CHURCH ',
+		],
+		[
+			'code' = 'mosque',
+			'constant' = 'EC::_MOSQUE ',
+		],
+		[
+			'code' = 'synagogue',
+			'constant' = 'EC::_SYNAGOGUE ',
+		],
+		[
+			'code' = 'kaaba',
+			'constant' = 'EC::_KAABA ',
+		],
+		[
+			'code' = 'shinto-shrine',
+			'constant' = 'EC::_SHINTO_SHRINE ',
+		],
+		[
+			'code' = 'watch',
+			'constant' = 'EC::_WATCH ',
+		],
+		[
+			'code' = 'iphone',
+			'constant' = 'EC::_IPHONE ',
+		],
+		[
+			'code' = 'calling',
+			'constant' = 'EC::_CALLING ',
+		],
+		[
+			'code' = 'computer',
+			'constant' = 'EC::_COMPUTER ',
+		],
+		[
+			'code' = 'keyboard',
+			'constant' = 'EC::_KEYBOARD ',
+		],
+		[
+			'code' = 'desktop-computer',
+			'constant' = 'EC::_DESKTOP_COMPUTER ',
+		],
+		[
+			'code' = 'printer',
+			'constant' = 'EC::_PRINTER ',
+		],
+		[
+			'code' = 'computer-mouse',
+			'constant' = 'EC::_COMPUTER_MOUSE ',
+		],
+		[
+			'code' = 'trackball',
+			'constant' = 'EC::_TRACKBALL ',
+		],
+		[
+			'code' = 'joystick',
+			'constant' = 'EC::_JOYSTICK ',
+		],
+		[
+			'code' = 'clamp',
+			'constant' = 'EC::_CLAMP ',
+		],
+		[
+			'code' = 'minidisc',
+			'constant' = 'EC::_MINIDISC ',
+		],
+		[
+			'code' = 'floppy-disk',
+			'constant' = 'EC::_FLOPPY_DISK ',
+		],
+		[
+			'code' = 'cd',
+			'constant' = 'EC::_CD ',
+		],
+		[
+			'code' = 'dvd',
+			'constant' = 'EC::_DVD ',
+		],
+		[
+			'code' = 'vhs',
+			'constant' = 'EC::_VHS ',
+		],
+		[
+			'code' = 'camera',
+			'constant' = 'EC::_CAMERA ',
+		],
+		[
+			'code' = 'camera-flash',
+			'constant' = 'EC::_CAMERA_FLASH ',
+		],
+		[
+			'code' = 'video-camera',
+			'constant' = 'EC::_VIDEO_CAMERA ',
+		],
+		[
+			'code' = 'movie-camera',
+			'constant' = 'EC::_MOVIE_CAMERA ',
+		],
+		[
+			'code' = 'film-projector',
+			'constant' = 'EC::_FILM_PROJECTOR ',
+		],
+		[
+			'code' = 'film-strip',
+			'constant' = 'EC::_FILM_STRIP ',
+		],
+		[
+			'code' = 'telephone-receiver',
+			'constant' = 'EC::_TELEPHONE_RECEIVER ',
+		],
+		[
+			'code' = 'pager',
+			'constant' = 'EC::_PAGER ',
+		],
+		[
+			'code' = 'fax',
+			'constant' = 'EC::_FAX ',
+		],
+		[
+			'code' = 'tv',
+			'constant' = 'EC::_TV ',
+		],
+		[
+			'code' = 'radio',
+			'constant' = 'EC::_RADIO ',
+		],
+		[
+			'code' = 'studio-microphone',
+			'constant' = 'EC::_STUDIO_MICROPHONE ',
+		],
+		[
+			'code' = 'level-slider',
+			'constant' = 'EC::_LEVEL_SLIDER ',
+		],
+		[
+			'code' = 'control-knobs',
+			'constant' = 'EC::_CONTROL_KNOBS ',
+		],
+		[
+			'code' = 'stopwatch',
+			'constant' = 'EC::_STOPWATCH ',
+		],
+		[
+			'code' = 'timer-clock',
+			'constant' = 'EC::_TIMER_CLOCK ',
+		],
+		[
+			'code' = 'alarm-clock',
+			'constant' = 'EC::_ALARM_CLOCK ',
+		],
+		[
+			'code' = 'mantelpiece-clock',
+			'constant' = 'EC::_MANTELPIECE_CLOCK ',
+		],
+		[
+			'code' = 'hourglass-flowing-sand',
+			'constant' = 'EC::_HOURGLASS_FLOWING_SAND ',
+		],
+		[
+			'code' = 'hourglass',
+			'constant' = 'EC::_HOURGLASS ',
+		],
+		[
+			'code' = 'satellite',
+			'constant' = 'EC::_SATELLITE ',
+		],
+		[
+			'code' = 'battery',
+			'constant' = 'EC::_BATTERY ',
+		],
+		[
+			'code' = 'electric-plug',
+			'constant' = 'EC::_ELECTRIC_PLUG ',
+		],
+		[
+			'code' = 'bulb',
+			'constant' = 'EC::_BULB ',
+		],
+		[
+			'code' = 'flashlight',
+			'constant' = 'EC::_FLASHLIGHT ',
+		],
+		[
+			'code' = 'candle',
+			'constant' = 'EC::_CANDLE ',
+		],
+		[
+			'code' = 'wastebasket',
+			'constant' = 'EC::_WASTEBASKET ',
+		],
+		[
+			'code' = 'oil-drum',
+			'constant' = 'EC::_OIL_DRUM ',
+		],
+		[
+			'code' = 'money-with-wings',
+			'constant' = 'EC::_MONEY_WITH_WINGS ',
+		],
+		[
+			'code' = 'dollar',
+			'constant' = 'EC::_DOLLAR ',
+		],
+		[
+			'code' = 'yen',
+			'constant' = 'EC::_YEN ',
+		],
+		[
+			'code' = 'euro',
+			'constant' = 'EC::_EURO ',
+		],
+		[
+			'code' = 'pound',
+			'constant' = 'EC::_POUND ',
+		],
+		[
+			'code' = 'moneybag',
+			'constant' = 'EC::_MONEYBAG ',
+		],
+		[
+			'code' = 'credit-card',
+			'constant' = 'EC::_CREDIT_CARD ',
+		],
+		[
+			'code' = 'gem',
+			'constant' = 'EC::_GEM ',
+		],
+		[
+			'code' = 'balance-scale',
+			'constant' = 'EC::_BALANCE_SCALE ',
+		],
+		[
+			'code' = 'wrench',
+			'constant' = 'EC::_WRENCH ',
+		],
+		[
+			'code' = 'hammer',
+			'constant' = 'EC::_HAMMER ',
+		],
+		[
+			'code' = 'hammer-and-pick',
+			'constant' = 'EC::_HAMMER_AND_PICK ',
+		],
+		[
+			'code' = 'hammer-and-wrench',
+			'constant' = 'EC::_HAMMER_AND_WRENCH ',
+		],
+		[
+			'code' = 'pick',
+			'constant' = 'EC::_PICK ',
+		],
+		[
+			'code' = 'nut-and-bolt',
+			'constant' = 'EC::_NUT_AND_BOLT ',
+		],
+		[
+			'code' = 'gear',
+			'constant' = 'EC::_GEAR ',
+		],
+		[
+			'code' = 'chains',
+			'constant' = 'EC::_CHAINS ',
+		],
+		[
+			'code' = 'gun',
+			'constant' = 'EC::_GUN ',
+		],
+		[
+			'code' = 'bomb',
+			'constant' = 'EC::_BOMB ',
+		],
+		[
+			'code' = 'hocho',
+			'constant' = 'EC::_HOCHO ',
+		],
+		[
+			'code' = 'dagger',
+			'constant' = 'EC::_DAGGER ',
+		],
+		[
+			'code' = 'crossed-swords',
+			'constant' = 'EC::_CROSSED_SWORDS ',
+		],
+		[
+			'code' = 'shield',
+			'constant' = 'EC::_SHIELD ',
+		],
+		[
+			'code' = 'smoking',
+			'constant' = 'EC::_SMOKING ',
+		],
+		[
+			'code' = 'skull-and-crossbones',
+			'constant' = 'EC::_SKULL_AND_CROSSBONES ',
+		],
+		[
+			'code' = 'coffin',
+			'constant' = 'EC::_COFFIN ',
+		],
+		[
+			'code' = 'funeral-urn',
+			'constant' = 'EC::_FUNERAL_URN ',
+		],
+		[
+			'code' = 'amphora',
+			'constant' = 'EC::_AMPHORA ',
+		],
+		[
+			'code' = 'crystal-ball',
+			'constant' = 'EC::_CRYSTAL_BALL ',
+		],
+		[
+			'code' = 'prayer-beads',
+			'constant' = 'EC::_PRAYER_BEADS ',
+		],
+		[
+			'code' = 'barber',
+			'constant' = 'EC::_BARBER ',
+		],
+		[
+			'code' = 'alembic',
+			'constant' = 'EC::_ALEMBIC ',
+		],
+		[
+			'code' = 'telescope',
+			'constant' = 'EC::_TELESCOPE ',
+		],
+		[
+			'code' = 'microscope',
+			'constant' = 'EC::_MICROSCOPE ',
+		],
+		[
+			'code' = 'hole',
+			'constant' = 'EC::_HOLE ',
+		],
+		[
+			'code' = 'pill',
+			'constant' = 'EC::_PILL ',
+		],
+		[
+			'code' = 'syringe',
+			'constant' = 'EC::_SYRINGE ',
+		],
+		[
+			'code' = 'thermometer',
+			'constant' = 'EC::_THERMOMETER ',
+		],
+		[
+			'code' = 'label',
+			'constant' = 'EC::_LABEL ',
+		],
+		[
+			'code' = 'bookmark',
+			'constant' = 'EC::_BOOKMARK ',
+		],
+		[
+			'code' = 'toilet',
+			'constant' = 'EC::_TOILET ',
+		],
+		[
+			'code' = 'shower',
+			'constant' = 'EC::_SHOWER ',
+		],
+		[
+			'code' = 'bathtub',
+			'constant' = 'EC::_BATHTUB ',
+		],
+		[
+			'code' = 'key',
+			'constant' = 'EC::_KEY ',
+		],
+		[
+			'code' = 'old-key',
+			'constant' = 'EC::_OLD_KEY ',
+		],
+		[
+			'code' = 'couch-and-lamp',
+			'constant' = 'EC::_COUCH_AND_LAMP ',
+		],
+		[
+			'code' = 'sleeping-bed',
+			'constant' = 'EC::_SLEEPING_BED ',
+		],
+		[
+			'code' = 'bed',
+			'constant' = 'EC::_BED ',
+		],
+		[
+			'code' = 'door',
+			'constant' = 'EC::_DOOR ',
+		],
+		[
+			'code' = 'bellhop-bell',
+			'constant' = 'EC::_BELLHOP_BELL ',
+		],
+		[
+			'code' = 'framed-picture',
+			'constant' = 'EC::_FRAMED_PICTURE ',
+		],
+		[
+			'code' = 'world-map',
+			'constant' = 'EC::_WORLD_MAP ',
+		],
+		[
+			'code' = 'parasol-on-ground',
+			'constant' = 'EC::_PARASOL_ON_GROUND ',
+		],
+		[
+			'code' = 'moyai',
+			'constant' = 'EC::_MOYAI ',
+		],
+		[
+			'code' = 'shopping',
+			'constant' = 'EC::_SHOPPING ',
+		],
+		[
+			'code' = 'shopping-cart',
+			'constant' = 'EC::_SHOPPING_CART ',
+		],
+		[
+			'code' = 'balloon',
+			'constant' = 'EC::_BALLOON ',
+		],
+		[
+			'code' = 'flags',
+			'constant' = 'EC::_FLAGS ',
+		],
+		[
+			'code' = 'ribbon',
+			'constant' = 'EC::_RIBBON ',
+		],
+		[
+			'code' = 'gift',
+			'constant' = 'EC::_GIFT ',
+		],
+		[
+			'code' = 'confetti-ball',
+			'constant' = 'EC::_CONFETTI_BALL ',
+		],
+		[
+			'code' = 'tada',
+			'constant' = 'EC::_TADA ',
+		],
+		[
+			'code' = 'dolls',
+			'constant' = 'EC::_DOLLS ',
+		],
+		[
+			'code' = 'wind-chime',
+			'constant' = 'EC::_WIND_CHIME ',
+		],
+		[
+			'code' = 'crossed-flags',
+			'constant' = 'EC::_CROSSED_FLAGS ',
+		],
+		[
+			'code' = 'izakaya-lantern',
+			'constant' = 'EC::_IZAKAYA_LANTERN ',
+		],
+		[
+			'code' = 'envelope-with-arrow',
+			'constant' = 'EC::_ENVELOPE_WITH_ARROW ',
+		],
+		[
+			'code' = 'incoming-envelope',
+			'constant' = 'EC::_INCOMING_ENVELOPE ',
+		],
+		[
+			'code' = 'e-mail',
+			'constant' = 'EC::_E_MAIL ',
+		],
+		[
+			'code' = 'love-letter',
+			'constant' = 'EC::_LOVE_LETTER ',
+		],
+		[
+			'code' = 'postbox',
+			'constant' = 'EC::_POSTBOX ',
+		],
+		[
+			'code' = 'mailbox-closed',
+			'constant' = 'EC::_MAILBOX_CLOSED ',
+		],
+		[
+			'code' = 'mailbox',
+			'constant' = 'EC::_MAILBOX ',
+		],
+		[
+			'code' = 'mailbox-with-mail',
+			'constant' = 'EC::_MAILBOX_WITH_MAIL ',
+		],
+		[
+			'code' = 'mailbox-with-no-mail',
+			'constant' = 'EC::_MAILBOX_WITH_NO_MAIL ',
+		],
+		[
+			'code' = 'package',
+			'constant' = 'EC::_PACKAGE ',
+		],
+		[
+			'code' = 'postal-horn',
+			'constant' = 'EC::_POSTAL_HORN ',
+		],
+		[
+			'code' = 'inbox-tray',
+			'constant' = 'EC::_INBOX_TRAY ',
+		],
+		[
+			'code' = 'outbox-tray',
+			'constant' = 'EC::_OUTBOX_TRAY ',
+		],
+		[
+			'code' = 'scroll',
+			'constant' = 'EC::_SCROLL ',
+		],
+		[
+			'code' = 'page-with-curl',
+			'constant' = 'EC::_PAGE_WITH_CURL ',
+		],
+		[
+			'code' = 'bookmark-tabs',
+			'constant' = 'EC::_BOOKMARK_TABS ',
+		],
+		[
+			'code' = 'bar-chart',
+			'constant' = 'EC::_BAR_CHART ',
+		],
+		[
+			'code' = 'chart-with-upwards-trend',
+			'constant' = 'EC::_CHART_WITH_UPWARDS_TREND ',
+		],
+		[
+			'code' = 'chart-with-downwards-trend',
+			'constant' = 'EC::_CHART_WITH_DOWNWARDS_TREND ',
+		],
+		[
+			'code' = 'page-facing-up',
+			'constant' = 'EC::_PAGE_FACING_UP ',
+		],
+		[
+			'code' = 'date',
+			'constant' = 'EC::_DATE ',
+		],
+		[
+			'code' = 'calendar',
+			'constant' = 'EC::_CALENDAR ',
+		],
+		[
+			'code' = 'spiral-calendar',
+			'constant' = 'EC::_SPIRAL_CALENDAR ',
+		],
+		[
+			'code' = 'card-index',
+			'constant' = 'EC::_CARD_INDEX ',
+		],
+		[
+			'code' = 'card-file-box',
+			'constant' = 'EC::_CARD_FILE_BOX ',
+		],
+		[
+			'code' = 'ballot-box',
+			'constant' = 'EC::_BALLOT_BOX ',
+		],
+		[
+			'code' = 'file-cabinet',
+			'constant' = 'EC::_FILE_CABINET ',
+		],
+		[
+			'code' = 'clipboard',
+			'constant' = 'EC::_CLIPBOARD ',
+		],
+		[
+			'code' = 'spiral-notepad',
+			'constant' = 'EC::_SPIRAL_NOTEPAD ',
+		],
+		[
+			'code' = 'file-folder',
+			'constant' = 'EC::_FILE_FOLDER ',
+		],
+		[
+			'code' = 'open-file-folder',
+			'constant' = 'EC::_OPEN_FILE_FOLDER ',
+		],
+		[
+			'code' = 'card-index-dividers',
+			'constant' = 'EC::_CARD_INDEX_DIVIDERS ',
+		],
+		[
+			'code' = 'newspaper-roll',
+			'constant' = 'EC::_NEWSPAPER_ROLL ',
+		],
+		[
+			'code' = 'newspaper',
+			'constant' = 'EC::_NEWSPAPER ',
+		],
+		[
+			'code' = 'notebook',
+			'constant' = 'EC::_NOTEBOOK ',
+		],
+		[
+			'code' = 'closed-book',
+			'constant' = 'EC::_CLOSED_BOOK ',
+		],
+		[
+			'code' = 'green-book',
+			'constant' = 'EC::_GREEN_BOOK ',
+		],
+		[
+			'code' = 'blue-book',
+			'constant' = 'EC::_BLUE_BOOK ',
+		],
+		[
+			'code' = 'orange-book',
+			'constant' = 'EC::_ORANGE_BOOK ',
+		],
+		[
+			'code' = 'notebook-with-decorative-cover',
+			'constant' = 'EC::_NOTEBOOK_WITH_DECORATIVE_COVER ',
+		],
+		[
+			'code' = 'ledger',
+			'constant' = 'EC::_LEDGER ',
+		],
+		[
+			'code' = 'books',
+			'constant' = 'EC::_BOOKS ',
+		],
+		[
+			'code' = 'open-book',
+			'constant' = 'EC::_OPEN_BOOK ',
+		],
+		[
+			'code' = 'link',
+			'constant' = 'EC::_LINK ',
+		],
+		[
+			'code' = 'paperclip',
+			'constant' = 'EC::_PAPERCLIP ',
+		],
+		[
+			'code' = 'paperclips',
+			'constant' = 'EC::_PAPERCLIPS ',
+		],
+		[
+			'code' = 'triangular-ruler',
+			'constant' = 'EC::_TRIANGULAR_RULER ',
+		],
+		[
+			'code' = 'straight-ruler',
+			'constant' = 'EC::_STRAIGHT_RULER ',
+		],
+		[
+			'code' = 'pushpin',
+			'constant' = 'EC::_PUSHPIN ',
+		],
+		[
+			'code' = 'round-pushpin',
+			'constant' = 'EC::_ROUND_PUSHPIN ',
+		],
+		[
+			'code' = 'triangular-flag-on-post',
+			'constant' = 'EC::_TRIANGULAR_FLAG_ON_POST ',
+		],
+		[
+			'code' = 'white-flag',
+			'constant' = 'EC::_WHITE_FLAG ',
+		],
+		[
+			'code' = 'black-flag',
+			'constant' = 'EC::_BLACK_FLAG ',
+		],
+		[
+			'code' = 'closed-lock-with-key',
+			'constant' = 'EC::_CLOSED_LOCK_WITH_KEY ',
+		],
+		[
+			'code' = 'lock',
+			'constant' = 'EC::_LOCK ',
+		],
+		[
+			'code' = 'unlock',
+			'constant' = 'EC::_UNLOCK ',
+		],
+		[
+			'code' = 'lock-with-ink-pen',
+			'constant' = 'EC::_LOCK_WITH_INK_PEN ',
+		],
+		[
+			'code' = 'pen',
+			'constant' = 'EC::_PEN ',
+		],
+		[
+			'code' = 'fountain-pen',
+			'constant' = 'EC::_FOUNTAIN_PEN ',
+		],
+		[
+			'code' = 'memo',
+			'constant' = 'EC::_MEMO ',
+		],
+		[
+			'code' = 'crayon',
+			'constant' = 'EC::_CRAYON ',
+		],
+		[
+			'code' = 'paintbrush',
+			'constant' = 'EC::_PAINTBRUSH ',
+		],
+		[
+			'code' = 'mag',
+			'constant' = 'EC::_MAG ',
+		],
+		[
+			'code' = 'mag-right',
+			'constant' = 'EC::_MAG_RIGHT ',
+		],
+		[
+			'code' = 'yellow-heart',
+			'constant' = 'EC::_YELLOW_HEART ',
+		],
+		[
+			'code' = 'green-heart',
+			'constant' = 'EC::_GREEN_HEART ',
+		],
+		[
+			'code' = 'blue-heart',
+			'constant' = 'EC::_BLUE_HEART ',
+		],
+		[
+			'code' = 'purple-heart',
+			'constant' = 'EC::_PURPLE_HEART ',
+		],
+		[
+			'code' = 'black-heart',
+			'constant' = 'EC::_BLACK_HEART ',
+		],
+		[
+			'code' = 'broken-heart',
+			'constant' = 'EC::_BROKEN_HEART ',
+		],
+		[
+			'code' = 'heavy-heart-exclamation',
+			'constant' = 'EC::_HEAVY_HEART_EXCLAMATION ',
+		],
+		[
+			'code' = 'two-hearts',
+			'constant' = 'EC::_TWO_HEARTS ',
+		],
+		[
+			'code' = 'revolving-hearts',
+			'constant' = 'EC::_REVOLVING_HEARTS ',
+		],
+		[
+			'code' = 'heartbeat',
+			'constant' = 'EC::_HEARTBEAT ',
+		],
+		[
+			'code' = 'heartpulse',
+			'constant' = 'EC::_HEARTPULSE ',
+		],
+		[
+			'code' = 'sparkling-heart',
+			'constant' = 'EC::_SPARKLING_HEART ',
+		],
+		[
+			'code' = 'cupid',
+			'constant' = 'EC::_CUPID ',
+		],
+		[
+			'code' = 'gift-heart',
+			'constant' = 'EC::_GIFT_HEART ',
+		],
+		[
+			'code' = 'heart-decoration',
+			'constant' = 'EC::_HEART_DECORATION ',
+		],
+		[
+			'code' = 'peace-symbol',
+			'constant' = 'EC::_PEACE_SYMBOL ',
+		],
+		[
+			'code' = 'latin-cross',
+			'constant' = 'EC::_LATIN_CROSS ',
+		],
+		[
+			'code' = 'star-and-crescent',
+			'constant' = 'EC::_STAR_AND_CRESCENT ',
+		],
+		[
+			'code' = 'om',
+			'constant' = 'EC::_OM ',
+		],
+		[
+			'code' = 'wheel-of-dharma',
+			'constant' = 'EC::_WHEEL_OF_DHARMA ',
+		],
+		[
+			'code' = 'star-of-david',
+			'constant' = 'EC::_STAR_OF_DAVID ',
+		],
+		[
+			'code' = 'six-pointed-star',
+			'constant' = 'EC::_SIX_POINTED_STAR ',
+		],
+		[
+			'code' = 'menorah',
+			'constant' = 'EC::_MENORAH ',
+		],
+		[
+			'code' = 'yin-yang',
+			'constant' = 'EC::_YIN_YANG ',
+		],
+		[
+			'code' = 'orthodox-cross',
+			'constant' = 'EC::_ORTHODOX_CROSS ',
+		],
+		[
+			'code' = 'place-of-worship',
+			'constant' = 'EC::_PLACE_OF_WORSHIP ',
+		],
+		[
+			'code' = 'ophiuchus',
+			'constant' = 'EC::_OPHIUCHUS ',
+		],
+		[
+			'code' = 'aries',
+			'constant' = 'EC::_ARIES ',
+		],
+		[
+			'code' = 'taurus',
+			'constant' = 'EC::_TAURUS ',
+		],
+		[
+			'code' = 'gemini',
+			'constant' = 'EC::_GEMINI ',
+		],
+		[
+			'code' = 'cancer',
+			'constant' = 'EC::_CANCER ',
+		],
+		[
+			'code' = 'leo',
+			'constant' = 'EC::_LEO ',
+		],
+		[
+			'code' = 'virgo',
+			'constant' = 'EC::_VIRGO ',
+		],
+		[
+			'code' = 'libra',
+			'constant' = 'EC::_LIBRA ',
+		],
+		[
+			'code' = 'scorpius',
+			'constant' = 'EC::_SCORPIUS ',
+		],
+		[
+			'code' = 'sagittarius',
+			'constant' = 'EC::_SAGITTARIUS ',
+		],
+		[
+			'code' = 'capricorn',
+			'constant' = 'EC::_CAPRICORN ',
+		],
+		[
+			'code' = 'aquarius',
+			'constant' = 'EC::_AQUARIUS ',
+		],
+		[
+			'code' = 'pisces',
+			'constant' = 'EC::_PISCES ',
+		],
+		[
+			'code' = 'id',
+			'constant' = 'EC::_ID ',
+		],
+		[
+			'code' = 'atom-symbol',
+			'constant' = 'EC::_ATOM_SYMBOL ',
+		],
+		[
+			'code' = 'u7a7a',
+			'constant' = 'EC::_U7A7A',
+		],
+		[
+			'code' = 'u5272',
+			'constant' = 'EC::_U5272',
+		],
+		[
+			'code' = 'radioactive',
+			'constant' = 'EC::_RADIOACTIVE ',
+		],
+		[
+			'code' = 'biohazard',
+			'constant' = 'EC::_BIOHAZARD ',
+		],
+		[
+			'code' = 'mobile-phone-off',
+			'constant' = 'EC::_MOBILE_PHONE_OFF ',
+		],
+		[
+			'code' = 'vibration-mode',
+			'constant' = 'EC::_VIBRATION_MODE ',
+		],
+		[
+			'code' = 'u6709',
+			'constant' = 'EC::_U6709',
+		],
+		[
+			'code' = 'u7121',
+			'constant' = 'EC::_U7121',
+		],
+		[
+			'code' = 'u7533',
+			'constant' = 'EC::_U7533',
+		],
+		[
+			'code' = 'u55b6',
+			'constant' = 'EC::_U55B6',
+		],
+		[
+			'code' = 'vs',
+			'constant' = 'EC::_VS ',
+		],
+		[
+			'code' = 'accept',
+			'constant' = 'EC::_ACCEPT ',
+		],
+		[
+			'code' = 'white-flower',
+			'constant' = 'EC::_WHITE_FLOWER ',
+		],
+		[
+			'code' = 'ideograph-advantage',
+			'constant' = 'EC::_IDEOGRAPH_ADVANTAGE ',
+		],
+		[
+			'code' = 'u5408',
+			'constant' = 'EC::_U5408',
+		],
+		[
+			'code' = 'u6e80',
+			'constant' = 'EC::_U6E80',
+		],
+		[
+			'code' = 'u7981',
+			'constant' = 'EC::_U7981',
+		],
+		[
+			'code' = 'ab',
+			'constant' = 'EC::_AB ',
+		],
+		[
+			'code' = 'cl',
+			'constant' = 'EC::_CL ',
+		],
+		[
+			'code' = 'sos',
+			'constant' = 'EC::_SOS ',
+		],
+		[
+			'code' = 'no-entry',
+			'constant' = 'EC::_NO_ENTRY ',
+		],
+		[
+			'code' = 'name-badge',
+			'constant' = 'EC::_NAME_BADGE ',
+		],
+		[
+			'code' = 'no-entry-sign',
+			'constant' = 'EC::_NO_ENTRY_SIGN ',
+		],
+		[
+			'code' = 'x',
+			'constant' = 'EC::_X ',
+		],
+		[
+			'code' = 'o',
+			'constant' = 'EC::_O ',
+		],
+		[
+			'code' = 'stop-sign',
+			'constant' = 'EC::_STOP_SIGN ',
+		],
+		[
+			'code' = 'anger',
+			'constant' = 'EC::_ANGER ',
+		],
+		[
+			'code' = 'no-pedestrians',
+			'constant' = 'EC::_NO_PEDESTRIANS ',
+		],
+		[
+			'code' = 'do-not-litter',
+			'constant' = 'EC::_DO_NOT_LITTER ',
+		],
+		[
+			'code' = 'no-bicycles',
+			'constant' = 'EC::_NO_BICYCLES ',
+		],
+		[
+			'code' = 'non-potable-water',
+			'constant' = 'EC::_NON_POTABLE_WATER ',
+		],
+		[
+			'code' = 'underage',
+			'constant' = 'EC::_UNDERAGE ',
+		],
+		[
+			'code' = 'no-mobile-phones',
+			'constant' = 'EC::_NO_MOBILE_PHONES ',
+		],
+		[
+			'code' = 'exclamation',
+			'constant' = 'EC::_EXCLAMATION ',
+		],
+		[
+			'code' = 'grey-exclamation',
+			'constant' = 'EC::_GREY_EXCLAMATION ',
+		],
+		[
+			'code' = 'question',
+			'constant' = 'EC::_QUESTION ',
+		],
+		[
+			'code' = 'grey-question',
+			'constant' = 'EC::_GREY_QUESTION ',
+		],
+		[
+			'code' = 'low-brightness',
+			'constant' = 'EC::_LOW_BRIGHTNESS ',
+		],
+		[
+			'code' = 'high-brightness',
+			'constant' = 'EC::_HIGH_BRIGHTNESS ',
+		],
+		[
+			'code' = 'trident',
+			'constant' = 'EC::_TRIDENT ',
+		],
+		[
+			'code' = 'fleur-de-lis',
+			'constant' = 'EC::_FLEUR_DE_LIS ',
+		],
+		[
+			'code' = 'children-crossing',
+			'constant' = 'EC::_CHILDREN_CROSSING ',
+		],
+		[
+			'code' = 'beginner',
+			'constant' = 'EC::_BEGINNER ',
+		],
+		[
+			'code' = 'u6307',
+			'constant' = 'EC::_U6307',
+		],
+		[
+			'code' = 'chart',
+			'constant' = 'EC::_CHART ',
+		],
+		[
+			'code' = 'negative-squared-cross-mark',
+			'constant' = 'EC::_NEGATIVE_SQUARED_CROSS_MARK ',
+		],
+		[
+			'code' = 'white-check-mark',
+			'constant' = 'EC::_WHITE_CHECK_MARK ',
+		],
+		[
+			'code' = 'diamond-shape-with-a-dot-inside',
+			'constant' = 'EC::_DIAMOND_SHAPE_WITH_A_DOT_INSIDE ',
+		],
+		[
+			'code' = 'cyclone',
+			'constant' = 'EC::_CYCLONE ',
+		],
+		[
+			'code' = 'loop',
+			'constant' = 'EC::_LOOP ',
+		],
+		[
+			'code' = 'globe-with-meridians',
+			'constant' = 'EC::_GLOBE_WITH_MERIDIANS ',
+		],
+		[
+			'code' = 'atm',
+			'constant' = 'EC::_ATM ',
+		],
+		[
+			'code' = 'passport-control',
+			'constant' = 'EC::_PASSPORT_CONTROL ',
+		],
+		[
+			'code' = 'customs',
+			'constant' = 'EC::_CUSTOMS ',
+		],
+		[
+			'code' = 'baggage-claim',
+			'constant' = 'EC::_BAGGAGE_CLAIM ',
+		],
+		[
+			'code' = 'left-luggage',
+			'constant' = 'EC::_LEFT_LUGGAGE ',
+		],
+		[
+			'code' = 'wheelchair',
+			'constant' = 'EC::_WHEELCHAIR ',
+		],
+		[
+			'code' = 'no-smoking',
+			'constant' = 'EC::_NO_SMOKING ',
+		],
+		[
+			'code' = 'wc',
+			'constant' = 'EC::_WC ',
+		],
+		[
+			'code' = 'potable-water',
+			'constant' = 'EC::_POTABLE_WATER ',
+		],
+		[
+			'code' = 'mens',
+			'constant' = 'EC::_MENS ',
+		],
+		[
+			'code' = 'womens',
+			'constant' = 'EC::_WOMENS ',
+		],
+		[
+			'code' = 'baby-symbol',
+			'constant' = 'EC::_BABY_SYMBOL ',
+		],
+		[
+			'code' = 'restroom',
+			'constant' = 'EC::_RESTROOM ',
+		],
+		[
+			'code' = 'put-litter-in-its-place',
+			'constant' = 'EC::_PUT_LITTER_IN_ITS_PLACE ',
+		],
+		[
+			'code' = 'cinema',
+			'constant' = 'EC::_CINEMA ',
+		],
+		[
+			'code' = 'signal-strength',
+			'constant' = 'EC::_SIGNAL_STRENGTH ',
+		],
+		[
+			'code' = 'koko',
+			'constant' = 'EC::_KOKO ',
+		],
+		[
+			'code' = 'ng',
+			'constant' = 'EC::_NG ',
+		],
+		[
+			'code' = 'ok',
+			'constant' = 'EC::_OK ',
+		],
+		[
+			'code' = 'up',
+			'constant' = 'EC::_UP ',
+		],
+		[
+			'code' = 'cool',
+			'constant' = 'EC::_COOL ',
+		],
+		[
+			'code' = 'new',
+			'constant' = 'EC::_NEW ',
+		],
+		[
+			'code' = 'free',
+			'constant' = 'EC::_FREE ',
+		],
+		[
+			'code' = 'keycap-ten',
+			'constant' = 'EC::_KEYCAP_TEN ',
+		],
+		[
+			'code' = 'pause-button',
+			'constant' = 'EC::_PAUSE_BUTTON ',
+		],
+		[
+			'code' = 'next-track-button',
+			'constant' = 'EC::_NEXT_TRACK_BUTTON ',
+		],
+		[
+			'code' = 'stop-button',
+			'constant' = 'EC::_STOP_BUTTON ',
+		],
+		[
+			'code' = 'record-button',
+			'constant' = 'EC::_RECORD_BUTTON ',
+		],
+		[
+			'code' = 'play-or-pause-button',
+			'constant' = 'EC::_PLAY_OR_PAUSE_BUTTON ',
+		],
+		[
+			'code' = 'previous-track-button',
+			'constant' = 'EC::_PREVIOUS_TRACK_BUTTON ',
+		],
+		[
+			'code' = 'fast-forward',
+			'constant' = 'EC::_FAST_FORWARD ',
+		],
+		[
+			'code' = 'rewind',
+			'constant' = 'EC::_REWIND ',
+		],
+		[
+			'code' = 'twisted-rightwards-arrows',
+			'constant' = 'EC::_TWISTED_RIGHTWARDS_ARROWS ',
+		],
+		[
+			'code' = 'repeat',
+			'constant' = 'EC::_REPEAT ',
+		],
+		[
+			'code' = 'repeat-one',
+			'constant' = 'EC::_REPEAT_ONE ',
+		],
+		[
+			'code' = 'arrow-up-small',
+			'constant' = 'EC::_ARROW_UP_SMALL ',
+		],
+		[
+			'code' = 'arrow-down-small',
+			'constant' = 'EC::_ARROW_DOWN_SMALL ',
+		],
+		[
+			'code' = 'arrow-double-up',
+			'constant' = 'EC::_ARROW_DOUBLE_UP ',
+		],
+		[
+			'code' = 'arrow-double-down',
+			'constant' = 'EC::_ARROW_DOUBLE_DOWN ',
+		],
+		[
+			'code' = 'arrows-counterclockwise',
+			'constant' = 'EC::_ARROWS_COUNTERCLOCKWISE ',
+		],
+		[
+			'code' = 'abc',
+			'constant' = 'EC::_ABC ',
+		],
+		[
+			'code' = 'abcd',
+			'constant' = 'EC::_ABCD ',
+		],
+		[
+			'code' = 'capital-abcd',
+			'constant' = 'EC::_CAPITAL_ABCD ',
+		],
+		[
+			'code' = 'symbols',
+			'constant' = 'EC::_SYMBOLS ',
+		],
+		[
+			'code' = 'musical-note',
+			'constant' = 'EC::_MUSICAL_NOTE ',
+		],
+		[
+			'code' = 'notes',
+			'constant' = 'EC::_NOTES ',
+		],
+		[
+			'code' = 'curly-loop',
+			'constant' = 'EC::_CURLY_LOOP ',
+		],
+		[
+			'code' = 'arrows-clockwise',
+			'constant' = 'EC::_ARROWS_CLOCKWISE ',
+		],
+		[
+			'code' = 'heavy-plus-sign',
+			'constant' = 'EC::_HEAVY_PLUS_SIGN ',
+		],
+		[
+			'code' = 'heavy-minus-sign',
+			'constant' = 'EC::_HEAVY_MINUS_SIGN ',
+		],
+		[
+			'code' = 'heavy-division-sign',
+			'constant' = 'EC::_HEAVY_DIVISION_SIGN ',
+		],
+		[
+			'code' = 'heavy-dollar-sign',
+			'constant' = 'EC::_HEAVY_DOLLAR_SIGN ',
+		],
+		[
+			'code' = 'currency-exchange',
+			'constant' = 'EC::_CURRENCY_EXCHANGE ',
+		],
+		[
+			'code' = 'end',
+			'constant' = 'EC::_END ',
+		],
+		[
+			'code' = 'back',
+			'constant' = 'EC::_BACK ',
+		],
+		[
+			'code' = 'on',
+			'constant' = 'EC::_ON ',
+		],
+		[
+			'code' = 'top',
+			'constant' = 'EC::_TOP ',
+		],
+		[
+			'code' = 'soon',
+			'constant' = 'EC::_SOON ',
+		],
+		[
+			'code' = 'radio-button',
+			'constant' = 'EC::_RADIO_BUTTON ',
+		],
+		[
+			'code' = 'white-circle',
+			'constant' = 'EC::_WHITE_CIRCLE ',
+		],
+		[
+			'code' = 'black-circle',
+			'constant' = 'EC::_BLACK_CIRCLE ',
+		],
+		[
+			'code' = 'red-circle',
+			'constant' = 'EC::_RED_CIRCLE ',
+		],
+		[
+			'code' = 'large-blue-circle',
+			'constant' = 'EC::_LARGE_BLUE_CIRCLE ',
+		],
+		[
+			'code' = 'small-orange-diamond',
+			'constant' = 'EC::_SMALL_ORANGE_DIAMOND ',
+		],
+		[
+			'code' = 'small-blue-diamond',
+			'constant' = 'EC::_SMALL_BLUE_DIAMOND ',
+		],
+		[
+			'code' = 'large-orange-diamond',
+			'constant' = 'EC::_LARGE_ORANGE_DIAMOND ',
+		],
+		[
+			'code' = 'large-blue-diamond',
+			'constant' = 'EC::_LARGE_BLUE_DIAMOND ',
+		],
+		[
+			'code' = 'small-red-triangle',
+			'constant' = 'EC::_SMALL_RED_TRIANGLE ',
+		],
+		[
+			'code' = 'black-large-square',
+			'constant' = 'EC::_BLACK_LARGE_SQUARE ',
+		],
+		[
+			'code' = 'white-large-square',
+			'constant' = 'EC::_WHITE_LARGE_SQUARE ',
+		],
+		[
+			'code' = 'small-red-triangle-down',
+			'constant' = 'EC::_SMALL_RED_TRIANGLE_DOWN ',
+		],
+		[
+			'code' = 'black-medium-small-square',
+			'constant' = 'EC::_BLACK_MEDIUM_SMALL_SQUARE ',
+		],
+		[
+			'code' = 'white-medium-small-square',
+			'constant' = 'EC::_WHITE_MEDIUM_SMALL_SQUARE ',
+		],
+		[
+			'code' = 'black-square-button',
+			'constant' = 'EC::_BLACK_SQUARE_BUTTON ',
+		],
+		[
+			'code' = 'white-square-button',
+			'constant' = 'EC::_WHITE_SQUARE_BUTTON ',
+		],
+		[
+			'code' = 'speaker',
+			'constant' = 'EC::_SPEAKER ',
+		],
+		[
+			'code' = 'sound',
+			'constant' = 'EC::_SOUND ',
+		],
+		[
+			'code' = 'loud-sound',
+			'constant' = 'EC::_LOUD_SOUND ',
+		],
+		[
+			'code' = 'mute',
+			'constant' = 'EC::_MUTE ',
+		],
+		[
+			'code' = 'mega',
+			'constant' = 'EC::_MEGA ',
+		],
+		[
+			'code' = 'loudspeaker',
+			'constant' = 'EC::_LOUDSPEAKER ',
+		],
+		[
+			'code' = 'bell',
+			'constant' = 'EC::_BELL ',
+		],
+		[
+			'code' = 'no-bell',
+			'constant' = 'EC::_NO_BELL ',
+		],
+		[
+			'code' = 'black-joker',
+			'constant' = 'EC::_BLACK_JOKER ',
+		],
+		[
+			'code' = 'mahjong',
+			'constant' = 'EC::_MAHJONG ',
+		],
+		[
+			'code' = 'flower-playing-cards',
+			'constant' = 'EC::_FLOWER_PLAYING_CARDS ',
+		],
+		[
+			'code' = 'thought-balloon',
+			'constant' = 'EC::_THOUGHT_BALLOON ',
+		],
+		[
+			'code' = 'right-anger-bubble',
+			'constant' = 'EC::_RIGHT_ANGER_BUBBLE ',
+		],
+		[
+			'code' = 'speech-balloon',
+			'constant' = 'EC::_SPEECH_BALLOON ',
+		],
+		[
+			'code' = 'left-speech-bubble',
+			'constant' = 'EC::_LEFT_SPEECH_BUBBLE ',
+		],
+		[
+			'code' = 'clock1',
+			'constant' = 'EC::_CLOCK1',
+		],
+		[
+			'code' = 'clock2',
+			'constant' = 'EC::_CLOCK2',
+		],
+		[
+			'code' = 'clock3',
+			'constant' = 'EC::_CLOCK3',
+		],
+		[
+			'code' = 'clock4',
+			'constant' = 'EC::_CLOCK4',
+		],
+		[
+			'code' = 'clock5',
+			'constant' = 'EC::_CLOCK5',
+		],
+		[
+			'code' = 'clock6',
+			'constant' = 'EC::_CLOCK6',
+		],
+		[
+			'code' = 'clock7',
+			'constant' = 'EC::_CLOCK7',
+		],
+		[
+			'code' = 'clock8',
+			'constant' = 'EC::_CLOCK8',
+		],
+		[
+			'code' = 'clock9',
+			'constant' = 'EC::_CLOCK9',
+		],
+		[
+			'code' = 'clock10',
+			'constant' = 'EC::_CLOCK10',
+		],
+		[
+			'code' = 'clock11',
+			'constant' = 'EC::_CLOCK11',
+		],
+		[
+			'code' = 'clock12',
+			'constant' = 'EC::_CLOCK12',
+		],
+		[
+			'code' = 'clock130',
+			'constant' = 'EC::_CLOCK130',
+		],
+		[
+			'code' = 'clock230',
+			'constant' = 'EC::_CLOCK230',
+		],
+		[
+			'code' = 'clock330',
+			'constant' = 'EC::_CLOCK330',
+		],
+		[
+			'code' = 'clock430',
+			'constant' = 'EC::_CLOCK430',
+		],
+		[
+			'code' = 'clock530',
+			'constant' = 'EC::_CLOCK530',
+		],
+		[
+			'code' = 'clock630',
+			'constant' = 'EC::_CLOCK630',
+		],
+		[
+			'code' = 'clock730',
+			'constant' = 'EC::_CLOCK730',
+		],
+		[
+			'code' = 'clock830',
+			'constant' = 'EC::_CLOCK830',
+		],
+		[
+			'code' = 'clock930',
+			'constant' = 'EC::_CLOCK930',
+		],
+		[
+			'code' = 'clock1030',
+			'constant' = 'EC::_CLOCK1030',
+		],
+		[
+			'code' = 'clock1130',
+			'constant' = 'EC::_CLOCK1130',
+		],
+		[
+			'code' = 'clock1230',
+			'constant' = 'EC::_CLOCK1230',
+		],
+		[
+			'code' = 'flag-white',
+			'constant' = 'EC::_FLAG_WHITE ',
+		],
+		[
+			'code' = 'flag-black',
+			'constant' = 'EC::_FLAG_BLACK ',
+		],
+		[
+			'code' = 'flag-rally',
+			'constant' = 'EC::_FLAG_RALLY ',
+		],
+		[
+			'code' = 'flag-red',
+			'constant' = 'EC::_FLAG_RED ',
+		],
+	],
+];
