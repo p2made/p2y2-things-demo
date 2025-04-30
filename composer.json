@@ -24,8 +24,7 @@
 	"prefer-stable" : true,
 
 	"require": {
-		"p2made/p2y2-things": "dev-5.0-dev",
-		"thamtech/yii2-yaml": "*"
+		"p2made/p2y2-things": "dev-5.0-dev"
 	},
 
 	"autoload": {
