@@ -85,6 +85,7 @@ class DemoController extends Controller
 							['label' => '401 Page', 'url' => ['/error/401']],
 							['label' => '404 Page', 'url' => ['/error/404']],
 							['label' => '500 Page', 'url' => ['/error/500']],
+							['label' => 'Error Page', 'url' => ['/error/error']],
 						],
 					],
 				],
