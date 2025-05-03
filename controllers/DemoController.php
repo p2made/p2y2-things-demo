@@ -15,7 +15,9 @@ namespace p2m\demo\controllers;
 
 use Yii;
 use yii\web\Controller;
+use yii\web\HttpException;
 use yii\web\NotFoundHttpException;
+use yii\web\ServerErrorHttpException;
 use p2m\demo\assets\ThingsDemoAsset;
 use p2m\helpers\BI;
 
@@ -151,15 +153,52 @@ class DemoController extends Controller
 	}
 
 	/**
-	 * Displays an error page.
+	 * Unified error handler:
 	 *
-	 * @return mixed
+	 * @param int|null $code  if set, we are *simulating* that HTTP status
+	 * @return string
+	 * @throws HttpException when simulating
 	 */
-	public function actionError(): string
+	public function actionError(int $code = null): string
 	{
-		// error code
+		// If you visited /401 or /502 etc, simulate that error:
+		if ($code !== null) {
+			// get standard reason phrase or fallback
+			$texts = \yii\web\Response::$statusTexts;
+			$message = $texts[$code] ?? 'Unknown error';
+			throw new HttpException($code, $message);
+		}
 
-		return $this->render('@p2m/demo/views/site/error');
+		// Otherwise we were called by Yii's errorHandler:
+		$handler   = Yii::$app->getErrorHandler();
+		$exception = $handler->exception;
+
+		// If no exception is set, show a generic 500:
+		if ($exception === null) {
+			$code      = 500;
+			$name      = 'Error';
+			$message   = 'An internal server error occurred.';
+		} else {
+			// pick up real values
+			if ($exception instanceof HttpException) {
+				$code = $exception->statusCode;
+			} else {
+				$code = 500;
+			}
+			// Yii provides a nice name helper:
+			$name    = $handler->getExceptionName($exception);
+			$message = $exception->getMessage();
+		}
+
+		// tell your layout to load the "error" body partial
+		$this->view->params['bodyMode'] = 'error';
+		$this->view->title = "$code – $name";
+
+		return $this->render('@p2m/demo/views/site/error.php', [
+			'statusCode' => $code,
+			'name'       => $name,
+			'message'    => $message,
+		]);
 	}
 
 	// simulate a 401
