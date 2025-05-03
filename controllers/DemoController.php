@@ -117,7 +117,7 @@ class DemoController extends Controller
 	 *
 	 * @return mixed
 	 */
-	public function actionView($part1 = '', $part2 = ''): void
+	public function actionView($part1 = '', $part2 = ''): string
 	{
 		//die("✅ DemoController reached: $part1 / $part2");
 
@@ -155,7 +155,7 @@ class DemoController extends Controller
 	 *
 	 * @return mixed
 	 */
-	public function actionError(): void
+	public function actionError(): string
 	{
 		// error code
 
@@ -190,7 +190,7 @@ class DemoController extends Controller
 	 * Logs in a user.
 	 *
 	 * @return mixed
-	public function actionLogin(): void
+	public function actionLogin(): string
 	{
 		if (!Yii::$app->user->isGuest) {
 			return $this->goHome();
@@ -213,7 +213,7 @@ class DemoController extends Controller
 	 * Logs out the current user.
 	 *
 	 * @return mixed
-	public function actionLogout(): void
+	public function actionLogout(): string
 	{
 		Yii::$app->user->logout();
 
@@ -225,7 +225,7 @@ class DemoController extends Controller
 	 * Displays about page.
 	 *
 	 * @return mixed
-	public function actionAbout(): void
+	public function actionAbout(): string
 	{
 		return $this->render('about');
 	}
@@ -235,7 +235,7 @@ class DemoController extends Controller
 	 * Requests password reset.
 	 *
 	 * @return mixed
-	public function actionRequestPasswordReset(): void
+	public function actionRequestPasswordReset(): string
 	{
 		$model = new PasswordResetRequestForm();
 		if ($model->load(Yii::$app->request->post()) && $model->validate()) {
@@ -260,7 +260,7 @@ class DemoController extends Controller
 	 * @param string $token
 	 * @return mixed
 	 * @throws BadRequestHttpException
-	public function actionResetPassword($token): void
+	public function actionResetPassword($token): string
 	{
 		try {
 			$model = new ResetPasswordForm($token);
@@ -286,7 +286,7 @@ class DemoController extends Controller
 	 * @param string $token
 	 * @throws BadRequestHttpException
 	 * @return yii\web\Response
-	public function actionVerifyEmail($token): void
+	public function actionVerifyEmail($token): string
 	{
 		try {
 			$model = new VerifyEmailForm($token);
