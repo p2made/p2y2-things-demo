@@ -1,7 +1,6 @@
 <?php
 /**
-	<?= $this->render('@p2m/demo/views/layouts/ * @p2m/demo/views/layouts/head.php') ?>
-echo $this->render('@p2m/demo/views/layouts/ * @p2m/demo/views/layouts/head.php');
+ * @p2m/demo/views/layouts/main.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) Pedro Plowman, 2025
@@ -9,40 +8,29 @@ echo $this->render('@p2m/demo/views/layouts/ * @p2m/demo/views/layouts/head.php'
  * @license MIT
  */
 
+/** $this->render('@p2m/demo/views/layouts/main.php'); */
+
 /** @var \yii\web\View $this */
 /** @var string $this->title */
 /** @var string $content */
-
-use common\widgets\Alert;
-use yii\bootstrap5\Breadcrumbs;
-use yii\bootstrap5\Html;
-use yii\bootstrap5\Nav;
-use yii\bootstrap5\NavBar;
-use p2m\helpers\BI;
-
-yii\bootstrap5\BootstrapAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
-	<?= $this->render('@p2m/demo/views/layouts/head.php') ?>
+	<?= $this->render('@p2m/demo/views/layouts/_head.php') ?>
 </head>
-<body class="sb-nav-fixed">
-<?php $this->beginBody() ?>
-	<?= $this->render('@p2m/demo/views/layouts/navigation-top.php') ?>
+	<?php
+		// pick the mode, default to 'admin'
+		$mode = $this->params['bodyMode'] ?? 'admin';
 
-	<div id="layoutSidenav">
-		<?= $this->render('@p2m/demo/views/layouts/navigation-side.php') ?>
-		<div id="layoutSidenav_content">
-			<main>
-				<?= $content ?>
-			</main>
-			<?= $this->render('@p2m/demo/views/layouts/footer.php') ?>
-		</div>
-	</div>
+		// sanitize just in case
+		if (!in_array($mode, ['admin','error','auth'], true)) {
+			$mode = 'admin';
+		}
 
-<?php $this->endBody() ?>
-</body>
+		// render the matching partial
+		echo $this->render("@p2m/demo/views/layouts/_body_{$mode}.php", ['content' => $content]);
+	?>
 </html>
 <?php $this->endPage(); ?>

@@ -1,12 +1,14 @@
 <?php
 /**
- * @p2m/demo/views/layouts/navigation-side.php
+ * @p2m/demo/views/layouts/_nav_side.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) Pedro Plowman, 2025
  * @link https://github.com/p2made
  * @license MIT
  */
+
+/** $this->render('@p2m/demo/views/layouts/_nav_side.php'); */
 
 /** @var \yii\web\View $this */
 

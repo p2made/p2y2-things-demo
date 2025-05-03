@@ -1,12 +1,14 @@
 <?php
 /**
- * @p2m/demo/views/layouts/head.php
+ * @p2m/demo/views/layouts/_head.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) Pedro Plowman, 2025
  * @link https://github.com/p2made
  * @license MIT
  */
+
+/** $this->render('@p2m/demo/views/layouts/_head.php'); */
 
 /** @var \yii\web\View $this */
 /** @var string $this->title */

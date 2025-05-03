@@ -1,12 +1,14 @@
 <?php
 /**
- * @frontend/modules/letter/layouts/footer.php
+ * @p2m/demo/views/layouts/_footer.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) Pedro Plowman, 2025
  * @link https://github.com/p2made
  * @license MIT
  */
+
+/** $this->render('@p2m/demo/views/layouts/_footer.php'); */
 
 /** @var \yii\web\View $this */
 

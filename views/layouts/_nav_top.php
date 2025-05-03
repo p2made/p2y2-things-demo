@@ -1,6 +1,6 @@
 <?php
 /**
- * @p2m/demo/views/layouts/top-navigation.php
+ * @p2m/demo/views/layouts/_nav_top.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) Pedro Plowman, 2025
@@ -8,13 +8,13 @@
  * @license MIT
  */
 
+/** $this->render('@p2m/demo/views/layouts/_nav_top.php'); */
+
 /** @var \yii\web\View $this */
 /** @var string $this->title */
 
 use yii\bootstrap5\Html;
-use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
-use yii\bootstrap5\Dropdown;
 use p2m\helpers\BI;
 
 $searchModel = new \yii\base\DynamicModel(['q']);
@@ -38,8 +38,8 @@ echo Html::button(
 	]
 );
 
-echo $this->render('@p2m/demo/views/layouts/navigation-search.php');
-echo $this->render('@p2m/demo/views/layouts/navigation-dropdown.php', ['which' => 'work']);
-echo $this->render('@p2m/demo/views/layouts/navigation-dropdown.php', ['which' => 'user']);
+echo $this->render('@p2m/demo/views/layouts/_nav_search.php');
+echo $this->render('@p2m/demo/views/layouts/_nav_dropdown.php', ['which' => 'work']);
+echo $this->render('@p2m/demo/views/layouts/_nav_dropdown.php', ['which' => 'user']);
 
 NavBar::end();

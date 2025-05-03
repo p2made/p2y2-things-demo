@@ -33,85 +33,6 @@ class DemoController extends Controller
 	// User for demo pages
 	protected $copyright = 'Pedro Plowman';
 
-	// User for user menu
-	protected $userMenu = [
-		['label' => 'Settings', 'url' => '#!'],
-		['label' => 'Activity Log', 'url' => '#!'],
-		'<div class="dropdown-divider"></div>',
-		['label' => 'Logout', 'url' => '#!'],
-	];
-
-	// User for work menu
-	protected $workMenu = [
-		['label' => 'Contacts', 'url' => '#!'],
-		['label' => 'Messages', 'url' => '#!'],
-		['label' => 'Tasks', 'url' => '#!'],
-		'<div class="dropdown-divider"></div>',
-		['label' => 'Documents', 'url' => '#!'],
-		['label' => 'Media', 'url' => '#!'],
-	];
-
-	// User for side menu
-	protected $sideMenu = [
-		'Core' => [
-			[
-				'label' => 'Dashboard',
-				'icon' => BI::_SPEEDOMETER2,
-				'url' => ['/']],
-		],
-		'Interface' => [
-			[
-				'label' => 'Layouts',
-				'icon' => BI::_COLUMNS,
-				'items' => [
-					['label' => 'Static Navigation', 'url' => ['/layout/static']],
-					['label' => 'Light Sidenav', 'url' => ['/layout/light']],
-				],
-			],
-			[
-				'label' => 'Pages',
-				'icon' => BI::_BOOK,
-				'items' => [
-					[
-						'label' => 'Authentication',
-						'items' => [
-							['label' => 'Login', 'url' => ['/login']],
-							['label' => 'Register', 'url' => ['/register']],
-						],
-					],
-					[
-						'label' => 'Error',
-						'items' => [
-							['label' => '401 Page', 'url' => ['/error/401']],
-							['label' => '404 Page', 'url' => ['/error/404']],
-							['label' => '500 Page', 'url' => ['/error/500']],
-							['label' => 'Error Page', 'url' => ['/error/error']],
-						],
-					],
-				],
-			],
-		],
-		'Addons' => [
-			[
-				'label' => 'Data',
-				'icon' => BI::_CLIPBOARD_DATA,
-				'items' => [
-					['label' => 'Charts', 'url' => ['/charts']],
-					['label' => 'Tables', 'url' => ['/tables']],
-				],
-			],
-			[
-				'label' => 'Icons',
-				'icon' => BI::_EMOJI_LAUGHING_FILL,
-				'items' => [
-					['label' => 'Bootstrap Icons', 'url' => ['/icons/bootstrap']],
-					['label' => 'Emoji Icons', 'url' => ['/icons/emoji']],
-					['label' => 'Flag Icons', 'url' => ['/icons/flags']],
-				],
-			],
-		],
-	];
-
 	public function init()
 	{
 		parent::init();
@@ -120,20 +41,82 @@ class DemoController extends Controller
 
 		$this->view->params['username'] = Yii::$app->user->identity->username ?? $this->demoUser;
 		$this->view->params['copyright'] = $this->copyright;
+		$this->view->params['bodyMode'] = 'admin';
+		//$this->view->params['bodyMode'] = 'error'; // In your error action:
+		//$this->view->params['bodyMode'] = 'auth'; // In your auth/login actions:
 		$this->view->params['menus'] = [
-			'user' => $this->userMenu,
-			'work' => $this->workMenu,
-			'side' => $this->sideMenu,
+			'user' => Yii::$app->params['userMenu'],
+			'work' => Yii::$app->params['workMenu'],
+			'side' => Yii::$app->params['sideMenu'],
 		];
 
 		// Register the meta asset
-		//$demoAsset = ThingsDemoAsset::register($this->view);
-		//$this->view->params['demoAssetUrl'] = $demoAsset->baseUrl;
 		$this->view->params['demoAssetUrl'] = ThingsDemoAsset::register($this->view)->baseUrl;
 		$this->view->params['showSearch'] = true;
 		$this->view->params['searchModel'] = new \yii\base\DynamicModel(['q']);
 	}
 
+	/**
+	 * {@inheritdoc}
+	public function behaviors()
+	{
+		return [
+			'access' => [
+				'class' => AccessControl::class,
+				'only' => ['logout', 'signup'],
+				'rules' => [
+					[
+						'actions' => ['signup'],
+						'allow' => true,
+						'roles' => ['?'],
+					],
+					[
+						'actions' => ['logout'],
+						'allow' => true,
+						'roles' => ['@'],
+					],
+				],
+			],
+			'verbs' => [
+				'class' => VerbFilter::class,
+				'actions' => [
+					'logout' => ['post'],
+				],
+			],
+		];
+	}
+	 */
+
+	/**
+	 * {@inheritdoc}
+	 */
+	public function actions()
+	{
+		return [
+			'error' => [
+				'class' => \yii\web\ErrorAction::class,
+			],
+			'page' => [
+				'class' => 'yii\web\ViewAction',
+			],
+		];
+	}
+
+	/**
+	 * Displays homepage.
+	 *
+	 * @return mixed
+	public function actionIndex()
+	{
+		return $this->render('index');
+	}
+	 */
+
+	/**
+	 * Displays a page.
+	 *
+	 * @return mixed
+	 */
 	public function actionView($part1 = '', $part2 = '')
 	{
 		//die("✅ DemoController reached: $part1 / $part2");
@@ -166,4 +149,121 @@ class DemoController extends Controller
 		//return $this->render("@p2m/demo/views/site/{$route}");
 		return $this->render($viewFile);
 	}
+
+	/**
+	 * Logs in a user.
+	 *
+	 * @return mixed
+	public function actionLogin()
+	{
+		if (!Yii::$app->user->isGuest) {
+			return $this->goHome();
+		}
+
+		$model = new LoginForm();
+		if ($model->load(Yii::$app->request->post()) && $model->login()) {
+			return $this->goBack();
+		}
+
+		$model->password = '';
+
+		return $this->render('login', [
+			'model' => $model,
+		]);
+	}
+	 */
+
+	/**
+	 * Logs out the current user.
+	 *
+	 * @return mixed
+	public function actionLogout()
+	{
+		Yii::$app->user->logout();
+
+		return $this->goHome();
+	}
+	 */
+
+	/**
+	 * Displays about page.
+	 *
+	 * @return mixed
+	public function actionAbout()
+	{
+		return $this->render('about');
+	}
+	 */
+
+	/**
+	 * Requests password reset.
+	 *
+	 * @return mixed
+	public function actionRequestPasswordReset()
+	{
+		$model = new PasswordResetRequestForm();
+		if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+			if ($model->sendEmail()) {
+				Yii::$app->session->setFlash('success', 'Check your email for further instructions.');
+
+				return $this->goHome();
+			}
+
+			Yii::$app->session->setFlash('error', 'Sorry, we are unable to reset password for the provided email address.');
+		}
+
+		return $this->render('requestPasswordResetToken', [
+			'model' => $model,
+		]);
+	}
+	 */
+
+	/**
+	 * Resets password.
+	 *
+	 * @param string $token
+	 * @return mixed
+	 * @throws BadRequestHttpException
+	public function actionResetPassword($token)
+	{
+		try {
+			$model = new ResetPasswordForm($token);
+		} catch (InvalidArgumentException $e) {
+			throw new BadRequestHttpException($e->getMessage());
+		}
+
+		if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
+			Yii::$app->session->setFlash('success', 'New password saved.');
+
+			return $this->goHome();
+		}
+
+		return $this->render('resetPassword', [
+			'model' => $model,
+		]);
+	}
+	 */
+
+	/**
+	 * Verify email address
+	 *
+	 * @param string $token
+	 * @throws BadRequestHttpException
+	 * @return yii\web\Response
+	public function actionVerifyEmail($token)
+	{
+		try {
+			$model = new VerifyEmailForm($token);
+		} catch (InvalidArgumentException $e) {
+			throw new BadRequestHttpException($e->getMessage());
+		}
+		if (($user = $model->verifyEmail()) && Yii::$app->user->login($user)) {
+			Yii::$app->session->setFlash('success', 'Your email has been confirmed!');
+			return $this->goHome();
+		}
+
+		Yii::$app->session->setFlash('error', 'Sorry, we are unable to verify your account with provided token.');
+		return $this->goHome();
+	}
+	 */
 }
