@@ -13,8 +13,6 @@
 /** @var \yii\web\View $this */
 
 use yii\bootstrap5\Html;
-use yii\bootstrap5\Nav;
-use yii\bootstrap5\NavBar;
 
 $copyright = $this->params['copyright'];
 ?>

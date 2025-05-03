@@ -33,7 +33,7 @@ class DemoController extends Controller
 	// User for demo pages
 	protected $copyright = 'Pedro Plowman';
 
-	public function init()
+	public function init(): void
 	{
 		parent::init();
 
@@ -58,7 +58,7 @@ class DemoController extends Controller
 
 	/**
 	 * {@inheritdoc}
-	public function behaviors()
+	public function behaviors(): array
 	{
 		return [
 			'access' => [
@@ -90,7 +90,7 @@ class DemoController extends Controller
 	/**
 	 * {@inheritdoc}
 	 */
-	public function actions()
+	public function actions(): array
 	{
 		return [
 			'error' => [
@@ -106,7 +106,7 @@ class DemoController extends Controller
 	 * Displays homepage.
 	 *
 	 * @return mixed
-	public function actionIndex()
+	public function actionIndex(): void
 	{
 		return $this->render('index');
 	}
@@ -117,7 +117,7 @@ class DemoController extends Controller
 	 *
 	 * @return mixed
 	 */
-	public function actionView($part1 = '', $part2 = '')
+	public function actionView($part1 = '', $part2 = ''): void
 	{
 		//die("✅ DemoController reached: $part1 / $part2");
 
@@ -151,10 +151,46 @@ class DemoController extends Controller
 	}
 
 	/**
+	 * Displays an error page.
+	 *
+	 * @return mixed
+	 */
+	public function actionError(): void
+	{
+		// error code
+
+		return $this->render('@p2m/demo/views/site/error');
+	}
+
+	// simulate a 401
+	public function action401(): void
+	{
+		$this->view->params['bodyMode'] = 'error'; // In your error action
+
+		throw new HttpException(401, 'You are not authorized to view this page.');
+	}
+
+	// simulate a 404
+	public function action404(): void
+	{
+		$this->view->params['bodyMode'] = 'error'; // In your error action
+
+		throw new NotFoundHttpException('The page you requested could not be found.');
+	}
+
+	// simulate a 500
+	public function action500(): void
+	{
+		$this->view->params['bodyMode'] = 'error'; // In your error action
+
+		throw new ServerErrorHttpException('An internal server error occurred.');
+	}
+
+	/**
 	 * Logs in a user.
 	 *
 	 * @return mixed
-	public function actionLogin()
+	public function actionLogin(): void
 	{
 		if (!Yii::$app->user->isGuest) {
 			return $this->goHome();
@@ -177,7 +213,7 @@ class DemoController extends Controller
 	 * Logs out the current user.
 	 *
 	 * @return mixed
-	public function actionLogout()
+	public function actionLogout(): void
 	{
 		Yii::$app->user->logout();
 
@@ -189,7 +225,7 @@ class DemoController extends Controller
 	 * Displays about page.
 	 *
 	 * @return mixed
-	public function actionAbout()
+	public function actionAbout(): void
 	{
 		return $this->render('about');
 	}
@@ -199,7 +235,7 @@ class DemoController extends Controller
 	 * Requests password reset.
 	 *
 	 * @return mixed
-	public function actionRequestPasswordReset()
+	public function actionRequestPasswordReset(): void
 	{
 		$model = new PasswordResetRequestForm();
 		if ($model->load(Yii::$app->request->post()) && $model->validate()) {
@@ -224,7 +260,7 @@ class DemoController extends Controller
 	 * @param string $token
 	 * @return mixed
 	 * @throws BadRequestHttpException
-	public function actionResetPassword($token)
+	public function actionResetPassword($token): void
 	{
 		try {
 			$model = new ResetPasswordForm($token);
@@ -250,7 +286,7 @@ class DemoController extends Controller
 	 * @param string $token
 	 * @throws BadRequestHttpException
 	 * @return yii\web\Response
-	public function actionVerifyEmail($token)
+	public function actionVerifyEmail($token): void
 	{
 		try {
 			$model = new VerifyEmailForm($token);
