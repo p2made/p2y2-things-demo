@@ -30,7 +30,7 @@ NavBar::begin([
 ]);
 
 echo Html::button(
-	BI::i(BI::_LIST)->size(4),
+	BI::i(BI::_LIST)->size(1),
 	[
 		'class' => 'btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0',
 		'id' => 'sidebarToggle',
