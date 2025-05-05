@@ -29,8 +29,8 @@ class DemoController extends Controller
 	/**
 	 * Point Yii at your package’s layouts and views
 	 */
-	public $layoutPath = '@p2m/demo/views/layouts';
-	public $viewPath   = '@p2m/demo/views/site';
+	//public $layoutPath = '@p2m/demo/views/layouts';
+	//public $viewPath   = '@p2m/demo/views/site';
 
 	// Title for demo pages
 	protected $demoTitle = 'p2y2-things-demo';
@@ -165,7 +165,7 @@ class DemoController extends Controller
 	 * @return string
 	 * @throws HttpException when simulating
 	 */
-	public function actionError(int $code): string
+	public function actionError(int $code = null): string
 	{
 		// If you visited /401 or /502 etc, simulate that error:
 		if ($code !== null) {
@@ -200,11 +200,12 @@ class DemoController extends Controller
 		$this->view->params['bodyMode'] = 'error';
 		$this->view->title = "$code – $name";
 
-		return $this->render('error', [
+		return $this->render('@p2m/demo/views/site/error.php', [
 			'statusCode' => $code,
 			'name'       => $name,
 			'message'    => $message,
 		]);
+	}
 
 	/**
 	 * Simulate a 401.
@@ -359,4 +360,4 @@ class DemoController extends Controller
 	}
 	 */
 }
-}
+
