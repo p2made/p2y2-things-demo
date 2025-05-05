@@ -21,7 +21,7 @@ $statusCode = $exception instanceof \yii\web\HttpException
 				<p><?= nl2br(Html::encode($message)) ?></p>
 
 				<?= Html::a(
-					BI::i(BI::_ARROW_LEFT_CIRCLE_FILL)->size(2) . 'Return to Dashboard',
+					BI::i(BI::_ARROW_LEFT_CIRCLE_FILL) . '  Return to Dashboard',
 					['/']
 				) ?>
 			</div>
