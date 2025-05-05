@@ -11,6 +11,21 @@
  * @class \p2m\demo\assets\ThingsDemoAsset
  */
 
+/**
+ * Demo params references
+ *
+ * Yii::$app->params['bodyMode'][0]
+ * Yii::$app->params['bodyMode'][1]
+ * Yii::$app->params['bodyMode'][2]
+ *
+ * Yii::$app->params['menus']['user']
+ * Yii::$app->params['menus']['work']
+ * Yii::$app->params['menus']['side']
+ *
+ * Yii::$app->params['copyright']
+ *
+ */
+
 namespace p2m\demo\controllers;
 
 use Yii;
@@ -32,9 +47,6 @@ class DemoController extends Controller
 	// User for demo pages
 	protected $demoUser = 'Demo User';
 
-	// User for demo pages
-	protected $copyright = 'Pedro Plowman';
-
 	public function init(): void
 	{
 		parent::init();
@@ -42,15 +54,12 @@ class DemoController extends Controller
 		$this->view->title = $this->demoTitle;
 
 		$this->view->params['bodyMode'] = Yii::$app->params['bodyMode'][0];
-		$this->view->params['copyright'] = Yii::$app->params['copyright'];
-		$this->view->params['username'] = Yii::$app->user->identity->username ?? $this->demoUser;
-		//$this->view->params['bodyMode'] = 'error'; // In your error action:
-		//$this->view->params['bodyMode'] = 'auth'; // In your auth/login actions:
 		$this->view->params['menus'] = [
 			'user' => Yii::$app->params['userMenu'],
 			'work' => Yii::$app->params['workMenu'],
 			'side' => Yii::$app->params['sideMenu'],
 		];
+		$this->view->params['username'] = Yii::$app->user->identity->username ?? $this->demoUser;
 
 		// Register the meta asset
 		$this->view->params['demoAssetUrl'] = ThingsDemoAsset::register($this->view)->baseUrl;
