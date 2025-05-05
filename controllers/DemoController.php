@@ -41,8 +41,8 @@ class DemoController extends Controller
 
 		$this->view->title = $this->demoTitle;
 
-		$this->view->params['bodyMode'] = Yii::$app->params['bodyMode'][0],
-		$this->view->params['copyright'] = Yii::$app->params['copyright'],
+		$this->view->params['bodyMode'] = Yii::$app->params['bodyMode'][0];
+		$this->view->params['copyright'] = Yii::$app->params['copyright'];
 		$this->view->params['username'] = Yii::$app->user->identity->username ?? $this->demoUser;
 		//$this->view->params['bodyMode'] = 'error'; // In your error action:
 		//$this->view->params['bodyMode'] = 'auth'; // In your auth/login actions:
