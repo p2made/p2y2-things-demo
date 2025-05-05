@@ -26,12 +26,6 @@ use p2m\helpers\BI;
  */
 class DemoController extends Controller
 {
-	/**
-	 * Point Yii at your package’s layouts and views
-	 */
-	//public $layoutPath = '@p2m/demo/views/layouts';
-	//public $viewPath   = '@p2m/demo/views/site';
-
 	// Title for demo pages
 	protected $demoTitle = 'p2y2-things-demo';
 
@@ -47,9 +41,9 @@ class DemoController extends Controller
 
 		$this->view->title = $this->demoTitle;
 
+		$this->view->params['bodyMode'] = Yii::$app->params['bodyMode'][0],
+		$this->view->params['copyright'] = Yii::$app->params['copyright'],
 		$this->view->params['username'] = Yii::$app->user->identity->username ?? $this->demoUser;
-		$this->view->params['copyright'] = $this->copyright;
-		$this->view->params['bodyMode'] = 'admin';
 		//$this->view->params['bodyMode'] = 'error'; // In your error action:
 		//$this->view->params['bodyMode'] = 'auth'; // In your auth/login actions:
 		$this->view->params['menus'] = [
