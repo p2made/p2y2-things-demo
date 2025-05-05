@@ -36,7 +36,7 @@ echo Html::activeInput('text', $searchModel, 'q', [
 ]);
 
 echo Html::button(
-	BI::i(BI::_SEARCH)->size(5),
+	BI::i(BI::_SEARCH),
 	[
 		'class' => 'btn btn-primary',
 		'id' => 'btnNavbarSearch',
