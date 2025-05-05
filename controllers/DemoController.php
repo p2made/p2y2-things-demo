@@ -26,6 +26,12 @@ use p2m\helpers\BI;
  */
 class DemoController extends Controller
 {
+	/**
+	 * Point Yii at your package’s layouts and views
+	 */
+	public $layoutPath = '@p2m/demo/views/layouts';
+	public $viewPath   = '@p2m/demo/views/site';
+
 	// Title for demo pages
 	protected $demoTitle = 'p2y2-things-demo';
 
@@ -159,7 +165,7 @@ class DemoController extends Controller
 	 * @return string
 	 * @throws HttpException when simulating
 	 */
-	public function actionError(int $code = null): string
+	public function actionError(int $code): string
 	{
 		// If you visited /401 or /502 etc, simulate that error:
 		if ($code !== null) {
@@ -194,36 +200,47 @@ class DemoController extends Controller
 		$this->view->params['bodyMode'] = 'error';
 		$this->view->title = "$code – $name";
 
-		return $this->render('@p2m/demo/views/site/error.php', [
+		return $this->render('error', [
 			'statusCode' => $code,
 			'name'       => $name,
 			'message'    => $message,
 		]);
-	}
 
-	// simulate a 401
+	/**
+	 * Simulate a 401.
+	 *
+	 * @return mixed
 	public function action401(): void
 	{
 		$this->view->params['bodyMode'] = 'error'; // In your error action
 
 		throw new HttpException(401, 'You are not authorized to view this page.');
 	}
+	 */
 
-	// simulate a 404
+	/**
+	 * Simulate a 404.
+	 *
+	 * @return mixed
 	public function action404(): void
 	{
 		$this->view->params['bodyMode'] = 'error'; // In your error action
 
 		throw new NotFoundHttpException('The page you requested could not be found.');
 	}
+	 */
 
-	// simulate a 500
+	/**
+	 * Simulate a 500.
+	 *
+	 * @return mixed
 	public function action500(): void
 	{
 		$this->view->params['bodyMode'] = 'error'; // In your error action
 
 		throw new ServerErrorHttpException('An internal server error occurred.');
 	}
+	 */
 
 	/**
 	 * Logs in a user.
@@ -341,4 +358,5 @@ class DemoController extends Controller
 		return $this->goHome();
 	}
 	 */
+}
 }
