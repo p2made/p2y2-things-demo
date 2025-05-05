@@ -13,13 +13,13 @@
 /** @var \yii\web\View $this */
 
 use yii\bootstrap5\Html;
-
-$copyright = $this->params['copyright'];
 ?>
 <footer class="py-4 bg-light mt-auto">
 	<div class="container-fluid px-4">
 		<div class="d-flex align-items-center justify-content-between small">
-			<div class="text-muted">Copyright &copy; <?= $copyright ?> <?= date('Y') ?></div>
+			<div class="text-muted">Copyright &copy;
+				<?= Yii::$app->params['copyright'] ?>
+			<?= date('Y') ?></div>
 			<div><?= Yii::powered() ?></div>
 		</div>
 	</div>
