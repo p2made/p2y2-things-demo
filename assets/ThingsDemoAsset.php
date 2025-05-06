@@ -3,40 +3,39 @@
  * ThingsDemoAsset.php
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright (c) Pedro Plowman, 2025
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things-demo
  * @license MIT
+ *
+ * @package p2made/yii2-p2y2-things-demo
+ * @class \p2m\demo\assets\ThingsDemoAsset
  */
 
 /**
  * Load this asset with...
- * p2m\assets\demo\ThingsDemoAsset::register($this);
+ * p2m\demo\assets\ThingsDemoAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2m\assets\demo\ThingsDemoAsset',
+ *     'p2m\demo\assets\ThingsDemoAsset',
  */
 
 namespace p2m\demo\assets;
 
-class ThingsDemoAsset extends \p2m\assets\base\P2AssetBundle
-{
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@vendor/p2made/yii2-p2y2-things-demo/assets/lib',
-			'css' => [
-				'css/things-demo.css',
-			],
-			'js' => [],
-		],
-		'depends' => [
-			'p2m\assets\P2CoreAsset',
-		],
-	);
+use yii\web\AssetBundle;
 
-	public function init()
-	{
-		$this->configureAsset($this->resourceData);
-		parent::init();
-	}
+class ThingsDemoAsset extends AssetBundle
+{
+	public $sourcePath = '@p2m/demo/assets/lib';
+
+	//public $css = [
+	//	'css/things-demo.css',
+	//];
+
+	public $depends = [
+		'p2m\assets\P2CoreAsset',
+		'p2m\assets\P2BootstrapIconsAsset',
+		'p2m\demo\assets\SbAdminAsset',
+		'p2m\assets\P2SimpleDatatablesAsset',
+		'p2m\assets\P2JqueryEasingAsset',
+	];
 }

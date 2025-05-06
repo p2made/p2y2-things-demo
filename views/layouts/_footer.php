@@ -1,36 +1,26 @@
 <?php
 /**
- * footer.php
+ * @p2m/demo/views/layouts/_footer.php
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright (c) Pedro Plowman, 2025
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things-demo
  * @license MIT
  */
 
-use yii\bootstrap\Html;
-use p2m\helpers\FA;
+/** $this->render('@p2m/demo/views/layouts/_footer.php'); */
 
-/* @var $this \yii\web\View */
+/** @var \yii\web\View $this */
 
+$copyright = $this->params['copyright'];
+
+use yii\bootstrap5\Html;
 ?>
-<footer class="footer">
-	<div class="container">
-		<p class="pull-left">
-			Crafted with <?= FA::icon('heart') ?> by Pedro fp, on the
-			<a href="https://en.wikipedia.org/wiki/Sunshine_Coast,_Queensland" target="_blank">
-				Sunshine Coast <?= FA::icon(FA::_EXTERNAL_LINK) ?>
-			</a> of
-			<a href="https://en.wikipedia.org/wiki/Queensland" target="_blank">
-				Queensland <?= FA::icon(FA::_EXTERNAL_LINK) ?>
-			</a>,
-			<a href="https://en.wikipedia.org/wiki/Australia" target="_blank">
-				Australia <?= FA::icon(FA::_EXTERNAL_LINK) ?>
-			</a>
-			<?= FA::icon('copyright') ?> <?= date('Y') ?>
-		</p>
-
-		<p class="pull-right"><?= Yii::powered() ?></p>
+<footer class="py-4 bg-light mt-auto">
+	<div class="container-fluid px-4">
+		<div class="d-flex align-items-center justify-content-between small">
+			<div class="text-muted">Copyright &copy; <?= $copyright ?> <?= date('Y') ?></div>
+			<div><?= Yii::powered() ?></div>
+		</div>
 	</div>
 </footer>

@@ -1,42 +1,35 @@
 <?php
-/**
- * error.php
- *
- * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
- * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things-demo
- * @license MIT
- */
-
-use yii\bootstrap\Html;
-use yii\widgets\Breadcrumbs;
-
-// load assets...
+use yii\bootstrap5\Html;
+use p2m\helpers\BI;
 
 /* @var $this yii\web\View */
+/* @var $exception \Throwable */
 /* @var $name string */
 /* @var $message string */
-/* @var $exception Exception */
 
 $this->title = $name;
+$statusCode = $exception instanceof \yii\web\HttpException
+	? $exception->statusCode
+	: $exception->getCode();
 ?>
-<div class="site-error">
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-lg-6">
+			<div class="text-center mt-4">
+				<h1 class="display-1"><?= Html::encode($statusCode) ?></h1>
+				<p class="lead"><?= Html::encode($name) ?></p>
+				<p><?= nl2br(Html::encode($message)) ?></p>
 
-	<h1><?= Html::encode($this->title) ?></h1>
-	<?= Breadcrumbs::widget([
-		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-	]) ?>
-
-	<div class="alert alert-danger">
-		<?= nl2br(Html::encode($message)) ?>
+				<?= Html::a(
+					BI::i(BI::_ARROW_LEFT_CIRCLE_FILL) . '  Return to Dashboard',
+					['/']
+				) ?>
+			</div>
+		</div>
 	</div>
-
-	<p>
-		The above error occurred while the Web server was processing your request.
-	</p>
-	<p>
-		Please contact us if you think this is a server error. Thank you.
-	</p>
-
 </div>
+<!--
+	_ARROW_LEFT
+	_ARROW_LEFT_CIRCLE
+	_ARROW_LEFT_CIRCLE_FILL
+-->

@@ -1,0 +1,1886 @@
+[
+  {
+    "code": "asean",
+    "constant": "FI::_ASEAN",
+    "long": "FI::_ASSOCIATION_OF_SOUTHEAST_ASIAN_NATIONS",
+    "description": "Association of Southeast Asian Nations"
+  },
+  {
+    "code": "cefta",
+    "constant": "FI::_CEFTA",
+    "long": "FI::_CENTRAL_EUROPEAN_FREE_TRADE_AGREEMENT",
+    "description": "Central European Free Trade Agreement"
+  },
+  {
+    "code": "eac",
+    "constant": "FI::_EAC",
+    "long": "FI::_EAST_AFRICAN_COMMUNITY",
+    "description": "East African Community"
+  },
+  {
+    "code": "eu",
+    "constant": "FI::_EU",
+    "long": "FI::_EUROPE",
+    "description": "European Union"
+  },
+  {
+    "code": "arab",
+    "constant": "FI::_ARAB",
+    "long": "FI::_LEAGUE_OF_ARAB_STATES",
+    "description": "League of Arab States"
+  },
+  {
+    "code": "turkic",
+    "constant": "FI::_TURKIC",
+    "long": "FI::_ORGANISATION_OF_TURKIC_STATES",
+    "description": "Organisation of Turkic States"
+  },
+  {
+    "code": "pc",
+    "constant": "FI::_PC",
+    "long": "FI::_PACIFIC_COMMUNITY",
+    "description": "Pacific Community"
+  },
+  {
+    "code": "un",
+    "constant": "FI::_UN",
+    "long": "FI::_UNITED_NATIONS",
+    "description": "United Nations"
+  },
+  {
+    "code": "pride",
+    "constant": "FI::_PRIDE",
+    "long": "FI::_LGB_PRIDE",
+    "description": "LGB Pride"
+  },
+  {
+    "code": "trans",
+    "constant": "FI::_TRANS",
+    "long": "FI::_TRANS_PRIDE",
+    "description": "Trans Pride"
+  },
+  {
+    "code": "dz",
+    "constant": "FI::_DZ",
+    "long": "FI::_ALGERIA",
+    "description": "Algeria"
+  },
+  {
+    "code": "ao",
+    "constant": "FI::_AO",
+    "long": "FI::_ANGOLA",
+    "description": "Angola"
+  },
+  {
+    "code": "sh-ac",
+    "constant": "FI::_SH_AC",
+    "long": "FI::_ASCENSION_ISLAND",
+    "description": "Ascension Island"
+  },
+  {
+    "code": "bj",
+    "constant": "FI::_BJ",
+    "long": "FI::_BENIN",
+    "description": "Benin"
+  },
+  {
+    "code": "bw",
+    "constant": "FI::_BW",
+    "long": "FI::_BOTSWANA",
+    "description": "Botswana"
+  },
+  {
+    "code": "bf",
+    "constant": "FI::_BF",
+    "long": "FI::_BURKINA_FASO",
+    "description": "Burkina Faso"
+  },
+  {
+    "code": "bi",
+    "constant": "FI::_BI",
+    "long": "FI::_BURUNDI",
+    "description": "Burundi"
+  },
+  {
+    "code": "cv",
+    "constant": "FI::_CV",
+    "long": "FI::_CABO_VERDE",
+    "description": "Cabo Verde"
+  },
+  {
+    "code": "cm",
+    "constant": "FI::_CM",
+    "long": "FI::_CAMEROON",
+    "description": "Cameroon"
+  },
+  {
+    "code": "cf",
+    "constant": "FI::_CF",
+    "long": "FI::_CENTRAL_AFRICAN_REPUBLIC",
+    "description": "Central African Republic"
+  },
+  {
+    "code": "td",
+    "constant": "FI::_TD",
+    "long": "FI::_CHAD",
+    "description": "Chad"
+  },
+  {
+    "code": "km",
+    "constant": "FI::_KM",
+    "long": "FI::_COMOROS",
+    "description": "Comoros"
+  },
+  {
+    "code": "ci",
+    "constant": "FI::_CI",
+    "long": "FI::_COTE_DIVOIRE",
+    "description": "Côte d'Ivoire"
+  },
+  {
+    "code": "cd",
+    "constant": "FI::_CD",
+    "long": "FI::_DEMOCRATIC_REPUBLIC_OF_THE_CONGO",
+    "description": "Democratic Republic of the Congo"
+  },
+  {
+    "code": "dj",
+    "constant": "FI::_DJ",
+    "long": "FI::_DJIBOUTI",
+    "description": "Djibouti"
+  },
+  {
+    "code": "eg",
+    "constant": "FI::_EG",
+    "long": "FI::_EGYPT",
+    "description": "Egypt"
+  },
+  {
+    "code": "gq",
+    "constant": "FI::_GQ",
+    "long": "FI::_EQUATORIAL_GUINEA",
+    "description": "Equatorial Guinea"
+  },
+  {
+    "code": "er",
+    "constant": "FI::_ER",
+    "long": "FI::_ERITREA",
+    "description": "Eritrea"
+  },
+  {
+    "code": "sz",
+    "constant": "FI::_SZ",
+    "long": "FI::_ESWATINI",
+    "description": "Eswatini"
+  },
+  {
+    "code": "et",
+    "constant": "FI::_ET",
+    "long": "FI::_ETHIOPIA",
+    "description": "Ethiopia"
+  },
+  {
+    "code": "tf",
+    "constant": "FI::_TF",
+    "long": "FI::_FRENCH_SOUTHERN_TERRITORIES",
+    "description": "French Southern Territories"
+  },
+  {
+    "code": "ga",
+    "constant": "FI::_GA",
+    "long": "FI::_GABON",
+    "description": "Gabon"
+  },
+  {
+    "code": "gm",
+    "constant": "FI::_GM",
+    "long": "FI::_GAMBIA",
+    "description": "Gambia"
+  },
+  {
+    "code": "gh",
+    "constant": "FI::_GH",
+    "long": "FI::_GHANA",
+    "description": "Ghana"
+  },
+  {
+    "code": "gn",
+    "constant": "FI::_GN",
+    "long": "FI::_GUINEA",
+    "description": "Guinea"
+  },
+  {
+    "code": "gw",
+    "constant": "FI::_GW",
+    "long": "FI::_GUINEA_BISSAU",
+    "description": "Guinea-Bissau"
+  },
+  {
+    "code": "ke",
+    "constant": "FI::_KE",
+    "long": "FI::_KENYA",
+    "description": "Kenya"
+  },
+  {
+    "code": "ls",
+    "constant": "FI::_LS",
+    "long": "FI::_LESOTHO",
+    "description": "Lesotho"
+  },
+  {
+    "code": "lr",
+    "constant": "FI::_LR",
+    "long": "FI::_LIBERIA",
+    "description": "Liberia"
+  },
+  {
+    "code": "ly",
+    "constant": "FI::_LY",
+    "long": "FI::_LIBYA",
+    "description": "Libya"
+  },
+  {
+    "code": "mg",
+    "constant": "FI::_MG",
+    "long": "FI::_MADAGASCAR",
+    "description": "Madagascar"
+  },
+  {
+    "code": "mw",
+    "constant": "FI::_MW",
+    "long": "FI::_MALAWI",
+    "description": "Malawi"
+  },
+  {
+    "code": "ml",
+    "constant": "FI::_ML",
+    "long": "FI::_MALI",
+    "description": "Mali"
+  },
+  {
+    "code": "mr",
+    "constant": "FI::_MR",
+    "long": "FI::_MAURITANIA",
+    "description": "Mauritania"
+  },
+  {
+    "code": "mu",
+    "constant": "FI::_MU",
+    "long": "FI::_MAURITIUS",
+    "description": "Mauritius"
+  },
+  {
+    "code": "yt",
+    "constant": "FI::_YT",
+    "long": "FI::_MAYOTTE",
+    "description": "Mayotte"
+  },
+  {
+    "code": "ma",
+    "constant": "FI::_MA",
+    "long": "FI::_MOROCCO",
+    "description": "Morocco"
+  },
+  {
+    "code": "mz",
+    "constant": "FI::_MZ",
+    "long": "FI::_MOZAMBIQUE",
+    "description": "Mozambique"
+  },
+  {
+    "code": "na",
+    "constant": "FI::_NA",
+    "long": "FI::_NAMIBIA",
+    "description": "Namibia"
+  },
+  {
+    "code": "ne",
+    "constant": "FI::_NE",
+    "long": "FI::_NIGER",
+    "description": "Niger"
+  },
+  {
+    "code": "ng",
+    "constant": "FI::_NG",
+    "long": "FI::_NIGERIA",
+    "description": "Nigeria"
+  },
+  {
+    "code": "cg",
+    "constant": "FI::_CG",
+    "long": "FI::_REPUBLIC_OF_THE_CONGO",
+    "description": "Republic of the Congo"
+  },
+  {
+    "code": "re",
+    "constant": "FI::_RE",
+    "long": "FI::_REUNION",
+    "description": "Réunion"
+  },
+  {
+    "code": "rw",
+    "constant": "FI::_RW",
+    "long": "FI::_RWANDA",
+    "description": "Rwanda"
+  },
+  {
+    "code": "sh-hl",
+    "constant": "FI::_SH_HL",
+    "long": "FI::_SAINT_HELENA",
+    "description": "Saint Helena"
+  },
+  {
+    "code": "sh",
+    "constant": "FI::_SH",
+    "long": "FI::_SAINT_HELENA_ASCENSION_TRISTAN_DA_CUNHA",
+    "description": "Saint Helena, Ascension & Tristan da Cunha"
+  },
+  {
+    "code": "st",
+    "constant": "FI::_ST",
+    "long": "FI::_SAO_TOME_PRINCIPE",
+    "description": "Sao Tome & Principe"
+  },
+  {
+    "code": "sn",
+    "constant": "FI::_SN",
+    "long": "FI::_SENEGAL",
+    "description": "Senegal"
+  },
+  {
+    "code": "sc",
+    "constant": "FI::_SC",
+    "long": "FI::_SEYCHELLES",
+    "description": "Seychelles"
+  },
+  {
+    "code": "sl",
+    "constant": "FI::_SL",
+    "long": "FI::_SIERRA_LEONE",
+    "description": "Sierra Leone"
+  },
+  {
+    "code": "so",
+    "constant": "FI::_SO",
+    "long": "FI::_SOMALIA",
+    "description": "Somalia"
+  },
+  {
+    "code": "za",
+    "constant": "FI::_ZA",
+    "long": "FI::_SOUTH_AFRICA",
+    "description": "South Africa"
+  },
+  {
+    "code": "ss",
+    "constant": "FI::_SS",
+    "long": "FI::_SOUTH_SUDAN",
+    "description": "South Sudan"
+  },
+  {
+    "code": "sd",
+    "constant": "FI::_SD",
+    "long": "FI::_SUDAN",
+    "description": "Sudan"
+  },
+  {
+    "code": "tz",
+    "constant": "FI::_TZ",
+    "long": "FI::_TANZANIA",
+    "description": "Tanzania"
+  },
+  {
+    "code": "tg",
+    "constant": "FI::_TG",
+    "long": "FI::_TOGO",
+    "description": "Togo"
+  },
+  {
+    "code": "sh-ta",
+    "constant": "FI::_SH_TA",
+    "long": "FI::_TRISTAN_DA_CUNHA",
+    "description": "Tristan da Cunha"
+  },
+  {
+    "code": "tn",
+    "constant": "FI::_TN",
+    "long": "FI::_TUNISIA",
+    "description": "Tunisia"
+  },
+  {
+    "code": "ug",
+    "constant": "FI::_UG",
+    "long": "FI::_UGANDA",
+    "description": "Uganda"
+  },
+  {
+    "code": "eh",
+    "constant": "FI::_EH",
+    "long": "FI::_WESTERN_SAHARA",
+    "description": "Western Sahara"
+  },
+  {
+    "code": "zm",
+    "constant": "FI::_ZM",
+    "long": "FI::_ZAMBIA",
+    "description": "Zambia"
+  },
+  {
+    "code": "zw",
+    "constant": "FI::_ZW",
+    "long": "FI::_ZIMBABWE",
+    "description": "Zimbabwe"
+  },
+  {
+    "code": "ai",
+    "constant": "FI::_AI",
+    "long": "FI::_ANGUILLA",
+    "description": "Anguilla"
+  },
+  {
+    "code": "ag",
+    "constant": "FI::_AG",
+    "long": "FI::_ANTIGUA_BARBUDA",
+    "description": "Antigua & Barbuda"
+  },
+  {
+    "code": "bs",
+    "constant": "FI::_BS",
+    "long": "FI::_BAHAMAS",
+    "description": "Bahamas"
+  },
+  {
+    "code": "bb",
+    "constant": "FI::_BB",
+    "long": "FI::_BARBADOS",
+    "description": "Barbados"
+  },
+  {
+    "code": "bz",
+    "constant": "FI::_BZ",
+    "long": "FI::_BELIZE",
+    "description": "Belize"
+  },
+  {
+    "code": "bm",
+    "constant": "FI::_BM",
+    "long": "FI::_BERMUDA",
+    "description": "Bermuda"
+  },
+  {
+    "code": "ca",
+    "constant": "FI::_CA",
+    "long": "FI::_CANADA",
+    "description": "Canada"
+  },
+  {
+    "code": "ky",
+    "constant": "FI::_KY",
+    "long": "FI::_CAYMAN_ISLANDS",
+    "description": "Cayman Islands"
+  },
+  {
+    "code": "cr",
+    "constant": "FI::_CR",
+    "long": "FI::_COSTA_RICA",
+    "description": "Costa Rica"
+  },
+  {
+    "code": "cu",
+    "constant": "FI::_CU",
+    "long": "FI::_CUBA",
+    "description": "Cuba"
+  },
+  {
+    "code": "dm",
+    "constant": "FI::_DM",
+    "long": "FI::_DOMINICA",
+    "description": "Dominica"
+  },
+  {
+    "code": "do",
+    "constant": "FI::_DO",
+    "long": "FI::_DOMINICAN_REPUBLIC",
+    "description": "Dominican Republic"
+  },
+  {
+    "code": "sv",
+    "constant": "FI::_SV",
+    "long": "FI::_EL_SALVADOR",
+    "description": "El Salvador"
+  },
+  {
+    "code": "gl",
+    "constant": "FI::_GL",
+    "long": "FI::_GREENLAND",
+    "description": "Greenland"
+  },
+  {
+    "code": "gd",
+    "constant": "FI::_GD",
+    "long": "FI::_GRENADA",
+    "description": "Grenada"
+  },
+  {
+    "code": "gp",
+    "constant": "FI::_GP",
+    "long": "FI::_GUADELOUPE",
+    "description": "Guadeloupe"
+  },
+  {
+    "code": "gt",
+    "constant": "FI::_GT",
+    "long": "FI::_GUATEMALA",
+    "description": "Guatemala"
+  },
+  {
+    "code": "ht",
+    "constant": "FI::_HT",
+    "long": "FI::_HAITI",
+    "description": "Haiti"
+  },
+  {
+    "code": "hn",
+    "constant": "FI::_HN",
+    "long": "FI::_HONDURAS",
+    "description": "Honduras"
+  },
+  {
+    "code": "jm",
+    "constant": "FI::_JM",
+    "long": "FI::_JAMAICA",
+    "description": "Jamaica"
+  },
+  {
+    "code": "mq",
+    "constant": "FI::_MQ",
+    "long": "FI::_MARTINIQUE",
+    "description": "Martinique"
+  },
+  {
+    "code": "mx",
+    "constant": "FI::_MX",
+    "long": "FI::_MEXICO",
+    "description": "Mexico"
+  },
+  {
+    "code": "ms",
+    "constant": "FI::_MS",
+    "long": "FI::_MONTSERRAT",
+    "description": "Montserrat"
+  },
+  {
+    "code": "ni",
+    "constant": "FI::_NI",
+    "long": "FI::_NICARAGUA",
+    "description": "Nicaragua"
+  },
+  {
+    "code": "pa",
+    "constant": "FI::_PA",
+    "long": "FI::_PANAMA",
+    "description": "Panama"
+  },
+  {
+    "code": "pr",
+    "constant": "FI::_PR",
+    "long": "FI::_PUERTO_RICO",
+    "description": "Puerto Rico"
+  },
+  {
+    "code": "bl",
+    "constant": "FI::_BL",
+    "long": "FI::_SAINT_BARTHELEMY",
+    "description": "Saint Barthélemy"
+  },
+  {
+    "code": "kn",
+    "constant": "FI::_KN",
+    "long": "FI::_SAINT_KITTS_NEVIS",
+    "description": "Saint Kitts & Nevis"
+  },
+  {
+    "code": "lc",
+    "constant": "FI::_LC",
+    "long": "FI::_SAINT_LUCIA",
+    "description": "Saint Lucia"
+  },
+  {
+    "code": "mf",
+    "constant": "FI::_MF",
+    "long": "FI::_SAINT_MARTIN",
+    "description": "Saint Martin"
+  },
+  {
+    "code": "pm",
+    "constant": "FI::_PM",
+    "long": "FI::_SAINT_PIERRE_MIQUELON",
+    "description": "Saint Pierre & Miquelon"
+  },
+  {
+    "code": "vc",
+    "constant": "FI::_VC",
+    "long": "FI::_SAINT_VINCENT_THE_GRENADINES",
+    "description": "Saint Vincent & the Grenadines"
+  },
+  {
+    "code": "sx",
+    "constant": "FI::_SX",
+    "long": "FI::_SINT_MAARTEN",
+    "description": "Sint Maarten"
+  },
+  {
+    "code": "tc",
+    "constant": "FI::_TC",
+    "long": "FI::_TURKS_CAICOS_ISLANDS",
+    "description": "Turks & Caicos Islands"
+  },
+  {
+    "code": "um",
+    "constant": "FI::_UM",
+    "long": "FI::_UNITED_STATES_MINOR_OUTLYING_ISLANDS",
+    "description": "United States Minor Outlying Islands"
+  },
+  {
+    "code": "us",
+    "constant": "FI::_US",
+    "long": "FI::_UNITED_STATES_OF_AMERICA",
+    "description": "United States of America"
+  },
+  {
+    "code": "vg",
+    "constant": "FI::_VG",
+    "long": "FI::_VIRGIN_ISLANDS_BRITISH",
+    "description": "Virgin Islands (British)"
+  },
+  {
+    "code": "vi",
+    "constant": "FI::_VI",
+    "long": "FI::_VIRGIN_ISLANDS_US",
+    "description": "Virgin Islands (US)"
+  },
+  {
+    "code": "ar",
+    "constant": "FI::_AR",
+    "long": "FI::_ARGENTINA",
+    "description": "Argentina"
+  },
+  {
+    "code": "aw",
+    "constant": "FI::_AW",
+    "long": "FI::_ARUBA",
+    "description": "Aruba"
+  },
+  {
+    "code": "bo",
+    "constant": "FI::_BO",
+    "long": "FI::_BOLIVIA",
+    "description": "Bolivia"
+  },
+  {
+    "code": "bq",
+    "constant": "FI::_BQ",
+    "long": "FI::_BONAIRE_SINT_EUSTATIUS_SABA",
+    "description": "Bonaire, Sint Eustatius & Saba"
+  },
+  {
+    "code": "br",
+    "constant": "FI::_BR",
+    "long": "FI::_BRAZIL",
+    "description": "Brazil"
+  },
+  {
+    "code": "cl",
+    "constant": "FI::_CL",
+    "long": "FI::_CHILE",
+    "description": "Chile"
+  },
+  {
+    "code": "co",
+    "constant": "FI::_CO",
+    "long": "FI::_COLOMBIA",
+    "description": "Colombia"
+  },
+  {
+    "code": "cw",
+    "constant": "FI::_CW",
+    "long": "FI::_CURACAO",
+    "description": "Curaçao"
+  },
+  {
+    "code": "ec",
+    "constant": "FI::_EC",
+    "long": "FI::_ECUADOR",
+    "description": "Ecuador"
+  },
+  {
+    "code": "fk",
+    "constant": "FI::_FK",
+    "long": "FI::_FALKLAND_ISLANDS",
+    "description": "Falkland Islands"
+  },
+  {
+    "code": "gf",
+    "constant": "FI::_GF",
+    "long": "FI::_FRENCH_GUIANA",
+    "description": "French Guiana"
+  },
+  {
+    "code": "gy",
+    "constant": "FI::_GY",
+    "long": "FI::_GUYANA",
+    "description": "Guyana"
+  },
+  {
+    "code": "py",
+    "constant": "FI::_PY",
+    "long": "FI::_PARAGUAY",
+    "description": "Paraguay"
+  },
+  {
+    "code": "pe",
+    "constant": "FI::_PE",
+    "long": "FI::_PERU",
+    "description": "Peru"
+  },
+  {
+    "code": "sr",
+    "constant": "FI::_SR",
+    "long": "FI::_SURINAME",
+    "description": "Suriname"
+  },
+  {
+    "code": "tt",
+    "constant": "FI::_TT",
+    "long": "FI::_TRINIDAD_TOBAGO",
+    "description": "Trinidad & Tobago"
+  },
+  {
+    "code": "uy",
+    "constant": "FI::_UY",
+    "long": "FI::_URUGUAY",
+    "description": "Uruguay"
+  },
+  {
+    "code": "ve",
+    "constant": "FI::_VE",
+    "long": "FI::_VENEZUELA",
+    "description": "Venezuela"
+  },
+  {
+    "code": "aq",
+    "constant": "FI::_AQ",
+    "long": "FI::_ANTARCTICA",
+    "description": "Antarctica"
+  },
+  {
+    "code": "bv",
+    "constant": "FI::_BV",
+    "long": "FI::_BOUVET_ISLAND",
+    "description": "Bouvet Island"
+  },
+  {
+    "code": "hm",
+    "constant": "FI::_HM",
+    "long": "FI::_HEARD_ISLAND_MCDONALD_ISLANDS",
+    "description": "Heard Island & McDonald Islands"
+  },
+  {
+    "code": "gs",
+    "constant": "FI::_GS",
+    "long": "FI::_SOUTH_GEORGIA_THE_SOUTH_SANDWICH_ISLANDS",
+    "description": "South Georgia & the South Sandwich Islands"
+  },
+  {
+    "code": "af",
+    "constant": "FI::_AF",
+    "long": "FI::_AFGHANISTAN",
+    "description": "Afghanistan"
+  },
+  {
+    "code": "am",
+    "constant": "FI::_AM",
+    "long": "FI::_ARMENIA",
+    "description": "Armenia"
+  },
+  {
+    "code": "az",
+    "constant": "FI::_AZ",
+    "long": "FI::_AZERBAIJAN",
+    "description": "Azerbaijan"
+  },
+  {
+    "code": "bh",
+    "constant": "FI::_BH",
+    "long": "FI::_BAHRAIN",
+    "description": "Bahrain"
+  },
+  {
+    "code": "balk",
+    "constant": "FI::_BALK",
+    "long": "FI::_BALKARS",
+    "description": "Balkars"
+  },
+  {
+    "code": "bd",
+    "constant": "FI::_BD",
+    "long": "FI::_BANGLADESH",
+    "description": "Bangladesh"
+  },
+  {
+    "code": "bt",
+    "constant": "FI::_BT",
+    "long": "FI::_BHUTAN",
+    "description": "Bhutan"
+  },
+  {
+    "code": "io",
+    "constant": "FI::_IO",
+    "long": "FI::_BRITISH_INDIAN_OCEAN_TERRITORY",
+    "description": "British Indian Ocean Territory"
+  },
+  {
+    "code": "bn",
+    "constant": "FI::_BN",
+    "long": "FI::_BRUNEI_DARUSSALAM",
+    "description": "Brunei Darussalam"
+  },
+  {
+    "code": "ru-bu",
+    "constant": "FI::_RU_BU",
+    "long": "FI::_BURYATIA",
+    "description": "Buryatia"
+  },
+  {
+    "code": "kh",
+    "constant": "FI::_KH",
+    "long": "FI::_CAMBODIA",
+    "description": "Cambodia"
+  },
+  {
+    "code": "cn",
+    "constant": "FI::_CN",
+    "long": "FI::_CHINA",
+    "description": "China"
+  },
+  {
+    "code": "cx",
+    "constant": "FI::_CX",
+    "long": "FI::_CHRISTMAS_ISLAND",
+    "description": "Christmas Island"
+  },
+  {
+    "code": "chlm",
+    "constant": "FI::_CHLM",
+    "long": "FI::_CHULYM",
+    "description": "Chulym"
+  },
+  {
+    "code": "cc",
+    "constant": "FI::_CC",
+    "long": "FI::_COCOS_ISLANDS",
+    "description": "Cocos (Keeling) Islands"
+  },
+  {
+    "code": "cn-et",
+    "constant": "FI::_CN_ET",
+    "long": "FI::_EAST_TURKESTAN",
+    "description": "East Turkestan"
+  },
+  {
+    "code": "ge",
+    "constant": "FI::_GE",
+    "long": "FI::_GEORGIA",
+    "description": "Georgia"
+  },
+  {
+    "code": "hazst",
+    "constant": "FI::_HAZST",
+    "long": "FI::_HAZARISTAN",
+    "description": "Hazaristan"
+  },
+  {
+    "code": "haz",
+    "constant": "FI::_HAZ",
+    "long": "FI::_HAZARRA",
+    "description": "Hazarra"
+  },
+  {
+    "code": "hk",
+    "constant": "FI::_HK",
+    "long": "FI::_HONG_KONG",
+    "description": "Hong Kong"
+  },
+  {
+    "code": "in",
+    "constant": "FI::_IN",
+    "long": "FI::_INDIA",
+    "description": "India"
+  },
+  {
+    "code": "id",
+    "constant": "FI::_ID",
+    "long": "FI::_INDONESIA",
+    "description": "Indonesia"
+  },
+  {
+    "code": "ir",
+    "constant": "FI::_IR",
+    "long": "FI::_IRAN",
+    "description": "Iran"
+  },
+  {
+    "code": "iq",
+    "constant": "FI::_IQ",
+    "long": "FI::_IRAQ",
+    "description": "Iraq"
+  },
+  {
+    "code": "il",
+    "constant": "FI::_IL",
+    "long": "FI::_ISRAEL",
+    "description": "Israel"
+  },
+  {
+    "code": "jp",
+    "constant": "FI::_JP",
+    "long": "FI::_JAPAN",
+    "description": "Japan"
+  },
+  {
+    "code": "jo",
+    "constant": "FI::_JO",
+    "long": "FI::_JORDAN",
+    "description": "Jordan"
+  },
+  {
+    "code": "ru-kb",
+    "constant": "FI::_RU_KB",
+    "long": "FI::_KABARDINO_BALKARIA",
+    "description": "Kabardino-Balkaria"
+  },
+  {
+    "code": "krch",
+    "constant": "FI::_KRCH",
+    "long": "FI::_KARACHAYS",
+    "description": "Karachays"
+  },
+  {
+    "code": "kz",
+    "constant": "FI::_KZ",
+    "long": "FI::_KAZAKHSTAN",
+    "description": "Kazakhstan"
+  },
+  {
+    "code": "kka",
+    "constant": "FI::_KKA",
+    "long": "FI::_KHAKAS",
+    "description": "Khakas"
+  },
+  {
+    "code": "ru-kk",
+    "constant": "FI::_RU_KK",
+    "long": "FI::_KHAKASSIA",
+    "description": "Khakassia"
+  },
+  {
+    "code": "ru-kya",
+    "constant": "FI::_RU_KYA",
+    "long": "FI::_KRASNOYARSK_KRAI",
+    "description": "Krasnoyarsk Krai"
+  },
+  {
+    "code": "kw",
+    "constant": "FI::_KW",
+    "long": "FI::_KUWAIT",
+    "description": "Kuwait"
+  },
+  {
+    "code": "kg",
+    "constant": "FI::_KG",
+    "long": "FI::_KYRGYZSTAN",
+    "description": "Kyrgyzstan"
+  },
+  {
+    "code": "la",
+    "constant": "FI::_LA",
+    "long": "FI::_LAOS",
+    "description": "Laos"
+  },
+  {
+    "code": "lb",
+    "constant": "FI::_LB",
+    "long": "FI::_LEBANON",
+    "description": "Lebanon"
+  },
+  {
+    "code": "mo",
+    "constant": "FI::_MO",
+    "long": "FI::_MACAU",
+    "description": "Macau"
+  },
+  {
+    "code": "my",
+    "constant": "FI::_MY",
+    "long": "FI::_MALAYSIA",
+    "description": "Malaysia"
+  },
+  {
+    "code": "mv",
+    "constant": "FI::_MV",
+    "long": "FI::_MALDIVES",
+    "description": "Maldives"
+  },
+  {
+    "code": "mn",
+    "constant": "FI::_MN",
+    "long": "FI::_MONGOLIA",
+    "description": "Mongolia"
+  },
+  {
+    "code": "mm",
+    "constant": "FI::_MM",
+    "long": "FI::_MYANMAR",
+    "description": "Myanmar"
+  },
+  {
+    "code": "np",
+    "constant": "FI::_NP",
+    "long": "FI::_NEPAL",
+    "description": "Nepal"
+  },
+  {
+    "code": "nog",
+    "constant": "FI::_NOG",
+    "long": "FI::_NOGAIS",
+    "description": "Nogais"
+  },
+  {
+    "code": "kp",
+    "constant": "FI::_KP",
+    "long": "FI::_NORTH_KOREA",
+    "description": "North Korea"
+  },
+  {
+    "code": "om",
+    "constant": "FI::_OM",
+    "long": "FI::_OMAN",
+    "description": "Oman"
+  },
+  {
+    "code": "pk",
+    "constant": "FI::_PK",
+    "long": "FI::_PAKISTAN",
+    "description": "Pakistan"
+  },
+  {
+    "code": "ph",
+    "constant": "FI::_PH",
+    "long": "FI::_PHILIPPINES",
+    "description": "Philippines"
+  },
+  {
+    "code": "qa",
+    "constant": "FI::_QA",
+    "long": "FI::_QATAR",
+    "description": "Qatar"
+  },
+  {
+    "code": "sa",
+    "constant": "FI::_SA",
+    "long": "FI::_SAUDI_ARABIA",
+    "description": "Saudi Arabia"
+  },
+  {
+    "code": "sg",
+    "constant": "FI::_SG",
+    "long": "FI::_SINGAPORE",
+    "description": "Singapore"
+  },
+  {
+    "code": "kr",
+    "constant": "FI::_KR",
+    "long": "FI::_SOUTH_KOREA",
+    "description": "South Korea"
+  },
+  {
+    "code": "lk",
+    "constant": "FI::_LK",
+    "long": "FI::_SRI_LANKA",
+    "description": "Sri Lanka"
+  },
+  {
+    "code": "ps",
+    "constant": "FI::_PS",
+    "long": "FI::_STATE_OF_PALESTINE",
+    "description": "State of Palestine"
+  },
+  {
+    "code": "sy",
+    "constant": "FI::_SY",
+    "long": "FI::_SYRIA",
+    "description": "Syria"
+  },
+  {
+    "code": "tw",
+    "constant": "FI::_TW",
+    "long": "FI::_TAIWAN",
+    "description": "Taiwan"
+  },
+  {
+    "code": "tj",
+    "constant": "FI::_TJ",
+    "long": "FI::_TAJIKISTAN",
+    "description": "Tajikistan"
+  },
+  {
+    "code": "ru-tdn",
+    "constant": "FI::_RU_TDN",
+    "long": "FI::_TAYMYRSKY_DOLGANO_NENETSKY_DISTRICT",
+    "description": "Taymyrsky Dolgano-Nenetsky District"
+  },
+  {
+    "code": "th",
+    "constant": "FI::_TH",
+    "long": "FI::_THAILAND",
+    "description": "Thailand"
+  },
+  {
+    "code": "tl",
+    "constant": "FI::_TL",
+    "long": "FI::_TIMOR_LESTE",
+    "description": "Timor-Leste"
+  },
+  {
+    "code": "ru-tom",
+    "constant": "FI::_RU_TOM",
+    "long": "FI::_TOMSK_OBLAST",
+    "description": "Tomsk Oblast"
+  },
+  {
+    "code": "tr",
+    "constant": "FI::_TR",
+    "long": "FI::_TURKIYE",
+    "description": "Türkiye"
+  },
+  {
+    "code": "tm",
+    "constant": "FI::_TM",
+    "long": "FI::_TURKMENISTAN",
+    "description": "Turkmenistan"
+  },
+  {
+    "code": "ru-ty",
+    "constant": "FI::_RU_TY",
+    "long": "FI::_TUVA",
+    "description": "Tuva"
+  },
+  {
+    "code": "ae",
+    "constant": "FI::_AE",
+    "long": "FI::_UNITED_ARAB_EMIRATES",
+    "description": "United Arab Emirates"
+  },
+  {
+    "code": "uz",
+    "constant": "FI::_UZ",
+    "long": "FI::_UZBEKISTAN",
+    "description": "Uzbekistan"
+  },
+  {
+    "code": "vn",
+    "constant": "FI::_VN",
+    "long": "FI::_VIETNAM",
+    "description": "Vietnam"
+  },
+  {
+    "code": "ye",
+    "constant": "FI::_YE",
+    "long": "FI::_YEMEN",
+    "description": "Yemen"
+  },
+  {
+    "code": "au-aa",
+    "constant": "FI::_AU_AA",
+    "long": "FI::_ABORIGINAL_AUSTRALIANS",
+    "description": "Aboriginal Australians"
+  },
+  {
+    "code": "au",
+    "constant": "FI::_AU",
+    "long": "FI::_AUSTRALIA",
+    "description": "Australia"
+  },
+  {
+    "code": "au-eu",
+    "constant": "FI::_AU_EU",
+    "long": "FI::_EUREKA_FLAG",
+    "description": "Eureka Flag"
+  },
+  {
+    "code": "au-tsi",
+    "constant": "FI::_AU_TSI",
+    "long": "FI::_TORRES_STRAIT_ISLANDS",
+    "description": "Torres Strait Islands"
+  },
+  {
+    "code": "ax",
+    "constant": "FI::_AX",
+    "long": "FI::_ALAND_ISLANDS",
+    "description": "Aland Islands"
+  },
+  {
+    "code": "al",
+    "constant": "FI::_AL",
+    "long": "FI::_ALBANIA",
+    "description": "Albania"
+  },
+  {
+    "code": "ru-al",
+    "constant": "FI::_RU_AL",
+    "long": "FI::_ALTAI_REPUBLIC",
+    "description": "Altai Republic"
+  },
+  {
+    "code": "ad",
+    "constant": "FI::_AD",
+    "long": "FI::_ANDORRA",
+    "description": "Andorra"
+  },
+  {
+    "code": "ru-ast",
+    "constant": "FI::_RU_AST",
+    "long": "FI::_ASTRAKHAN_OBLAST",
+    "description": "Astrakhan Oblast"
+  },
+  {
+    "code": "at",
+    "constant": "FI::_AT",
+    "long": "FI::_AUSTRIA",
+    "description": "Austria"
+  },
+  {
+    "code": "pt-20",
+    "constant": "FI::_PT_20",
+    "long": "FI::_AZORES",
+    "description": "Azores"
+  },
+  {
+    "code": "es-ib",
+    "constant": "FI::_ES_IB",
+    "long": "FI::_BALEARIC_ISLANDS",
+    "description": "Balearic Islands"
+  },
+  {
+    "code": "ru-ba",
+    "constant": "FI::_RU_BA",
+    "long": "FI::_BASHKORTOSTAN",
+    "description": "Bashkortostan"
+  },
+  {
+    "code": "es-pv",
+    "constant": "FI::_ES_PV",
+    "long": "FI::_BASQUE_COUNTRY",
+    "description": "Basque Country"
+  },
+  {
+    "code": "by",
+    "constant": "FI::_BY",
+    "long": "FI::_BELARUS",
+    "description": "Belarus"
+  },
+  {
+    "code": "be",
+    "constant": "FI::_BE",
+    "long": "FI::_BELGIUM",
+    "description": "Belgium"
+  },
+  {
+    "code": "ba",
+    "constant": "FI::_BA",
+    "long": "FI::_BOSNIA_HERZEGOVINA",
+    "description": "Bosnia & Herzegovina"
+  },
+  {
+    "code": "bg",
+    "constant": "FI::_BG",
+    "long": "FI::_BULGARIA",
+    "description": "Bulgaria"
+  },
+  {
+    "code": "es-ct",
+    "constant": "FI::_ES_CT",
+    "long": "FI::_CATALONIA",
+    "description": "Catalonia"
+  },
+  {
+    "code": "ru-ce",
+    "constant": "FI::_RU_CE",
+    "long": "FI::_CHECHNYA",
+    "description": "Chechnya"
+  },
+  {
+    "code": "ru-che",
+    "constant": "FI::_RU_CHE",
+    "long": "FI::_CHELYABINSK_OBLAST",
+    "description": "Chelyabinsk Oblast"
+  },
+  {
+    "code": "ru-cu",
+    "constant": "FI::_RU_CU",
+    "long": "FI::_CHUVASHIA",
+    "description": "Chuvashia"
+  },
+  {
+    "code": "ccss",
+    "constant": "FI::_CCSS",
+    "long": "FI::_CIRCASSIANS",
+    "description": "Circassians"
+  },
+  {
+    "code": "ua-43",
+    "constant": "FI::_UA_43",
+    "long": "FI::_CRIMEA",
+    "description": "Crimea"
+  },
+  {
+    "code": "ua-ct",
+    "constant": "FI::_UA_CT",
+    "long": "FI::_CRIMEAN_TATARS",
+    "description": "Crimean Tatars"
+  },
+  {
+    "code": "hr",
+    "constant": "FI::_HR",
+    "long": "FI::_CROATIA",
+    "description": "Croatia"
+  },
+  {
+    "code": "cy",
+    "constant": "FI::_CY",
+    "long": "FI::_CYPRUS",
+    "description": "Cyprus"
+  },
+  {
+    "code": "cz",
+    "constant": "FI::_CZ",
+    "long": "FI::_CZECH_REPUBLIC",
+    "description": "Czech Republic"
+  },
+  {
+    "code": "ru-da",
+    "constant": "FI::_RU_DA",
+    "long": "FI::_DAGESTAN",
+    "description": "Dagestan"
+  },
+  {
+    "code": "dk",
+    "constant": "FI::_DK",
+    "long": "FI::_DENMARK",
+    "description": "Denmark"
+  },
+  {
+    "code": "gb-eng",
+    "constant": "FI::_GB_ENG",
+    "long": "FI::_ENGLAND",
+    "description": "England"
+  },
+  {
+    "code": "ee",
+    "constant": "FI::_EE",
+    "long": "FI::_ESTONIA",
+    "description": "Estonia"
+  },
+  {
+    "code": "fo",
+    "constant": "FI::_FO",
+    "long": "FI::_FAROE_ISLANDS",
+    "description": "Faroe Islands"
+  },
+  {
+    "code": "fi",
+    "constant": "FI::_FI",
+    "long": "FI::_FINLAND",
+    "description": "Finland"
+  },
+  {
+    "code": "fr",
+    "constant": "FI::_FR",
+    "long": "FI::_FRANCE",
+    "description": "France"
+  },
+  {
+    "code": "es-ga",
+    "constant": "FI::_ES_GA",
+    "long": "FI::_GALICIA",
+    "description": "Galicia"
+  },
+  {
+    "code": "de",
+    "constant": "FI::_DE",
+    "long": "FI::_GERMANY",
+    "description": "Germany"
+  },
+  {
+    "code": "gi",
+    "constant": "FI::_GI",
+    "long": "FI::_GIBRALTAR",
+    "description": "Gibraltar"
+  },
+  {
+    "code": "gr",
+    "constant": "FI::_GR",
+    "long": "FI::_GREECE",
+    "description": "Greece"
+  },
+  {
+    "code": "gg",
+    "constant": "FI::_GG",
+    "long": "FI::_GUERNSEY",
+    "description": "Guernsey"
+  },
+  {
+    "code": "va",
+    "constant": "FI::_VA",
+    "long": "FI::_HOLY_SEE",
+    "description": "Holy See"
+  },
+  {
+    "code": "hu",
+    "constant": "FI::_HU",
+    "long": "FI::_HUNGARY",
+    "description": "Hungary"
+  },
+  {
+    "code": "is",
+    "constant": "FI::_IS",
+    "long": "FI::_ICELAND",
+    "description": "Iceland"
+  },
+  {
+    "code": "ie",
+    "constant": "FI::_IE",
+    "long": "FI::_IRELAND",
+    "description": "Ireland"
+  },
+  {
+    "code": "im",
+    "constant": "FI::_IM",
+    "long": "FI::_ISLE_OF_MAN",
+    "description": "Isle of Man"
+  },
+  {
+    "code": "it",
+    "constant": "FI::_IT",
+    "long": "FI::_ITALY",
+    "description": "Italy"
+  },
+  {
+    "code": "je",
+    "constant": "FI::_JE",
+    "long": "FI::_JERSEY",
+    "description": "Jersey"
+  },
+  {
+    "code": "ru-kl",
+    "constant": "FI::_RU_KL",
+    "long": "FI::_KALMYKIA",
+    "description": "Kalmykia"
+  },
+  {
+    "code": "ru-kc",
+    "constant": "FI::_RU_KC",
+    "long": "FI::_KARACHAY_CHERKESSIA",
+    "description": "Karachay-Cherkessia"
+  },
+  {
+    "code": "uz-qr",
+    "constant": "FI::_UZ_QR",
+    "long": "FI::_KARAKALPAKSTAN",
+    "description": "Karakalpakstan"
+  },
+  {
+    "code": "xk",
+    "constant": "FI::_XK",
+    "long": "FI::_KOSOVO",
+    "description": "Kosovo"
+  },
+  {
+    "code": "kpr",
+    "constant": "FI::_KPR",
+    "long": "FI::_KUBAN_PEOPLES_REPUBLIC",
+    "description": "Kuban People's Republic"
+  },
+  {
+    "code": "ru-kgn",
+    "constant": "FI::_RU_KGN",
+    "long": "FI::_KURGAN_OBLAST",
+    "description": "Kurgan Oblast"
+  },
+  {
+    "code": "lv",
+    "constant": "FI::_LV",
+    "long": "FI::_LATVIA",
+    "description": "Latvia"
+  },
+  {
+    "code": "li",
+    "constant": "FI::_LI",
+    "long": "FI::_LIECHTENSTEIN",
+    "description": "Liechtenstein"
+  },
+  {
+    "code": "lt",
+    "constant": "FI::_LT",
+    "long": "FI::_LITHUANIA",
+    "description": "Lithuania"
+  },
+  {
+    "code": "lu",
+    "constant": "FI::_LU",
+    "long": "FI::_LUXEMBOURG",
+    "description": "Luxembourg"
+  },
+  {
+    "code": "pt-30",
+    "constant": "FI::_PT_30",
+    "long": "FI::_MADEIRA",
+    "description": "Madeira"
+  },
+  {
+    "code": "mt",
+    "constant": "FI::_MT",
+    "long": "FI::_MALTA",
+    "description": "Malta"
+  },
+  {
+    "code": "md",
+    "constant": "FI::_MD",
+    "long": "FI::_MOLDOVA",
+    "description": "Moldova"
+  },
+  {
+    "code": "mc",
+    "constant": "FI::_MC",
+    "long": "FI::_MONACO",
+    "description": "Monaco"
+  },
+  {
+    "code": "me",
+    "constant": "FI::_ME",
+    "long": "FI::_MONTENEGRO",
+    "description": "Montenegro"
+  },
+  {
+    "code": "es-na",
+    "constant": "FI::_ES_NA",
+    "long": "FI::_NAVARRA",
+    "description": "Navarra"
+  },
+  {
+    "code": "nl",
+    "constant": "FI::_NL",
+    "long": "FI::_NETHERLANDS",
+    "description": "Netherlands"
+  },
+  {
+    "code": "mk",
+    "constant": "FI::_MK",
+    "long": "FI::_NORTH_MACEDONIA",
+    "description": "North Macedonia"
+  },
+  {
+    "code": "gb-nir",
+    "constant": "FI::_GB_NIR",
+    "long": "FI::_NORTHERN_IRELAND",
+    "description": "Northern Ireland"
+  },
+  {
+    "code": "no",
+    "constant": "FI::_NO",
+    "long": "FI::_NORWAY",
+    "description": "Norway"
+  },
+  {
+    "code": "pl",
+    "constant": "FI::_PL",
+    "long": "FI::_POLAND",
+    "description": "Poland"
+  },
+  {
+    "code": "pt",
+    "constant": "FI::_PT",
+    "long": "FI::_PORTUGAL",
+    "description": "Portugal"
+  },
+  {
+    "code": "ro",
+    "constant": "FI::_RO",
+    "long": "FI::_ROMANIA",
+    "description": "Romania"
+  },
+  {
+    "code": "ru",
+    "constant": "FI::_RU",
+    "long": "FI::_RUSSIA",
+    "description": "Russia"
+  },
+  {
+    "code": "ru-sa",
+    "constant": "FI::_RU_SA",
+    "long": "FI::_SAKHA_REPUBLIC",
+    "description": "Sakha Republic (Yakutia)"
+  },
+  {
+    "code": "sm",
+    "constant": "FI::_SM",
+    "long": "FI::_SAN_MARINO",
+    "description": "San Marino"
+  },
+  {
+    "code": "gb-sct",
+    "constant": "FI::_GB_SCT",
+    "long": "FI::_SCOTLAND",
+    "description": "Scotland"
+  },
+  {
+    "code": "rs",
+    "constant": "FI::_RS",
+    "long": "FI::_SERBIA",
+    "description": "Serbia"
+  },
+  {
+    "code": "sk",
+    "constant": "FI::_SK",
+    "long": "FI::_SLOVAKIA",
+    "description": "Slovakia"
+  },
+  {
+    "code": "si",
+    "constant": "FI::_SI",
+    "long": "FI::_SLOVENIA",
+    "description": "Slovenia"
+  },
+  {
+    "code": "es",
+    "constant": "FI::_ES",
+    "long": "FI::_SPAIN",
+    "description": "Spain"
+  },
+  {
+    "code": "sj",
+    "constant": "FI::_SJ",
+    "long": "FI::_SVALBARD_JAN_MAYEN",
+    "description": "Svalbard & Jan Mayen"
+  },
+  {
+    "code": "ru-sve",
+    "constant": "FI::_RU_SVE",
+    "long": "FI::_SVERDLOVSK_OBLAST",
+    "description": "Sverdlovsk Oblast"
+  },
+  {
+    "code": "se",
+    "constant": "FI::_SE",
+    "long": "FI::_SWEDEN",
+    "description": "Sweden"
+  },
+  {
+    "code": "ch",
+    "constant": "FI::_CH",
+    "long": "FI::_SWITZERLAND",
+    "description": "Switzerland"
+  },
+  {
+    "code": "ru-ta",
+    "constant": "FI::_RU_TA",
+    "long": "FI::_TATARSTAN",
+    "description": "Tatarstan"
+  },
+  {
+    "code": "ua",
+    "constant": "FI::_UA",
+    "long": "FI::_UKRAINE",
+    "description": "Ukraine"
+  },
+  {
+    "code": "gb",
+    "constant": "FI::_GB",
+    "long": "FI::_UNITED_KINGDOM",
+    "description": "United Kingdom"
+  },
+  {
+    "code": "gb-wls",
+    "constant": "FI::_GB_WLS",
+    "long": "FI::_WALES",
+    "description": "Wales"
+  },
+  {
+    "code": "as",
+    "constant": "FI::_AS",
+    "long": "FI::_AMERICAN_SAMOA",
+    "description": "American Samoa"
+  },
+  {
+    "code": "ic",
+    "constant": "FI::_IC",
+    "long": "FI::_CANARY_ISLANDS",
+    "description": "Canary Islands"
+  },
+  {
+    "code": "cp",
+    "constant": "FI::_CP",
+    "long": "FI::_CLIPPERTON_ISLAND",
+    "description": "Clipperton Island"
+  },
+  {
+    "code": "ck",
+    "constant": "FI::_CK",
+    "long": "FI::_COOK_ISLANDS",
+    "description": "Cook Islands"
+  },
+  {
+    "code": "dg",
+    "constant": "FI::_DG",
+    "long": "FI::_DIEGO_GARCIA",
+    "description": "Diego Garcia"
+  },
+  {
+    "code": "fm",
+    "constant": "FI::_FM",
+    "long": "FI::_FEDERATED_STATES_OF_MICRONESIA",
+    "description": "Federated States of Micronesia"
+  },
+  {
+    "code": "fj",
+    "constant": "FI::_FJ",
+    "long": "FI::_FIJI",
+    "description": "Fiji"
+  },
+  {
+    "code": "pf",
+    "constant": "FI::_PF",
+    "long": "FI::_FRENCH_POLYNESIA",
+    "description": "French Polynesia"
+  },
+  {
+    "code": "gu",
+    "constant": "FI::_GU",
+    "long": "FI::_GUAM",
+    "description": "Guam"
+  },
+  {
+    "code": "ki",
+    "constant": "FI::_KI",
+    "long": "FI::_KIRIBATI",
+    "description": "Kiribati"
+  },
+  {
+    "code": "mh",
+    "constant": "FI::_MH",
+    "long": "FI::_MARSHALL_ISLANDS",
+    "description": "Marshall Islands"
+  },
+  {
+    "code": "nr",
+    "constant": "FI::_NR",
+    "long": "FI::_NAURU",
+    "description": "Nauru"
+  },
+  {
+    "code": "nc",
+    "constant": "FI::_NC",
+    "long": "FI::_NEW_CALEDONIA",
+    "description": "New Caledonia"
+  },
+  {
+    "code": "nz",
+    "constant": "FI::_NZ",
+    "long": "FI::_NEW_ZEALAND",
+    "description": "New Zealand"
+  },
+  {
+    "code": "nu",
+    "constant": "FI::_NU",
+    "long": "FI::_NIUE",
+    "description": "Niue"
+  },
+  {
+    "code": "nf",
+    "constant": "FI::_NF",
+    "long": "FI::_NORFOLK_ISLAND",
+    "description": "Norfolk Island"
+  },
+  {
+    "code": "mp",
+    "constant": "FI::_MP",
+    "long": "FI::_NORTHERN_MARIANA_ISLANDS",
+    "description": "Northern Mariana Islands"
+  },
+  {
+    "code": "pw",
+    "constant": "FI::_PW",
+    "long": "FI::_PALAU",
+    "description": "Palau"
+  },
+  {
+    "code": "pg",
+    "constant": "FI::_PG",
+    "long": "FI::_PAPUA_NEW_GUINEA",
+    "description": "Papua New Guinea"
+  },
+  {
+    "code": "pn",
+    "constant": "FI::_PN",
+    "long": "FI::_PITCAIRN",
+    "description": "Pitcairn"
+  },
+  {
+    "code": "ws",
+    "constant": "FI::_WS",
+    "long": "FI::_SAMOA",
+    "description": "Samoa"
+  },
+  {
+    "code": "sb",
+    "constant": "FI::_SB",
+    "long": "FI::_SOLOMON_ISLANDS",
+    "description": "Solomon Islands"
+  },
+  {
+    "code": "tk",
+    "constant": "FI::_TK",
+    "long": "FI::_TOKELAU",
+    "description": "Tokelau"
+  },
+  {
+    "code": "to",
+    "constant": "FI::_TO",
+    "long": "FI::_TONGA",
+    "description": "Tonga"
+  },
+  {
+    "code": "tv",
+    "constant": "FI::_TV",
+    "long": "FI::_TUVALU",
+    "description": "Tuvalu"
+  },
+  {
+    "code": "vu",
+    "constant": "FI::_VU",
+    "long": "FI::_VANUATU",
+    "description": "Vanuatu"
+  },
+  {
+    "code": "wf",
+    "constant": "FI::_WF",
+    "long": "FI::_WALLIS_FUTUNA",
+    "description": "Wallis & Futuna"
+  },
+  {
+    "code": "xx",
+    "constant": "FI::_XX",
+    "long": "FI::_UNKNOWN",
+    "description": "Unknown"
+  }
+]

@@ -1,50 +1,31 @@
 <?php
 /**
- * main.php
+ * @p2m/demo/views/layouts/main.php
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright (c) Pedro Plowman, 2025
  * @link https://github.com/p2made
- * @package p2made/yii2-p2y2-things-demo
  * @license MIT
  */
 
-use yii\bootstrap\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use p2m\widgets\Alert;
-use p2m\helpers\FA;
+/** $this->render('@p2m/demo/views/layouts/main.php'); */
 
-/* @var $this \yii\web\View */
-/* @var $content string */
-
-p2m\demo\assets\ThingsDemoAsset::register($this);
+/** @var \yii\web\View $this */
+/** @var string $this->title */
+/** @var string $content */
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
+<html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
-	<meta charset="<?= Yii::$app->charset ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<?= Html::csrfMetaTags() ?>
-	<title><?= Html::encode($this->title) ?> | P2Y2Things</title>
-	<?php $this->head() ?>
+	<?= $this->render('@p2m/demo/views/layouts/_head.php') ?>
 </head>
-<body>
-<?php $this->beginBody() ?>
+	<?php
+		// pick the mode, default to 'admin'
+		$mode = $bodyMode ?? 'admin';
 
-	<div class="wrap">
-<?= $this->render('_navigation.php', []) ?>
-
-		<div class="container">
-<?= Alert::widget() ?>
-<?= $content ?>
-		</div>
-	</div>
-
-<?= $this->render('_footer.php', []) ?>
-
-<?php $this->endBody() ?>
-</body>
+		// render the matching partial
+		echo $this->render("@p2m/demo/views/layouts/_body_{$mode}.php", ['content' => $content]);
+	?>
 </html>
-<?php $this->endPage() ?>
+<?php $this->endPage(); ?>
