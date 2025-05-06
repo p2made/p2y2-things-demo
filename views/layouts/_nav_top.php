@@ -17,7 +17,9 @@ use yii\bootstrap5\Html;
 use yii\bootstrap5\NavBar;
 use p2m\helpers\BI;
 
-$searchModel = new \yii\base\DynamicModel(['q']);
+// pull those same flags that nav_search uses:
+$showSearch  = $this->params['showSearch']  ?? true;
+$searchModel = $this->params['searchModel'] ?? null;
 
 NavBar::begin([
 	'brandLabel' => $this->title,
@@ -38,8 +40,28 @@ echo Html::button(
 	]
 );
 
-echo $this->render('@p2m/demo/views/layouts/_nav_search.php');
-echo $this->render('@p2m/demo/views/layouts/_nav_dropdown.php', ['which' => 'work']);
-echo $this->render('@p2m/demo/views/layouts/_nav_dropdown.php', ['which' => 'user']);
+// if the search is hidden, wrap the dropdowns in ms-auto so they float right:
+if (!$showSearch || $searchModel === null) {
+	echo Html::beginTag('div', ['class' => 'ms-auto d-flex']);
+}
+else {
+	echo $this->render(
+		'@p2m/demo/views/layouts/_nav_search.php',
+		['searchModel' => $searchModel],
+	);
+}
+
+echo $this->render(
+	'@p2m/demo/views/layouts/_nav_dropdown.php',
+	['name' => 'work', 'menu' => Yii::$app->params['menus']['work']]
+);
+echo $this->render(
+	'@p2m/demo/views/layouts/_nav_dropdown.php',
+	['name' => 'user', 'menu' => Yii::$app->params['menus']['user']]
+);
+
+if (!$showSearch || $searchModel === null) {
+	echo Html::endTag('div');
+}
 
 NavBar::end();

@@ -16,17 +16,17 @@ use yii\bootstrap5\Html;
 use yii\bootstrap5\Dropdown;
 use p2m\helpers\BI;
 
-/** @var string $which */
+/** @var string $name */
 
-$menus = $this->params['menus'] ?? [];
-$menuItems = $menus[$which] ?? [];
+// Set $menu based on $name
+$menu = Yii::$app->params['menus'][$name] ?? [];
 
-// Set icon based on $which
+// Set $icon based on $name
 $iconMap = [
 	'user' => BI::i(BI::_PERSON)->size(4),
 	'work' => BI::i(BI::_PERSON_WORKSPACE)->size(4),
 ];
-$icon = $iconMap[$which] ?? BI::i(BI::_QUESTION_CIRCLE)->size(4); // fallback icon
+$icon = $iconMap[$name] ?? BI::i(BI::_QUESTION_CIRCLE)->size(4); // fallback icon
 
 echo Html::tag('ul',
 	Html::tag('li',
@@ -35,17 +35,17 @@ echo Html::tag('ul',
 			'#',
 			[
 				'class' => 'nav-link dropdown-toggle',
-				'id' => $which . 'Dropdown',
+				'id' => $name . 'Dropdown',
 				'role' => 'button',
 				'data-bs-toggle' => 'dropdown',
 				'aria-expanded' => 'false',
 			]
 		) .
 		Dropdown::widget([
-			'items' => $menuItems,
+			'items' => $menu,
 			'options' => [
 				'class' => 'dropdown-menu dropdown-menu-end',
-				'aria-labelledby' => $which . 'Dropdown',
+				'aria-labelledby' => $name . ' Dropdown',
 			],
 			'encodeLabels' => false, // in case titles include icons/HTML
 		]),

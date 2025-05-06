@@ -15,13 +15,6 @@
 use yii\bootstrap5\Html;
 use p2m\helpers\BI;
 
-$showSearch = $this->params['showSearch'] ?? true;
-$searchModel = $this->params['searchModel'] ?? null;
-
-if (!$showSearch || $searchModel === null) {
-	return;
-}
-
 echo Html::beginForm('', 'get', [
 	'class' => 'd-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0',
 ]);

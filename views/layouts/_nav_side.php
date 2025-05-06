@@ -16,7 +16,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use p2m\helpers\BI;
 
-$menu = $this->params['menus']['side'] ?? [];
+$menu = Yii::$app->params['menus']['side'] ?? [];
 
 function renderSideMenu(array $items, int $depth = 1): string
 {

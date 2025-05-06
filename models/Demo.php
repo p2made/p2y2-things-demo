@@ -1,6 +1,17 @@
 <?php
+/**
+ * Demo.php
+ *
+ * @author Pedro Plowman
+ * @copyright Copyright (c) Pedro Plowman, 2025
+ * @link https://github.com/p2made
+ * @license MIT
+ *
+ * @package p2made/yii2-p2y2-things-demo
+ * @class \p2m\demo\models\Demo
+ */
 
-namespace common\models;
+namespace p2m\demo\models;
 
 use Yii;
 use yii\db\ActiveRecord;
@@ -21,19 +32,18 @@ use yii\db\ActiveRecord;
  * @property string $html_lang HTML Language
  * @property string|null $footer_content Footer Content
  */
-class Language extends ActiveRecord
+class Demo extends ActiveRecord
 {
 	/**
 	 * {@inheritdoc}
-	 */
 	public static function tableName()
 	{
 		return '{{%language}}';
 	}
+	 */
 
 	/**
 	 * {@inheritdoc}
-	 */
 	public function rules()
 	{
 		return [
@@ -53,10 +63,10 @@ class Language extends ActiveRecord
 			[['prev_code'], 'unique'],
 		];
 	}
+	 */
 
 	/**
 	 * {@inheritdoc}
-	 */
 	public function attributeLabels()
 	{
 		return [
@@ -74,4 +84,5 @@ class Language extends ActiveRecord
 			'footer_content' => 'Footer Content',
 		];
 	}
+	 */
 }

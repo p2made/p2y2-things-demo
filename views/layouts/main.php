@@ -22,12 +22,7 @@
 </head>
 	<?php
 		// pick the mode, default to 'admin'
-		$mode = $this->params['bodyMode'] ?? 'admin';
-
-		// sanitize just in case
-		if (!in_array($mode, ['admin','error','auth'], true)) {
-			$mode = 'admin';
-		}
+		$mode = $bodyMode ?? 'admin';
 
 		// render the matching partial
 		echo $this->render("@p2m/demo/views/layouts/_body_{$mode}.php", ['content' => $content]);

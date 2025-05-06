@@ -25,7 +25,7 @@ use yii\web\AssetBundle;
 
 class DatatablesSimpleDemo extends AssetBundle
 {
-	public $sourcePath = '@p2m/demo/demo';
+	public $sourcePath = '@p2m/demo/data';
 
 	public $js = [
 		'sb-admin/datatables-simple-demo.js',

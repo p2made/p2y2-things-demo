@@ -25,7 +25,7 @@ use yii\web\AssetBundle;
 
 class ChartBarDemo extends AssetBundle
 {
-	public $sourcePath = '@p2m/demo/demo';
+	public $sourcePath = '@p2m/demo/data';
 
 	public $js = [
 		'sb-admin/chart-bar-demo.js',

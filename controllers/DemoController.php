@@ -14,9 +14,9 @@
 /**
  * Demo params references
  *
- * Yii::$app->params['bodyMode'][0]
- * Yii::$app->params['bodyMode'][1]
- * Yii::$app->params['bodyMode'][2]
+ * Yii::$app->params['bodyMode'][0] // 'admin'
+ * Yii::$app->params['bodyMode'][1] // 'auth'
+ * Yii::$app->params['bodyMode'][2] // 'error'
  *
  * Yii::$app->params['menus']['user']
  * Yii::$app->params['menus']['work']
@@ -41,8 +41,16 @@ use p2m\helpers\BI;
  */
 class DemoController extends Controller
 {
+	// bodyMode values:
+	private const MODE_ADMIN  = 'admin';
+	private const MODE_AUTH   = 'auth';
+	private const MODE_ERROR  = 'error';
 	// Title for demo pages
-	protected $demoTitle = 'p2y2-things-demo';
+	private const DEMO_TITLE  = 'p2y2-things-demo';
+	// Copyright
+	private const COPYRIGHT   = 'Pedro Plowman';
+	// Show search
+	private const SHOW_SEARCH = true;
 
 	// User for demo pages
 	protected $demoUser = 'Demo User';
@@ -51,20 +59,15 @@ class DemoController extends Controller
 	{
 		parent::init();
 
-		$this->view->title = $this->demoTitle;
+		$this->view->title = self::DEMO_TITLE;
 
-		$this->view->params['bodyMode'] = Yii::$app->params['bodyMode'][0];
-		$this->view->params['menus'] = [
-			'user' => Yii::$app->params['userMenu'],
-			'work' => Yii::$app->params['workMenu'],
-			'side' => Yii::$app->params['sideMenu'],
-		];
+		$this->view->params['copyright'] = self::COPYRIGHT;
 		$this->view->params['username'] = Yii::$app->user->identity->username ?? $this->demoUser;
 
 		// Register the meta asset
 		$this->view->params['demoAssetUrl'] = ThingsDemoAsset::register($this->view)->baseUrl;
-		$this->view->params['showSearch'] = true;
-		$this->view->params['searchModel'] = new \yii\base\DynamicModel(['q']);
+		$this->view->params['showSearch']   = self::SHOW_SEARCH;
+		$this->view->params['searchModel']  = new \yii\base\DynamicModel(['q']);
 	}
 
 	/**
@@ -139,17 +142,11 @@ class DemoController extends Controller
 			$route = 'index';
 		}
 
-		$viewFile = "@p2m/demo/views/site/{$route}.php";
-
-		if (!is_file(Yii::getAlias($viewFile))) {
-			throw new NotFoundHttpException("The requested page does not exist: $route");
-		}
-
 		if (in_array($route, ['contact', 'login', 'signup'])) {
 			$models = [
 				'contact' => ['name', 'email', 'subject', 'body', 'verifyCode'],
-				'login' => ['username', 'password', 'rememberMe'],
-				'signup' => ['username', 'email', 'password'],
+				'login' =>   ['username', 'password', 'rememberMe'],
+				'signup' =>  ['username', 'email', 'password'],
 			];
 
 			$model = new \yii\base\DynamicModel($models[$route]);
@@ -158,7 +155,10 @@ class DemoController extends Controller
 		}
 
 		//return $this->render("@p2m/demo/views/site/{$route}");
-		return $this->render($viewFile);
+		return $this->render(
+			"@p2m/demo/views/site/{$route}.php",
+			['bodyMode' => self::MODE_ADMIN]
+		);
 	}
 
 	/**
@@ -168,7 +168,7 @@ class DemoController extends Controller
 	 * @return string
 	 * @throws HttpException when simulating
 	 */
-	public function actionError(int $code = null): string
+	public function actionError(?int $code = null): string
 	{
 		// If you visited /401 or /502 etc, simulate that error:
 		if ($code !== null) {
@@ -200,10 +200,10 @@ class DemoController extends Controller
 		}
 
 		// tell your layout to load the "error" body partial
-		$this->view->params['bodyMode'] = 'error';
 		$this->view->title = "$code – $name";
 
 		return $this->render('@p2m/demo/views/site/error.php', [
+			'bodyMode'   => self::MODE_ERROR,
 			'statusCode' => $code,
 			'name'       => $name,
 			'message'    => $message,
@@ -363,4 +363,3 @@ class DemoController extends Controller
 	}
 	 */
 }
-
