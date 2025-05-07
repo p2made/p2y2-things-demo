@@ -18,7 +18,7 @@ use yii\data\ActiveDataProvider;
 use p2m\demo\models\Demo;
 
 /**
- * LanguageSearch represents the model behind the search form of `common\models\Language`.
+ * DemoSearch represents the model behind the search form of `p2m\demo\models\Demo`.
  */
 class DemoSearch extends Demo
 {
