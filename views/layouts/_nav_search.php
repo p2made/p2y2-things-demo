@@ -18,7 +18,7 @@ use yii\bootstrap5\Html;
 use p2m\helpers\BI;
 
 $form = ActiveForm::begin([
-	'action'  => ['site/search'],    // or wherever your search lives
+	'action'  => ['search'],    // or wherever your search lives
 	'method'  => 'get',
 	'options' => ['class' => 'd-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0'],
 ]);

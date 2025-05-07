@@ -8,21 +8,15 @@
  * @license MIT
  *
  * @package p2made/yii2-p2y2-things-demo
- * @class \p2m\demo\assets\ThingsDemoAsset
+ * @class \p2m\demo\controllers\DemoController
  */
 
 /**
- * Demo params references
- *
- * Yii::$app->params['bodyMode'][0] // 'admin'
- * Yii::$app->params['bodyMode'][1] // 'auth'
- * Yii::$app->params['bodyMode'][2] // 'error'
+ * Demo menus references
  *
  * Yii::$app->params['menus']['user']
  * Yii::$app->params['menus']['work']
  * Yii::$app->params['menus']['side']
- *
- * Yii::$app->params['copyright']
  *
  */
 
@@ -31,13 +25,16 @@ namespace p2m\demo\controllers;
 use Yii;
 use yii\web\Controller;
 use yii\web\HttpException;
-use yii\web\NotFoundHttpException;
-use yii\web\ServerErrorHttpException;
+use yii\filters\AccessControl;
+use yii\filters\VerbFilter;
+use p2m\demo\models\DemoSearch;
+//use yii\web\NotFoundHttpException;
+//use yii\web\ServerErrorHttpException;
 use p2m\demo\assets\ThingsDemoAsset;
 use p2m\helpers\BI;
 
 /**
- * Site controller
+ * Demo controller
  */
 class DemoController extends Controller
 {
@@ -77,30 +74,40 @@ class DemoController extends Controller
 	}
 
 	/**
+	 * Behaviors: who can see index/search, and HTTP verbs
 	 * {@inheritdoc}
 	public function behaviors(): array
 	{
 		return [
 			'access' => [
 				'class' => AccessControl::class,
-				'only' => ['logout', 'signup'],
+				// allow only logged-in users to index & search
+				'only'  => ['index', 'search'],
+				//'only' => ['logout', 'signup'],
 				'rules' => [
 					[
-						'actions' => ['signup'],
-						'allow' => true,
-						'roles' => ['?'],
+						'actions' => ['index', 'search'],
+						//'actions' => ['signup'],
+						'allow'   => true,
+						'roles'   => ['@'],
+						//'roles' => ['?'],
 					],
+					// allow guests to see error (and later login/signup)
 					[
-						'actions' => ['logout'],
-						'allow' => true,
-						'roles' => ['@'],
+						'actions' => ['error'],
+						//'actions' => ['logout'],
+						'allow'   => true,
+						'roles'   => ['?', '@'],
+						//'roles' => ['@'],
 					],
 				],
 			],
 			'verbs' => [
 				'class' => VerbFilter::class,
 				'actions' => [
-					'logout' => ['post'],
+					'search' => ['get'],
+					'error'  => ['get','post'],
+					//'logout' => ['post'],
 				],
 			],
 		];
@@ -123,14 +130,18 @@ class DemoController extends Controller
 	}
 
 	/**
-	 * Displays homepage.
+	 * Displays Dashboard.
 	 *
 	 * @return mixed
-	public function actionIndex(): void
-	{
-		return $this->render('index');
-	}
 	 */
+	public function actionIndex(): string
+	{
+		// optionally, you can prepare dataProviders here if your index lists things
+
+		return $this->render('index', [
+			'bodyMode' => self::MODE_ADMIN,
+		]);
+	}
 
 	/**
 	 * Displays a page.
@@ -165,6 +176,18 @@ class DemoController extends Controller
 			"@p2m/demo/views/site/{$route}.php",
 			['bodyMode' => self::MODE_ADMIN]
 		);
+	}
+
+	/**
+	 * Displays the search page.
+	 *
+	 * @return mixed
+	 */
+	public function actionSearch(): string
+	{
+		return $this->render('search', [
+			'bodyMode' => self::MODE_ERROR,
+		]);
 	}
 
 	/**
@@ -215,157 +238,4 @@ class DemoController extends Controller
 			'message'    => $message,
 		]);
 	}
-
-	/**
-	 * Simulate a 401.
-	 *
-	 * @return mixed
-	public function action401(): void
-	{
-		$this->view->params['bodyMode'] = 'error'; // In your error action
-
-		throw new HttpException(401, 'You are not authorized to view this page.');
-	}
-	 */
-
-	/**
-	 * Simulate a 404.
-	 *
-	 * @return mixed
-	public function action404(): void
-	{
-		$this->view->params['bodyMode'] = 'error'; // In your error action
-
-		throw new NotFoundHttpException('The page you requested could not be found.');
-	}
-	 */
-
-	/**
-	 * Simulate a 500.
-	 *
-	 * @return mixed
-	public function action500(): void
-	{
-		$this->view->params['bodyMode'] = 'error'; // In your error action
-
-		throw new ServerErrorHttpException('An internal server error occurred.');
-	}
-	 */
-
-	/**
-	 * Logs in a user.
-	 *
-	 * @return mixed
-	public function actionLogin(): string
-	{
-		if (!Yii::$app->user->isGuest) {
-			return $this->goHome();
-		}
-
-		$model = new LoginForm();
-		if ($model->load(Yii::$app->request->post()) && $model->login()) {
-			return $this->goBack();
-		}
-
-		$model->password = '';
-
-		return $this->render('login', [
-			'model' => $model,
-		]);
-	}
-	 */
-
-	/**
-	 * Logs out the current user.
-	 *
-	 * @return mixed
-	public function actionLogout(): string
-	{
-		Yii::$app->user->logout();
-
-		return $this->goHome();
-	}
-	 */
-
-	/**
-	 * Displays about page.
-	 *
-	 * @return mixed
-	public function actionAbout(): string
-	{
-		return $this->render('about');
-	}
-	 */
-
-	/**
-	 * Requests password reset.
-	 *
-	 * @return mixed
-	public function actionRequestPasswordReset(): string
-	{
-		$model = new PasswordResetRequestForm();
-		if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-			if ($model->sendEmail()) {
-				Yii::$app->session->setFlash('success', 'Check your email for further instructions.');
-
-				return $this->goHome();
-			}
-
-			Yii::$app->session->setFlash('error', 'Sorry, we are unable to reset password for the provided email address.');
-		}
-
-		return $this->render('requestPasswordResetToken', [
-			'model' => $model,
-		]);
-	}
-	 */
-
-	/**
-	 * Resets password.
-	 *
-	 * @param string $token
-	 * @return mixed
-	 * @throws BadRequestHttpException
-	public function actionResetPassword($token): string
-	{
-		try {
-			$model = new ResetPasswordForm($token);
-		} catch (InvalidArgumentException $e) {
-			throw new BadRequestHttpException($e->getMessage());
-		}
-
-		if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
-			Yii::$app->session->setFlash('success', 'New password saved.');
-
-			return $this->goHome();
-		}
-
-		return $this->render('resetPassword', [
-			'model' => $model,
-		]);
-	}
-	 */
-
-	/**
-	 * Verify email address
-	 *
-	 * @param string $token
-	 * @throws BadRequestHttpException
-	 * @return yii\web\Response
-	public function actionVerifyEmail($token): string
-	{
-		try {
-			$model = new VerifyEmailForm($token);
-		} catch (InvalidArgumentException $e) {
-			throw new BadRequestHttpException($e->getMessage());
-		}
-		if (($user = $model->verifyEmail()) && Yii::$app->user->login($user)) {
-			Yii::$app->session->setFlash('success', 'Your email has been confirmed!');
-			return $this->goHome();
-		}
-
-		Yii::$app->session->setFlash('error', 'Sorry, we are unable to verify your account with provided token.');
-		return $this->goHome();
-	}
-	 */
 }
