@@ -50,7 +50,8 @@ class DemoController extends Controller
 	private const SHOW_SEARCH = true;
 
 	// User for demo pages
-	private $demoUser = 'Demo User';
+	private $demoUser         = 'Demo User';
+	private $demoPassword     = 'pa$sw0rd';
 
 	public function init(): void
 	{
