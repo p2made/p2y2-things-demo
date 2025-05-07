@@ -28,6 +28,8 @@ use yii\web\HttpException;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use p2m\demo\models\DemoSearch;
+use yii\base\DynamicModel;
+use yii\web\Response;
 //use yii\web\NotFoundHttpException;
 //use yii\web\ServerErrorHttpException;
 use p2m\demo\assets\ThingsDemoAsset;
@@ -50,8 +52,10 @@ class DemoController extends Controller
 	private const SHOW_SEARCH = true;
 
 	// User for demo pages
-	private $demoUser         = 'Demo User';
-	private $demoPassword     = 'pa$sw0rd';
+	private $demoUser         = 'demo';
+	private $demoPassword     = 'demo';
+	//private $demoUser         = 'Demo User';
+	//private $demoPassword     = 'pa$sw0rd';
 
 	public function init(): void
 	{
@@ -131,6 +135,28 @@ class DemoController extends Controller
 	}
 
 	/**
+	 * Override beforeAction() to guard access
+	 * {@inheritdoc}
+	 */
+	public function beforeAction($action)
+	{
+		// always allow error pages
+		if ($action->id === 'error') {
+			return parent::beforeAction($action);
+		}
+
+		$session = Yii::$app->session;
+		$loggedIn = $session->get('demoLoggedIn', false);
+
+		// if not logged in and not on login/logout, redirect to login
+		if (!$loggedIn && !in_array($action->id, ['login','logout'], true)) {
+			return $this->redirect(['login']);
+		}
+
+		return parent::beforeAction($action);
+	}
+
+	/**
 	 * Displays Dashboard.
 	 *
 	 * @return mixed
@@ -189,6 +215,51 @@ class DemoController extends Controller
 		return $this->render('search', [
 			'bodyMode' => self::MODE_ERROR,
 		]);
+	}
+
+	/**
+	 * Logs the user in.
+	 */
+	public function actionLogin()
+	{
+		$session = Yii::$app->session;
+
+		// if already “logged in”, go home:
+		if ($session->get('demoLoggedIn', false)) {
+			return $this->redirect(['index']);
+		}
+
+		// build an on-the-fly model for username/password
+		$model = new DynamicModel(['username','password']);
+		$model->addRule(['username','password'], 'required');
+
+		if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+			if ($model->username === $this->demoUser
+				&& $model->password === $this->demoPass) {
+				// success!
+				$session->set('demoLoggedIn', true);
+				// redirect to dashboard
+				return $this->redirect(['index']);
+			} else {
+				$model->addError('password','Invalid demo credentials');
+			}
+		}
+
+		// render your login.php under @p2m/demo/views/site/login.php
+		return $this->render('login', [
+			'model' => $model,
+		]);
+	}
+
+	/**
+	 * Logs the user out.
+	 *
+	 * @return Response
+	 */
+	public function actionLogout(): Response
+	{
+		Yii::$app->session->remove('demoLoggedIn');
+		return $this->redirect(['login']);
 	}
 
 	/**

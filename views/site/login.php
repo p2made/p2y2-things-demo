@@ -1,8 +1,10 @@
 <?php
-
 /** @var yii\web\View $this */
 /** @var yii\web\View $this->title */
+/** @var \yii\base\DynamicModel $model */
 
+use yii\bootstrap5\ActiveForm;
+use yii\bootstrap5\Html;
 ?>
 <div class="container">
 	<div class="row justify-content-center">
@@ -28,9 +30,6 @@
 							<a class="btn btn-primary" href="index.php">Login</a>
 						</div>
 					</form>
-				</div>
-				<div class="card-footer text-center py-3">
-					<div class="small"><a href="register.php">Need an account? Sign up!</a></div>
 				</div>
 			</div>
 		</div>
