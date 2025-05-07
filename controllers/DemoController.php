@@ -53,7 +53,7 @@ class DemoController extends Controller
 	private const SHOW_SEARCH = true;
 
 	// User for demo pages
-	protected $demoUser = 'Demo User';
+	private $demoUser = 'Demo User';
 
 	public function init(): void
 	{
@@ -66,8 +66,14 @@ class DemoController extends Controller
 
 		// Register the meta asset
 		$this->view->params['demoAssetUrl'] = ThingsDemoAsset::register($this->view)->baseUrl;
-		$this->view->params['showSearch']   = self::SHOW_SEARCH;
-		$this->view->params['searchModel']  = new \yii\base\DynamicModel(['q']);
+
+		$this->view->params['showSearch'] = self::SHOW_SEARCH;
+		if (self::SHOW_SEARCH) {
+			$searchModel = new \p2m\demo\models\DemoSearch();
+			//$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+			$this->view->params['searchModel'] = $searchModel;
+			//$this->view->params['dataProvider'] = $dataProvider;
+		}
 	}
 
 	/**

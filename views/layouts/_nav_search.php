@@ -10,23 +10,30 @@
 
 /** $this->render('@p2m/demo/views/layouts/_nav_search.php'); */
 
-/** @var \yii\web\View $this */
+/** @var \yii\web\View                  $this */
+/** @var \p2m\demo\models\DemoSearch    $searchModel */
 
+use yii\bootstrap5\ActiveForm;
 use yii\bootstrap5\Html;
 use p2m\helpers\BI;
 
-echo Html::beginForm('', 'get', [
-	'class' => 'd-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0',
+$form = ActiveForm::begin([
+	'action'  => ['site/search'],    // or wherever your search lives
+	'method'  => 'get',
+	'options' => ['class' => 'd-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0'],
 ]);
 
 echo Html::beginTag('div', ['class' => 'input-group']);
 
-echo Html::activeInput('text', $searchModel, 'q', [
-	'class' => 'form-control',
-	'placeholder' => 'Search for...',
-	'aria-label' => 'Search for...',
+echo $form->field($searchModel, 'q', [
+	'template' => "{input}\n{error}",
+	'options'  => ['class' => ''],  // remove wrapper div
+])->textInput([
+	'class'       => 'form-control',
+	'placeholder' => 'Search for…',
+	'aria-label'  => 'Search for…',
 	'aria-describedby' => 'btnNavbarSearch',
-]);
+])->label(false);
 
 echo Html::button(
 	BI::i(BI::_SEARCH),
@@ -38,4 +45,5 @@ echo Html::button(
 );
 
 echo Html::endTag('div');
-echo Html::endForm();
+ActiveForm::end();
+
