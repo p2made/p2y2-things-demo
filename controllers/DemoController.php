@@ -55,6 +55,7 @@ class DemoController extends Controller
 	private $demoUser         = 'demo';
 	private $demoPassword     = 'demo';
 	//private $demoUser         = 'Demo User';
+	//private $demoEmail        = 'demo@example.com';
 	//private $demoPassword     = 'pa$sw0rd';
 
 	public function init(): void
