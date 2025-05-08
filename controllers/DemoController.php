@@ -30,7 +30,7 @@ use yii\filters\VerbFilter;
 use p2m\demo\models\DemoSearch;
 use yii\base\DynamicModel;
 use yii\web\Response;
-//use yii\web\NotFoundHttpException;
+use yii\web\NotFoundHttpException;
 //use yii\web\ServerErrorHttpException;
 use p2m\demo\assets\ThingsDemoAsset;
 use p2m\helpers\BI;
@@ -82,6 +82,7 @@ class DemoController extends Controller
 	/**
 	 * Behaviors: who can see index/search, and HTTP verbs
 	 * {@inheritdoc}
+	 */
 	public function behaviors(): array
 	{
 		return [
@@ -118,7 +119,6 @@ class DemoController extends Controller
 			],
 		];
 	}
-	 */
 
 	/**
 	 * {@inheritdoc}
@@ -176,7 +176,36 @@ class DemoController extends Controller
 	 *
 	 * @return mixed
 	 */
-	public function actionView($part1 = '', $part2 = ''): string
+	public function actionView(string $part1 = '', ?string $part2 = null): string
+	{
+		// block out the special routes entirely
+		if (in_array($part1, ['login','logout','search','error'], true)) {
+			throw new BadRequestHttpException('Not found');
+		}
+
+		// compute which view file to load under @p2m/demo/views/site/…
+		if ($part2 === null) {
+			// /foo  => views/site/foo.php
+			$viewName = $part1;
+		} else {
+			if ($part1 === 'site') {
+				// /site/bar  => views/site/bar.php
+				$viewName = $part2;
+			} else {
+				// /foo/bar  => views/site/foo/bar.php
+				$viewName = "$part1/$part2";
+			}
+		}
+
+		$file = Yii::getAlias("@p2m/demo/views/site/{$viewName}.php");
+		if (!is_file($file)) {
+			throw new NotFoundHttpException("View not found: {$viewName}");
+		}
+
+		// pass through any shared params, e.g. bodyMode
+		return $this->renderFile($file, ['bodyMode' => self::MODE_ADMIN]);
+	}
+	/**
 	{
 		//die("✅ DemoController reached: $part1 / $part2");
 
@@ -205,6 +234,7 @@ class DemoController extends Controller
 			['bodyMode' => self::MODE_ADMIN]
 		);
 	}
+	 */
 
 	/**
 	 * Displays the search page.
@@ -221,34 +251,16 @@ class DemoController extends Controller
 	/**
 	 * Logs the user in.
 	 */
-	public function actionLogin()
+	public function actionLogin(): string
 	{
 		$session = Yii::$app->session;
-
-		// if already “logged in”, go home:
-		if ($session->get('demoLoggedIn', false)) {
+		if ($session->get('demoLoggedIn')) {
 			return $this->redirect(['index']);
 		}
-
-		// build an on-the-fly model for username/password
-		$model = new DynamicModel(['username','password']);
-		$model->addRule(['username','password'], 'required');
-
-		if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-			if ($model->username === $this->demoUser
-				&& $model->password === $this->demoPass) {
-				// success!
-				$session->set('demoLoggedIn', true);
-				// redirect to dashboard
-				return $this->redirect(['index']);
-			} else {
-				$model->addError('password','Invalid demo credentials');
-			}
-		}
-
-		// render your login.php under @p2m/demo/views/site/login.php
-		return $this->render('login', [
-			'model' => $model,
+		// …build $model…
+		return $this->render('@p2m/demo/views/site/login.php', [
+			'bodyMode' => self::MODE_AUTH,
+			'model'=>$model,
 		]);
 	}
 

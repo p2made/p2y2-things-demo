@@ -15,7 +15,6 @@ namespace p2m\demo\models;
 
 use Yii;
 use yii\base\NotSupportedException;
-use yii\behaviors\TimestampBehavior;
 use yii\base\Model;
 use yii\base\DynamicModel;
 //use yii\db\ActiveRecord;
