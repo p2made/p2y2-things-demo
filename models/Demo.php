@@ -14,7 +14,7 @@
 namespace p2m\demo\models;
 
 use Yii;
-use yii\base\Model;
+//use yii\base\Model;
 use yii\base\DynamicModel;
 
 /**
@@ -22,6 +22,6 @@ use yii\base\DynamicModel;
  *
  * @property string $property Property description
  */
-class Demo extends Model
+class Demo extends DynamicModel
 {
 }

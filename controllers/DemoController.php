@@ -32,6 +32,7 @@ use yii\base\DynamicModel;
 use yii\web\Response;
 use yii\web\NotFoundHttpException;
 //use yii\web\ServerErrorHttpException;
+use p2m\demo\models\User;
 use p2m\demo\assets\ThingsDemoAsset;
 use p2m\helpers\BI;
 
@@ -114,6 +115,7 @@ class DemoController extends Controller
 				'actions' => [
 					'search' => ['get'],
 					'error'  => ['get','post'],
+					'logout' => ['get'],  // demo-only; normally POST
 					//'logout' => ['post'],
 				],
 			],
@@ -164,11 +166,11 @@ class DemoController extends Controller
 	 */
 	public function actionIndex(): string
 	{
+		$this->view->params['bodyMode'] = self::MODE_ADMIN;
+
 		// optionally, you can prepare dataProviders here if your index lists things
 
-		return $this->render('index', [
-			'bodyMode' => self::MODE_ADMIN,
-		]);
+		return $this->render('@p2m/demo/views/site/index.php');
 	}
 
 	/**
@@ -178,32 +180,21 @@ class DemoController extends Controller
 	 */
 	public function actionView(string $part1 = '', ?string $part2 = null): string
 	{
+		$this->view->params['bodyMode'] = self::MODE_ADMIN;
+
 		// block out the special routes entirely
 		if (in_array($part1, ['login','logout','search','error'], true)) {
 			throw new BadRequestHttpException('Not found');
 		}
 
-		// compute which view file to load under @p2m/demo/views/site/…
-		if ($part2 === null) {
-			// /foo  => views/site/foo.php
-			$viewName = $part1;
-		} else {
-			if ($part1 === 'site') {
-				// /site/bar  => views/site/bar.php
-				$viewName = $part2;
-			} else {
-				// /foo/bar  => views/site/foo/bar.php
-				$viewName = "$part1/$part2";
-			}
-		}
+		$route = trim("$part1/$part2", '/');
 
-		$file = Yii::getAlias("@p2m/demo/views/site/{$viewName}.php");
-		if (!is_file($file)) {
-			throw new NotFoundHttpException("View not found: {$viewName}");
+		if ($route === '') {
+			$route = 'index';
 		}
 
 		// pass through any shared params, e.g. bodyMode
-		return $this->renderFile($file, ['bodyMode' => self::MODE_ADMIN]);
+		return $this->render("@p2m/demo/views/site/{$route}.php");
 	}
 	/**
 	{
@@ -251,27 +242,36 @@ class DemoController extends Controller
 	/**
 	 * Logs the user in.
 	 */
-	public function actionLogin(): string
+	public function actionLogin()//: string
 	{
-		$session = Yii::$app->session;
-		if ($session->get('demoLoggedIn')) {
-			return $this->redirect(['index']);
+		$this->view->params['bodyMode'] = self::MODE_AUTH;
+
+		$model = new \p2m\demo\models\User();
+
+		if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+			if ($model->validateDemo()) {
+				Yii::$app->session->set('demoLoggedIn', true);
+				Yii::$app->session->set('demoUser', $model->displayName);
+				return $this->redirect(['index']);
+			}
+			$model->addError('password','Invalid demo credentials');
 		}
-		// …build $model…
+
 		return $this->render('@p2m/demo/views/site/login.php', [
-			'bodyMode' => self::MODE_AUTH,
-			'model'=>$model,
+			'model' => $model,
 		]);
 	}
 
 	/**
-	 * Logs the user out.
+	 * Clears the demo session and redirects to login.
 	 *
 	 * @return Response
 	 */
 	public function actionLogout(): Response
 	{
-		Yii::$app->session->remove('demoLoggedIn');
+		$session = Yii::$app->session;
+		$session->remove('demoLoggedIn');
+		$session->remove('demoUser');
 		return $this->redirect(['login']);
 	}
 
@@ -284,6 +284,8 @@ class DemoController extends Controller
 	 */
 	public function actionError(?int $code = null): string
 	{
+		$this->view->params['bodyMode'] = self::MODE_ERROR;
+
 		// If you visited /401 or /502 etc, simulate that error:
 		if ($code !== null) {
 			// get standard reason phrase or fallback
@@ -317,7 +319,6 @@ class DemoController extends Controller
 		$this->view->title = "$code – $name";
 
 		return $this->render('@p2m/demo/views/site/error.php', [
-			'bodyMode'   => self::MODE_ERROR,
 			'statusCode' => $code,
 			'name'       => $name,
 			'message'    => $message,

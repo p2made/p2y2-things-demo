@@ -19,7 +19,7 @@ use yii\bootstrap5\Html;
 						'options' => ['class' => ''],
 					]); ?>
 						<div class="form-floating mb-3">
-							<?= $form->field($model, 'username', [
+							<?= $form->field($model, 'email', [
 								'template' => "{input}\n{label}\n{error}",
 								'options'  => ['tag' => false],
 							])->textInput([

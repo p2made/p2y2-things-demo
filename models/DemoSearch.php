@@ -13,8 +13,6 @@
 
 namespace p2m\demo\models;
 
-use yii\base\Model;
-use yii\base\DynamicModel;
 use yii\data\ActiveDataProvider;
 use p2m\demo\models\Demo;
 

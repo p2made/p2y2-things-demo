@@ -13,12 +13,7 @@
 
 namespace p2m\demo\models;
 
-use Yii;
-use yii\base\NotSupportedException;
 use yii\base\Model;
-use yii\base\DynamicModel;
-//use yii\db\ActiveRecord;
-use yii\web\IdentityInterface;
 
 /**
  * User model
@@ -27,17 +22,54 @@ use yii\web\IdentityInterface;
  * @property string $email
  * @property string $password
  */
-class User extends Model implements IdentityInterface
+class User extends Model
 {
 	// User for demo pages
 	protected const DEMO_USER      = 'Demo User';
 	protected const DEMO_EMAIL     = 'demo@example.com';
 	protected const DEMO_PASSWORD  = 'pa$sw0rd';
 
-	protected static $username = 'Demo User';
-	protected static $email    = 'demo@example.com';
-	protected static $password = 'pa$sw0rd';
-	//protected static $username = 'demo';
-	//protected static $password = 'demo';
+	/** @var string */
+	public $email;
+	/** @var string */
+	public $password;
 
+	/**
+	 * Initialize defaults so the form is pre-filled.
+	 */
+	public function init(): void
+	{
+		parent::init();
+		$this->email    = self::DEMO_EMAIL;
+		$this->password = self::DEMO_PASSWORD;
+	}
+
+	/**
+	 * Validation rules for the form.
+	 */
+	public function rules(): array
+	{
+		return [
+			[['email','password'], 'required'],
+			['email', 'email'],
+			['password', 'string', 'min' => 8],
+		];
+	}
+
+	/**
+	 * “Log in” check against your demo credentials.
+	 */
+	public function validateDemo(): bool
+	{
+		return $this->email === self::DEMO_EMAIL
+			&& $this->password === self::DEMO_PASSWORD;
+	}
+
+	/**
+	 * What to show in the navbar after logging in.
+	 */
+	public function getDisplayName(): string
+	{
+		return self::DEMO_USER;
+	}
 }
