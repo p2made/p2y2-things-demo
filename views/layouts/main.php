@@ -13,6 +13,8 @@
 /** @var \yii\web\View $this */
 /** @var string $this->title */
 /** @var string $content */
+
+//p2m\assets\P2BootstrapIconsAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
