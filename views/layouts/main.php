@@ -13,6 +13,8 @@
 /** @var \yii\web\View $this */
 /** @var string $this->title */
 /** @var string $content */
+
+//p2m\assets\P2BootstrapIconsAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -22,7 +24,7 @@
 </head>
 	<?php
 		// pick the mode, default to 'admin'
-		$mode = $bodyMode ?? 'admin';
+		$mode = $this->params['bodyMode'] ?? 'admin';
 
 		// render the matching partial
 		echo $this->render("@p2m/demo/views/layouts/_body_{$mode}.php", ['content' => $content]);

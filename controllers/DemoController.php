@@ -28,8 +28,11 @@ use yii\web\HttpException;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use p2m\demo\models\DemoSearch;
-//use yii\web\NotFoundHttpException;
+use yii\base\DynamicModel;
+use yii\web\Response;
+use yii\web\NotFoundHttpException;
 //use yii\web\ServerErrorHttpException;
+use p2m\demo\models\User;
 use p2m\demo\assets\ThingsDemoAsset;
 use p2m\helpers\BI;
 
@@ -50,8 +53,11 @@ class DemoController extends Controller
 	private const SHOW_SEARCH = true;
 
 	// User for demo pages
-	private $demoUser         = 'Demo User';
-	private $demoPassword     = 'pa$sw0rd';
+	private $demoUser         = 'demo';
+	private $demoPassword     = 'demo';
+	//private $demoUser         = 'Demo User';
+	//private $demoEmail        = 'demo@example.com';
+	//private $demoPassword     = 'pa$sw0rd';
 
 	public function init(): void
 	{
@@ -75,8 +81,18 @@ class DemoController extends Controller
 	}
 
 	/**
+	 * Simplifies setting body mode.
+	 */
+	private function setBodyMode(string $bodyMode): void
+	{
+		$this->view->params['bodyMode'] = $bodyMode;
+	}
+
+	/**
 	 * Behaviors: who can see index/search, and HTTP verbs
+	 *
 	 * {@inheritdoc}
+	 */
 	public function behaviors(): array
 	{
 		return [
@@ -108,12 +124,12 @@ class DemoController extends Controller
 				'actions' => [
 					'search' => ['get'],
 					'error'  => ['get','post'],
+					'logout' => ['post'],  // demo-only; normally POST
 					//'logout' => ['post'],
 				],
 			],
 		];
 	}
-	 */
 
 	/**
 	 * {@inheritdoc}
@@ -131,17 +147,41 @@ class DemoController extends Controller
 	}
 
 	/**
+	 * Override beforeAction() to guard access
+	 * {@inheritdoc}
+	 */
+	public function beforeAction($action)
+	{
+		// always allow error pages
+		if ($action->id === 'error') {
+			return parent::beforeAction($action);
+		}
+
+		$session = Yii::$app->session;
+		$loggedIn = $session->get('demoLoggedIn', false);
+
+		// if not logged in and not on login/logout, redirect to login
+		if (!$loggedIn && !in_array($action->id, ['login','logout'], true)) {
+			return $this->redirect(['login']);
+		}
+
+		return parent::beforeAction($action);
+	}
+
+	/**
 	 * Displays Dashboard.
 	 *
 	 * @return mixed
 	 */
 	public function actionIndex(): string
 	{
+		$this->setBodyMode(self::MODE_ADMIN);
+		//$this->view->params['bodyMode'] = self::MODE_ADMIN;
+
 		// optionally, you can prepare dataProviders here if your index lists things
 
-		return $this->render('index', [
-			'bodyMode' => self::MODE_ADMIN,
-		]);
+		return $this->render('@p2m/demo/views/site/index.php');
+		//return $this->redirect(['index']);
 	}
 
 	/**
@@ -149,7 +189,27 @@ class DemoController extends Controller
 	 *
 	 * @return mixed
 	 */
-	public function actionView($part1 = '', $part2 = ''): string
+	public function actionView(string $part1 = '', ?string $part2 = null): string
+	{
+		$this->setBodyMode(self::MODE_ADMIN);
+		//$this->view->params['bodyMode'] = self::MODE_ADMIN;
+
+		// block out the special routes entirely
+		if (in_array($part1, ['login','logout','search','error'], true)) {
+			throw new BadRequestHttpException('Not found');
+		}
+
+		$route = trim("$part1/$part2", '/');
+
+		if ($route === '') {
+			$route = 'index';
+		}
+
+		// pass through any shared params, e.g. bodyMode
+		return $this->render("@p2m/demo/views/site/{$route}.php");
+		//return $this->render($route);
+	}
+	/**
 	{
 		//die("✅ DemoController reached: $part1 / $part2");
 
@@ -178,6 +238,7 @@ class DemoController extends Controller
 			['bodyMode' => self::MODE_ADMIN]
 		);
 	}
+	 */
 
 	/**
 	 * Displays the search page.
@@ -186,9 +247,57 @@ class DemoController extends Controller
 	 */
 	public function actionSearch(): string
 	{
-		return $this->render('search', [
-			'bodyMode' => self::MODE_ERROR,
+		$this->setBodyMode(self::MODE_ADMIN);
+		//$this->view->params['bodyMode'] = self::MODE_ADMIN;
+
+		return $this->render('@p2m/demo/views/site/search.php');
+		//return $this->render('search');
+	}
+
+	/**
+	 * Logs the user in.
+	 */
+	public function actionLogin(): Response|string
+	{
+		$this->setBodyMode(self::MODE_AUTH);
+		//$this->view->params['bodyMode'] = self::MODE_AUTH;
+
+		$model = new \p2m\demo\models\User();
+
+		if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+			if ($model->validateDemo()) {
+				Yii::$app->session->set('demoLoggedIn', true);
+				Yii::$app->session->set('demoUser', $model->getDisplayName());
+				//Yii::$app->session->set('demoUser', $model->displayName);
+				return $this->redirect(['index']);
+			}
+			$model->addError('password','Invalid demo credentials');
+		}
+
+		return $this->render('@p2m/demo/views/site/login.php', [
+			'model' => $model,
 		]);
+		/*
+		return $this->render('login', [
+			'model' => $model,
+		]);
+		*/
+	}
+
+	/**
+	 * Clears the demo session and redirects to login.
+	 *
+	 * @return Response
+	 */
+	public function actionLogout(): Response|string
+	{
+		$session = Yii::$app->session;
+		$session->remove('demoLoggedIn');
+		$session->remove('demoUser');
+		//return $this->redirect(['@p2m/demo/views/site/index.php']);
+		//return $this->redirect(['@p2m/demo/views/site/login.php']);
+		//return $this->redirect(['index']);
+		return $this->redirect(['login']);   // ← goes straight to actionLogin()
 	}
 
 	/**
@@ -200,6 +309,8 @@ class DemoController extends Controller
 	 */
 	public function actionError(?int $code = null): string
 	{
+		$this->view->params['bodyMode'] = self::MODE_ERROR;
+
 		// If you visited /401 or /502 etc, simulate that error:
 		if ($code !== null) {
 			// get standard reason phrase or fallback
@@ -233,7 +344,6 @@ class DemoController extends Controller
 		$this->view->title = "$code – $name";
 
 		return $this->render('@p2m/demo/views/site/error.php', [
-			'bodyMode'   => self::MODE_ERROR,
 			'statusCode' => $code,
 			'name'       => $name,
 			'message'    => $message,
