@@ -1,59 +1,41 @@
 <?php
-/** @var yii\web\View $this */
-/** @var yii\web\View $this->title */
-/** @var \yii\base\DynamicModel $model */
 
-use yii\bootstrap5\ActiveForm;
+/** @var yii\web\View $this */
+/** @var yii\bootstrap5\ActiveForm $form */
+/** @var \common\models\LoginForm $model */
+
 use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
+
+$this->title = 'Login';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="container">
-	<div class="row justify-content-center">
-		<div class="col-lg-5">
-			<div class="card shadow-lg border-0 rounded-lg mt-5">
-				<div class="card-header">
-					<h3 class="text-center font-weight-light my-4">Login</h3>
-				</div>
-				<div class="card-body">
-					<?php $form = ActiveForm::begin([
-						'id'      => 'login-form',
-						'options' => ['class' => ''],
-					]); ?>
-						<div class="form-floating mb-3">
-							<?= $form->field($model, 'email', [
-								'template' => "{input}\n{label}\n{error}",
-								'options'  => ['tag' => false],
-							])->textInput([
-								'class'       => 'form-control',
-								'id'          => 'inputEmail',
-								'type'        => 'email',
-								'placeholder' => 'name@example.com',
-								'autofocus'   => true,
-							])->label('Email address', ['for' => 'inputEmail']) ?>
-						</div>
-						<div class="form-floating mb-3">
-							<?= $form->field($model, 'password', [
-								'template' => "{input}\n{label}\n{error}",
-								'options'  => ['tag' => false],
-							])->passwordInput([
-								'class'       => 'form-control',
-								'id'          => 'inputPassword',
-								'placeholder' => 'Password',
-							])->label('Password', ['for' => 'inputPassword']) ?>
-						</div>
-						<div class="form-check mb-3">
-							<?= Html::checkbox('remember', false, [
-								'class' => 'form-check-input',
-								'id'    => 'inputRememberPassword',
-							]) ?>
-							<?= Html::label('Remember Password', 'inputRememberPassword', ['class' => 'form-check-label']) ?>
-						</div>
-						<div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-							<?= Html::a('Forgot Password?', ['site/password'], ['class' => 'small']) ?>
-							<?= Html::submitButton('Login', ['class' => 'btn btn-primary']) ?>
-						</div>
-					<?php ActiveForm::end(); ?>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="site-login">
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <p>Please fill out the following fields to login:</p>
+
+    <div class="row">
+        <div class="col-lg-5">
+            <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+
+                <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+
+                <?= $form->field($model, 'password')->passwordInput() ?>
+
+                <?= $form->field($model, 'rememberMe')->checkbox() ?>
+
+                <div class="my-1 mx-0" style="color:#999;">
+                    If you forgot your password you can <?= Html::a('reset it', ['site/request-password-reset']) ?>.
+                    <br>
+                    Need new verification email? <?= Html::a('Resend', ['site/resend-verification-email']) ?>
+                </div>
+
+                <div class="form-group">
+                    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                </div>
+
+            <?php ActiveForm::end(); ?>
+        </div>
+    </div>
 </div>
