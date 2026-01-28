@@ -24,6 +24,7 @@ $this->params['themeAssetUrl'] = P2SBAdminAsset::register($this)->baseUrl;
 	<?php $this->registerCsrfMetaTags() ?>
 	<title><?= Html::encode($this->title) ?></title>
 	<?php $this->head() ?>
+	<!-- < ?= //$this->render('@app/views/partials/head.php') ? > -->
 </head>
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>

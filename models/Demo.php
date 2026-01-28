@@ -7,7 +7,7 @@
  * @link https://github.com/p2made
  * @license MIT
  *
- * @package p2made/yii2-p2y2-things-demo
+ * @package p2made/p2y2-demo
  * @class \p2m\demo\models\Demo
  */
 
